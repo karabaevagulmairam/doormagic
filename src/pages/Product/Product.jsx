@@ -6,12 +6,12 @@ import api from "../../config/api/api";
 
 const Product = () => {
 
-    const params = useParams();
+    const {id} = useParams();
 
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        api(`product/${params.id}`)
+        api(`products/${id}`).json()
             .then((res) => setProduct(res))
     }, []);
 
