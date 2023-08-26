@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  transition: .2s;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+.container{
+  max-width: 1620px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+
+
+@import "header";
+@import "form";
+@import "product";
+@import "cart";
+@import "banner";
+@import "hit";
+@import "card";
