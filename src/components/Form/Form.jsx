@@ -10,6 +10,7 @@ import {BsPhone} from "react-icons/bs"
 import {AiFillEye, AiFillEyeInvisible} from "react-icons/ai"
 import api from "../../config/api/api";
 import {CustomContext} from "../../config/context/context";
+import logo from "../../assets/logo.jpg"
 
 const Form = () => {
 
@@ -225,7 +226,9 @@ const Form = () => {
                 </form>
             </div>
 
-            <div className="form__right"></div>
+            <div className="form__right">
+                <img src={logo} alt=""/>
+            </div>
         </div>
     );
 };

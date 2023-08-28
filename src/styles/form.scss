@@ -1,6 +1,10 @@
 .form{
   padding: 80px 75px;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
   &__logo{
     margin-bottom: 100px;
   }

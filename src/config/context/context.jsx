@@ -9,7 +9,8 @@ export const Context = (props) => {
     const [user, setUser] = useState({email: ''});
 
     const [favorites, setFavorites] = useState([]);
-    const [hit, setHit] =useState([])
+
+    const [hit, setHit] =useState([]);
 
     const navigate = useNavigate();
 
@@ -64,11 +65,25 @@ export const Context = (props) => {
     const getHit = () =>{
         api('products?_sort=rating&_order=desc&_limit=12').json()
             .then((res)=>setHit(res))
-    }
+    };
+
+    const addCarts = (product) => {
+        api.patch(`users/${user.id}`, {
+            headers: {
+                'content-type': 'application/json'
+            },
+            json: {
+                carts: [...user.carts, {...product, count: 1}]
+            }
+        }).json().then((res) => {
+            setUser(res);
+            localStorage.setItem('user', JSON.stringify(res))
+        })
+    };
 
 
     let value = {
-        user, setUser, registerUser, loginUser, logOutUser, getHit, hit
+        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts
     };
 
     return <CustomContext.Provider value={value}>

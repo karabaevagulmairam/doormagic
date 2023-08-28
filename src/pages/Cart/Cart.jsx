@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {CustomContext} from "../../config/context/context";
 
 const Cart = () => {
+
+    const {user} = useContext(CustomContext);
+
     return (
         <section className="cart">
             <div className="container">
@@ -10,23 +14,29 @@ const Cart = () => {
                 </div>
 
                 <div className="cart__row">
-                    <div className="cart__card">
-                        <img src="https://bookhouse.kg/media/galleryphoto/2023/4/797be0a4-7c0b-4918-8ceb-9d9b5fccb54a.jpg.600x780_q94.jpg" alt=""/>
-                        <div className="cart__card-info">
-                            <h3 className="cart__card-title">Каштановый человечек</h3>
-                            <p className="cart__card-author">Сорен Свейструп</p>
-                        </div>
+                    {
+                        user.carts?.map((item) => (
+                            <div className="cart__card">
+                                <img src={`/${item.image}`} alt=""/>
+                                <div className="cart__card-info">
+                                    <h3 className="cart__card-title">{item.title}</h3>
+                                    <p className="cart__card-author">{item.author}</p>
+                                </div>
 
-                        <div className="cart__card-quantity">
-                            <button className="cart__card-min">-</button>
-                            <input type="text" className="cart__card-num" min={1} max={9} />
-                            <button className="cart__card-max">+</button>
-                        </div>
 
-                        <div className="cart__card-price">600</div>
+                                <div className="cart__card-quantity">
+                                    <button className="cart__card-min">-</button>
+                                    <input type="text" className="cart__card-num" min={1} max={9} />
+                                    <button className="cart__card-max">+</button>
+                                </div>
 
-                        <button className="cart__card-deleted">X</button>
-                    </div>
+                                <div className="cart__card-price">{item.price}</div>
+
+                                <button className="cart__card-deleted">X</button>
+                            </div>
+                        ))
+                    }
+
                 </div>
 
                 <div className="cart__bottom">
