@@ -1,5 +1,6 @@
 .header{
   padding-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(28, 28, 28, 0.1);
   &__top{
     background: #1A1919;
     padding: 7px 0;
@@ -28,6 +29,7 @@
     }
   }
   &__center{
+    border-bottom: 1px solid #DEDEFF50;
     display: flex;
     align-items: center;
     justify-content: space-between;

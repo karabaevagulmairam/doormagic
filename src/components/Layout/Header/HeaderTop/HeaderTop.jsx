@@ -1,4 +1,4 @@
-
+import React from "react";
 //media
 import {MdEmail} from "react-icons/md"
 import {FiPhone} from "react-icons/fi"
@@ -29,8 +29,10 @@ const HeaderTop = () => {
                             </span>
                             Напишите нам в WhatsApp
                         </a>
+
                     </div>
                     <div className="header__top-delivery">
+
                         <a href="#" className="header__top-link">
                             <span>
                                 <TbTruckDelivery/>

@@ -1,32 +1,33 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const HeaderBot = () => {
     return (
         <nav className="header__bot">
-            <ul className="header__bot-list">
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">О центре</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">Онлайн обучение</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">Отзывы</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">База знатий</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">Контакты</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">Контакты</a>
-                </li>
-                <li className="header__bot-item">
-                    <a href="#" className="header__bot-link">Контакты</a>
-                </li>
 
-            </ul>
+            <Link className="header__bot-link">
+                О нас
+            </Link>
+
+            <div className="header__bot-list">
+
+                <Link className="header__bot-link">
+                    Скидки
+                </Link>
+                <Link className="header__bot-link">
+                    Рейтинги
+                </Link>
+                <Link className="header__bot-link">
+                    Новинки
+                </Link>
+                <Link className="header__bot-link">
+                    Авторы
+                </Link>
+                <Link className="header__bot-link">
+
+                </Link>
+
+            </div>
         </nav>
     );
 };
