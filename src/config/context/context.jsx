@@ -18,7 +18,13 @@ export const Context = (props) => {
         if (localStorage.getItem('user') !== null) {
             setUser(JSON.parse(localStorage.getItem('user')))
         }
+
+        if (localStorage.getItem('favorites') !== null) {
+            setFavorites(JSON.parse(localStorage.getItem('favorites')))
+        }
     }, []);
+
+    //start userContent
 
     const registerUser = (user) => {
         api.post('register', {
@@ -62,10 +68,39 @@ export const Context = (props) => {
         navigate('/')
     };
 
+    //end userContent
+
+    //start hit
+
     const getHit = () =>{
         api('products?_sort=rating&_order=desc&_limit=12').json()
             .then((res)=>setHit(res))
     };
+
+    //end hit
+
+    //start favorites
+
+    const favoritesHandler = (product) => {
+        let findProduct = favorites.some(item => item.id === product.id);
+
+        if (findProduct) {
+            setFavorites(prev => prev.filter(item => item.id !== product.id))
+        } else {
+            setFavorites(prev => [...prev, product])
+        }
+    };
+
+    useEffect(() => {
+        localStorage.setItem('favorites', JSON.stringify(favorites))
+    }, [favorites]);
+
+
+
+    //end favorites
+
+
+    //start countCarts
 
     const addCarts = (product) => {
         api.patch(`users/${user.id}`, {
@@ -81,9 +116,48 @@ export const Context = (props) => {
         })
     };
 
+    const addCartsCountPlus = (id) => {
+        api.patch(`users/${user.id}`, {
+            headers: {
+                'content-type': 'application/json'
+            },
+            json: {
+                carts: user.carts.map(item => {
+                    if (item.id === id) {
+                        return {...item, count: item.count + 1}
+                    }
+                    return item
+                })
+            }
+        }).json().then((res) => {
+            setUser(res);
+            localStorage.setItem('user', JSON.stringify(res))
+        })
+    };
+
+    const removeCartsCountMinus = (id) => {
+        api.patch(`users/${user.id}`, {
+            headers: {
+                'content-type': 'application/json'
+            },
+            json: {
+                carts: user.carts.find(item => item.id === id).count > 1 ? user.carts.map(item => {
+                    if (item.id === id) {
+                        return {...item, count: item.count - 1}
+                    }
+                    return item
+                }) : user.carts.filter((item) => item.id !== id)
+            }
+        }).json().then((res) => {
+            setUser(res);
+            localStorage.setItem('user', JSON.stringify(res))
+        })
+    };
+
+    //end countCarts
 
     let value = {
-        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts
+        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts, addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites
     };
 
     return <CustomContext.Provider value={value}>

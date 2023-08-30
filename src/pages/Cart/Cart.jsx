@@ -3,7 +3,7 @@ import {CustomContext} from "../../config/context/context";
 
 const Cart = () => {
 
-    const {user} = useContext(CustomContext);
+    const {user, removeCartsCountMinus, addCartsCountPlus} = useContext(CustomContext);
 
     return (
         <section className="cart">
@@ -17,20 +17,31 @@ const Cart = () => {
                     {
                         user.carts?.map((item) => (
                             <div className="cart__card">
-                                <img src={`/${item.image}`} alt=""/>
-                                <div className="cart__card-info">
-                                    <h3 className="cart__card-title">{item.title}</h3>
-                                    <p className="cart__card-author">{item.author}</p>
+                                <div className="cart__card-item">
+                                    <img src={item.image}/*{`/${item.image}`}*/ alt=""/>
+                                    <div className="cart__card-info">
+                                        <h3 className="cart__card-title">{item.title}</h3>
+                                        <p className="cart__card-author">{item.author}</p>
+                                    </div>
                                 </div>
-
 
                                 <div className="cart__card-quantity">
-                                    <button className="cart__card-min">-</button>
-                                    <input type="text" className="cart__card-num" min={1} max={9} />
-                                    <button className="cart__card-max">+</button>
+                                    <button className="cart__card-min" type="button" onClick={() => removeCartsCountMinus(item.id)}>-</button>
+                                    <span className="cart__card-num">
+                                        {
+                                            user.carts.find(el => el.id === item.id).count
+                                        }
+                                    </span>
+                                    <button className="cart__card-max" type="button" onClick={() => addCartsCountPlus(item.id)}>+</button>
                                 </div>
 
-                                <div className="cart__card-price">{item.price}</div>
+                                <p className="cart__card-price">
+                                    {item.price} сом
+                                    <br/>
+                                    {
+                                        item.price * item.count
+                                    } сом
+                                </p>
 
                                 <button className="cart__card-deleted">X</button>
                             </div>
@@ -41,7 +52,7 @@ const Cart = () => {
 
                 <div className="cart__bottom">
                     <p className="cart__bottom-count">
-                        Итоговая стоимость: 600 сом
+                        Итоговая стоимость: {user.carts?.reduce((acc, rec) => acc + rec.price * rec.count, 0)} сом
                     </p>
                     <button className="cart__bottom-order">
                         Оформить заказ
