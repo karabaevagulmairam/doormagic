@@ -5,15 +5,17 @@ import {BsSearch} from "react-icons/bs"
 import {RiUserHeartLine} from "react-icons/ri"
 import {BiBookHeart} from "react-icons/bi"
 import {LiaOpencart} from   "react-icons/lia"
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 import {CustomContext} from "../../../../config/context/context";
+import api from "../../../../config/api/api";
 
 
 const HeaderCenter = () => {
 
-    const {user, logOutUser} = useContext(CustomContext);
+    const {user, logOutUser, search, setSearch} = useContext(CustomContext);
 
     const location = useLocation();
+
 
     return (
         <nav className="header__center">
@@ -26,9 +28,11 @@ const HeaderCenter = () => {
                     <BsSearch/>
                 </span>
                 <input
+                    value={search}
                     type="search"
                     className="header__center-field"
                     placeholder="Поиск"
+                    onChange={(e) => setSearch(e.target.value)}
                 />
                 
             </div>

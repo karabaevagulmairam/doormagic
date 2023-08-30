@@ -12,6 +12,8 @@ export const Context = (props) => {
 
     const [hit, setHit] =useState([]);
 
+    const [search, setSearch] = useState('');
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -157,7 +159,9 @@ export const Context = (props) => {
     //end countCarts
 
     let value = {
-        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts, addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites
+        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
+        addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
+        search, setSearch
     };
 
     return <CustomContext.Provider value={value}>

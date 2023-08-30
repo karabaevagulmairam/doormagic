@@ -1,10 +1,20 @@
-import React, {Fragment, useContext} from 'react';
+import React, {Fragment, useContext, useEffect, useState} from 'react';
 import {CustomContext} from "../../config/context/context";
 import Card from "../../components/Card/Card";
 
 const Favorites = () => {
 
     const {favorites} = useContext(CustomContext);
+
+    const [page, setPage] = useState(1);
+
+    let favoritesPages = new Array(Math.ceil(favorites.length / 4)).fill(null, 0);
+
+    useEffect(() => {
+        if (page > favoritesPages.length) {
+            setPage(favoritesPages.length)
+        }
+    }, [favoritesPages]);
 
     console.log(favorites);
 
@@ -13,6 +23,11 @@ const Favorites = () => {
             <section className="hit">
                 <div className="container">
                     <h2 className="hit__title">Избранные товары</h2>
+
+                    {
+                        page
+                    }
+
                     <Swiper
                         loop={true}
                         autoplay={
@@ -26,7 +41,7 @@ const Favorites = () => {
                     >
 
                         {
-                            favorites.map((item, idx)=>(
+                            favorites.filter((item, idx) => idx >= page * 4 - 4 && idx < page * 4).map((item)=>(
                                 <Fragment key={item.id || idx}>
                                     <SwiperSlide>
                                         <Card item={item}/>
@@ -35,13 +50,22 @@ const Favorites = () => {
                             ))
                         }
                     </Swiper>
+
+                    {
+                        favoritesPages.length > 1 && <ul>
+                            {
+                                favoritesPages.map((item, idx) => (
+                                    <li onClick={() => setPage(idx + 1)} key={idx}>{idx + 1}</li>
+                                ))
+                            }
+                        </ul>
+                    }
                 </div>
             </section>
         );
     } else {
         return <h2 className="hit__title-fav">Список избранных товаров пуст</h2>
     }
-
 };
 
 export default Favorites;
