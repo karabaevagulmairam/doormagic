@@ -1,0 +1,19 @@
+.rating{
+  padding: 20px 0;
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  &__card{
+    width: calc(20% - 16px);
+    border-radius: 6%;
+  }
+  &__img{
+    width: 100%;
+    height: 250px;
+  }
+  &__desc{
+    text-align: center;
+  }
+}

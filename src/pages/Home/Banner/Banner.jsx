@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
@@ -29,29 +29,29 @@ const Banner = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <a href="" className="banner__item">
+                        <Link to={'/sale'}>
                             <img src={b1} alt="" className="banner__img"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="" className="banner__item">
+                        <Link to={'/sale'}>
                             <img src={b2} alt="" className="banner__img"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="" className="banner__item">
+                        <Link to={'/sale'}>
                             <img src={b3} alt="" className="banner__img"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="" className="banner__item">
+                        <Link to={'/sale'}>
                             <img src={b4} alt="" className="banner__img"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="" className="banner__item">
+                        <Link to={'/sale'}>
                             <img src={b5} alt="" className="banner__img"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                 </Swiper>
             </div>

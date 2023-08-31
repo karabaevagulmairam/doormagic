@@ -16,13 +16,10 @@ const Hit = () => {
         getHit()
     },[])
 
-
-    console.log(hit)
-
     return (
         <section className="hit">
             <div className="container">
-                <h2 className="hit__title">Новинки</h2>
+                <h2 className="title">Новинки</h2>
                     <Swiper
                         loop={true}
                         autoplay={
