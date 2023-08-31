@@ -7,6 +7,7 @@ const Home = () => {
         <main>
             <Banner/>
             <Hit/>
+
         </main>
     );
 };

@@ -11,7 +11,7 @@ export const Context = (props) => {
     const [favorites, setFavorites] = useState([]);
 
     const [hit, setHit] =useState([]);
-
+    const [catalog, setCatalog] =useState([]);
     const [search, setSearch] = useState('');
 
     const navigate = useNavigate();
@@ -97,7 +97,7 @@ export const Context = (props) => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
 
-
+    const getCatalog = () =>{ api('products').json().then((res)=>setCatalog(res))};
 
     //end favorites
 
@@ -161,7 +161,7 @@ export const Context = (props) => {
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
-        search, setSearch
+        search, setSearch , getCatalog ,catalog
     };
 
     return <CustomContext.Provider value={value}>

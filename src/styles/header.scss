@@ -75,11 +75,11 @@
   &__bot{
     padding-top: 20px;
     display: flex;
-    column-gap: 40px;
     align-items: center;
+    column-gap: 500px;
     &-list{
       display: flex;
-      column-gap: 40px;
+     column-gap: 50px;
     }
     &-link{
       font-family: 'Roboto', sans-serif;

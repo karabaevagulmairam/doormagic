@@ -5,26 +5,25 @@ const HeaderBot = () => {
     return (
         <nav className="header__bot">
 
-            <Link className="header__bot-link">
+            <Link to={'/about'} className="header__bot-link">
                 О нас
             </Link>
-
             <div className="header__bot-list">
 
-                <Link className="header__bot-link">
+                <Link to={'/sale'} className="header__bot-link">
                     Скидки
                 </Link>
-                <Link className="header__bot-link">
+                <Link to={'/rating'} className="header__bot-link">
                     Рейтинги
                 </Link>
                 <Link className="header__bot-link">
                     Новинки
                 </Link>
-                <Link className="header__bot-link">
+                <Link to={'/author'} className="header__bot-link">
                     Авторы
                 </Link>
-                <Link className="header__bot-link">
-
+                <Link  to={'/cataloge'} className="header__bot-link">
+                    Каталог
                 </Link>
 
             </div>

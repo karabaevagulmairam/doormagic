@@ -26,7 +26,7 @@ const Card = ({item}) => {
                 </div>
 
 
-                <div className="dop">
+                <div className="card__dop">
 
                     {
                         user.carts?.some(el => el.id === item.id) ?
