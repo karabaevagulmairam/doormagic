@@ -80,7 +80,13 @@
           "book": "Магкий",
           "rating": "0",
           "sale": "0",
-          "image": "https://ndc.book24.ru/resize/440x568/iblock/aa6/aa67e13d549d9227d4ef2b448ef5e42c/77ecfc01793e14871ff531eddf3391d3.jpg",
+          "images": [
+            "https://ndc.book24.ru/resize/440x568/iblock/aa6/aa67e13d549d9227d4ef2b448ef5e42c/77ecfc01793e14871ff531eddf3391d3.jpg",
+            "https://ndc.book24.ru/resize/820x1180/iblock/573/573dd59c7f3cb2acff21e27b82111888/a3a6081effbc88169342f862b3bbaf84.jpg",
+            "https://ndc.book24.ru/resize/820x1180/iblock/2a7/2a7bf35cdc6983644614b5617401645a/7417d27713bfeb36faf59569f81ea162.jpg",
+            "https://ndc.book24.ru/resize/820x1180/iblock/853/853a3d241666f2364b70fec0349e5206/8d5b4f6b904d84117605ccdc73c34cd7.jpg",
+            "https://ndc.book24.ru/resize/820x1180/iblock/038/038899f5cbad19f14695ab5ff1544f5a/5674eb32aee4fe65454bb20804d0747b.jpg"
+          ],
           "count": 1
         },
         {
