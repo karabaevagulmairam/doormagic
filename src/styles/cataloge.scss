@@ -1,13 +1,12 @@
 .catalog{
   padding: 40px 0;
-  .cards{
+  &__row{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    .card{
+    .cards{
+      margin-bottom: 40px;
       width: calc(20% - 16px);
     }
   }
-
-
 }
