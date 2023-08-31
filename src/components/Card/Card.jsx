@@ -1,21 +1,24 @@
 import React, {useContext} from 'react';
-import {AiOutlineHeart} from "react-icons/ai";
-import {Link, useNavigate} from 'react-router-dom'
+import {AiOutlineHeart, AiFillHeart} from "react-icons/ai";
+import {Link, useNavigate, useLocation} from 'react-router-dom'
 import {LiaOpencart} from   "react-icons/lia"
 import {CustomContext} from "../../config/context/context";
 
 const Card = ({item}) => {
 
+    const {favorites, favoritesHandler} = useContext(CustomContext);
+
     const {addCarts, user} = useContext(CustomContext);
 
     const navigate = useNavigate();
 
+    const location = useLocation();
 
     return (
             <div className="cards">
                 <div className="card">
                     <Link to={`/product/${item.id}`}>
-                        <img src={location.pathname === "/" ? item.image : `../${item.image}`} alt="" className="card__img"/>
+                        <img src={location.pathname === '/' ? item.image : `../${item.image}`} alt="" className="card__img"/>
                     </Link>
                     <p className="card__price">{item.price}c</p>
                     <p className="card__title">{item.title}</p>
@@ -23,7 +26,7 @@ const Card = ({item}) => {
                 </div>
 
 
-                <div className="dop">
+                <div className="card__dop">
 
                     {
                         user.carts?.some(el => el.id === item.id) ?
@@ -41,8 +44,10 @@ const Card = ({item}) => {
                             </button>
                     }
 
-                    <span className="card__fav">
-                        <AiOutlineHeart/>
+                    <span className="card__fav" onClick={() => favoritesHandler(item)}>
+                        {
+                            favorites.some(el => el.id === item.id) ? <AiFillHeart color="red"/> : <AiOutlineHeart/>
+                        }
                     </span>
                 </div>
             </div>

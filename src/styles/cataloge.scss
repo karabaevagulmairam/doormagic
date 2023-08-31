@@ -1,10 +1,13 @@
 .catalog{
-  &__row{
+  padding: 40px 0;
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .card{
+      width: calc(20% - 16px);
+    }
+  }
 
-  }
-  &__card{
-    width: 100px;
-    height: 100px;
-    background: #444B59;
-  }
+
 }

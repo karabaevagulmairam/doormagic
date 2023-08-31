@@ -10,11 +10,13 @@ import NotFound from "./pages/NotFound/NotFound";
 import './styles/style.scss'
 import LogIn from "./pages/LogIn/LogIn";
 import Register from "./pages/Register/Register";
-import Favorites from "./pages/Favorites/Favorites";
 import CheckOut from "./pages/CheckOut/CheckOut";
+import Favorites from "./pages/Favorites/Favorites";
 import Sale from "./pages/Sale/Sale";
 import Author from "./pages/Author/Author";
 import Rating from "./pages/Rating/Rating";
+
+
 
 function App() {
 

@@ -10,11 +10,13 @@ import {CustomContext} from "../../config/context/context";
 
 const Hit = () => {
 
-    const{hit, getHit} = useContext(CustomContext)
+    const{hit, getHit} = useContext(CustomContext);
 
     useEffect(()=>{
         getHit()
-    },[])
+    },[]);
+
+
 
     return (
         <section className="hit">

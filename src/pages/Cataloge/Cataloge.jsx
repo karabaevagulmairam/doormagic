@@ -1,18 +1,27 @@
-import React, {useContext, useEffect} from 'react';
-import Card from "../../components/Card/Card";
+import React, {Fragment, useContext, useEffect} from 'react';
 import {CustomContext} from "../../config/context/context";
-import {useNavigate} from "react-router-dom";
+import Card from "../../components/Card/Card";
+
 
 const Cataloge = () => {
 
+    const{catalog, getCatalog} = useContext(CustomContext);
 
+    useEffect(()=>{
+        getCatalog()
+    },[]);
 
     return (
         <div className="catalog">
             <div className="container">
-                <div className="catalog__row">
+                {
+                    catalog.map((item, idx)=>(
+                        <Fragment key={item.id || idx}>
+                            <Card item={item}/>
+                        </Fragment>
+                    ))
+                }
 
-                </div>
             </div>
         </div>
     );

@@ -2,9 +2,6 @@
   padding: 7px;
   height: 420px;
   position: relative;
-  &__fav{
-
-  }
   &__btn{
     margin-top: 20px ;
     padding: 7px 15px;
@@ -16,6 +13,14 @@
       background: #1A1919;
     }
   }
+  &__add {
+    margin-top: 20px;
+    padding: 7px 15px;
+    border-radius: 3%;
+    background: #7d8290;
+    color: #fff;
+    font-size: 15px;
+  }
   &__cart{
     margin-left: 10px;
   }
@@ -24,10 +29,9 @@
     font-size: 25px;
     margin-top: 20px;
     cursor: pointer;
+    position: absolute;
     &:hover{
-      path{
-        fill: #1A1919;
-      }
+      transform: scale(1.4);
     }
   }
   &__img{
@@ -54,7 +58,7 @@
     line-height: 21px;
     color: #1A1919;
   }
-}
-.dop{
-  margin-top: 20px;
+  &__dop{
+    margin-top: 20px;
+  }
 }
