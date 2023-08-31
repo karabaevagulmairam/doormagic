@@ -14,14 +14,15 @@ const Cataloge = () => {
     return (
         <div className="catalog">
             <div className="container">
-                {
-                    catalog.map((item, idx)=>(
-                        <Fragment key={item.id || idx}>
-                            <Card item={item}/>
-                        </Fragment>
-                    ))
-                }
-
+                <div className="catalog__row">
+                    {
+                        catalog.map((item, idx)=>(
+                            <Fragment key={item.id || idx}>
+                                <Card item={item}/>
+                            </Fragment>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     );
