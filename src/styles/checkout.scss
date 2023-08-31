@@ -1,3 +1,77 @@
 .checkout{
+  padding: 30px;
+  &__left{
+    width: 70%;
+    padding: 40px;
+    background: #F3F2F3;
+  }
+  &__subs{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    padding-bottom: 50px;
+    &-num{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+    }
+  }
+  &__delivery{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    &-del{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+      padding: 15px 20px;
+      width: 40%;
+      background: #ffffff;
+    }
+    &-check{
+      width: 20px;
+      height: 20px;
+    }
+    &-box{
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      padding-left: 20px;
+      width: 100%;
+    }
+    &-comp{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &-exp{
+      color: #D3D3D3;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+    }
+  }
+  &__form{
+    padding: 70px 0 50px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    &-fields{
+      display: flex;
+      padding-bottom: 20px;
+    }
+    &-field{
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+      padding: 15px 20px;
+      border: none;
+      width: 40%;
 
+      color: #525252;
+      font-family: "Montserrat",sans-serif;
+      font-size: 16px;
+    }
+  }
 }

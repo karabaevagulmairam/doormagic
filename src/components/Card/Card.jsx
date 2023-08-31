@@ -18,7 +18,7 @@ const Card = ({item}) => {
             <div className="cards">
                 <div className="card">
                     <Link to={`/product/${item.id}`}>
-                        <img src={location.pathname === '/' ? item.image : `../${item.image}`} alt="" className="card__img"/>
+                        <img src={location.pathname === '/' ? item.image : `${item.image}`} alt="" className="card__img"/>
                     </Link>
                     <p className="card__price">{item.price}c</p>
                     <p className="card__title">{item.title}</p>
