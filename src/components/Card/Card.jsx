@@ -16,16 +16,6 @@ const Card = ({item}) => {
 
     return (
             <div className="cards">
-<<<<<<< HEAD
-                <div className="card">
-                    <Link to={`/product/${item.id}`}>
-                        <img src={location.pathname === '/' ? item.image : `${item.image}`} alt="" className="card__img"/>
-                    </Link>
-                    <p className="card__price">{item.price}c</p>
-                    <p className="card__title">{item.title}</p>
-                    <p className="card__name">{item.author}</p>
-                </div>
-=======
                 <div className="cards__row">
                     <div className="card">
                         <Link to={`/product/${item.id}`}>
@@ -35,8 +25,6 @@ const Card = ({item}) => {
                         <p className="card__title">{item.title}</p>
                         <p className="card__name">{item.author}</p>
                     </div>
->>>>>>> ad5c633af9e2d11b4f17d51ba1270cb311f530ab
-
 
                     <div className="card__dop">
 
