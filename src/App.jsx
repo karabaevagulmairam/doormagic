@@ -13,9 +13,9 @@ import Register from "./pages/Register/Register";
 import CheckOut from "./pages/CheckOut/CheckOut";
 import Favorites from "./pages/Favorites/Favorites";
 import Sale from "./pages/Sale/Sale";
-import Author from "./pages/Author/Author";
+import Authors from "./pages/Authors/Authors";
 import Rating from "./pages/Rating/Rating";
-
+import Author from "./pages/Author/Author";
 
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
           <Route path='/checkout' element={<CheckOut/>}/>
           <Route path='/room' element={<Room/>}/>
           <Route path='/sale' element={<Sale/>}/>
+          <Route path='/authors' element={<Authors/>}/>
           <Route path='/author' element={<Author/>}/>
           <Route path='/rating' element={<Rating/>}/>
           <Route path='/favorites' element={<Favorites/>}/>

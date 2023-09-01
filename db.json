@@ -24,6 +24,21 @@
       "orders": [],
       "carts": [
         {
+          "id": 2,
+          "title": "Восхождение фениксов",
+          "author": "Тянься Гуйюань",
+          "price": "834",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Знаменитый китайский роман от популярной писательницы Тянься Гуйюань! Впервые на русском языке!\n\nТянься Гуйюань занимает первое место в списке ТОП-50 самых влиятельных писательниц китайской интернет-литературы.\n\nВы окунетесь в атмосферу Древнего Китая с его пленительными пейзажами и роскошными пагодами, окажетесь в центре дворцовых интриг и примете участие в кровавой схватке за трон. Ну и, конечно… влюбитесь. Так искренне, чисто и самоотверженно, как описывают только в китайских романах.\n\nВас ожидают цветные вклейки с персонажами в традиционных китайских костюмах на мелованной бумаге и запечатанные форзацы!\n\nНа «Возхождение фениксов» есть шикарная дорама на Netflix с известными актерами, которая уже популярна не только в Китае, но и в России. Дорама стала одним из самых рейтинговых шоу года. Номинирована на лучший драматический сериал на Asian Television Awards и выиграла премию за лучшую операторскую работу на 25-м Шанхайском телевизионном фестивале.\n\nИллюстрация на обложке Екатерины Александрович-Голондзевской https://vk.com/otraenna\n\nВнутренние арты Ольги Брыкиной https://vk.com/oriollie\n\nРанним утром хлопья снега кружили в воздухе, опускаясь на водную гладь пруда. Я безмятежно наблюдала, как расстилается розоватый туман и… как умирает моя тетя. Хотите знать, почему не спасла ее? Много лет назад из-за этой женщины едва не погибла моя мать.\n\nМеня зовут Фэн Чживэй.\n\nЯ всегда отличалась волевым характером и острым умом. Поэтому оказалась в самом знаменитом учебном заведении империи — Академии Цинмин. Получила почетное звание ученого и стала приближенной самого императора.\n\nНа моих глазах во дворце разворачивается настоящая борьба за власть. Но до сих пор в ней не участвовала я… Шаг за шагом я иду к своей цели. Ведь я феникс, возрождающийся из пепла.",
+          "public": "\nЭксмо, Freedom",
+          "limit": "18+",
+          "book": "Твердый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://cdn.eksmo.ru/v2/ITD000000001306075/COVER/cover1__w600.jpg",
+          "count": 1
+        },
+        {
           "id": 3,
           "title": "Царство Страха",
           "author": "\nКерри Манискалко",
@@ -39,6 +54,21 @@
           "count": 1
         },
         {
+          "id": 5,
+          "title": "Королевство гнева и тумана",
+          "author": "\nМаас Сара Дж.",
+          "price": "779",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Фейра уже не та простая смертная девушка, какой была на землях людей. Здесь, в Притиании, она обрела бессмертие, развила магические способности, ее возлюбленный — верховный правитель Двора весны, и скоро состоится их свадьба. Но когда-то она заключила договор с правителем Двора ночи и обязана неделю каждого месяца проводить в соседних владениях, о которых идет недобрая слава. Между тем владыка Сонного королевства, давний враг Притиании и мира людей, готовит вторжение на их земли. В его руках мощный артефакт, давший когда-то жизнь всему миру и способный оживлять мертвых. Противостоять его силе может лишь Книга Дуновений, и Фейра делает все возможное и невозможное, чтобы заполучить Книгу.",
+          "public": "\nАзбука",
+          "limit": "18+",
+          "book": "Твердый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/440x568/iblock/8cf/8cf17cd59958d830d01a6ea93c41c2f8/ef13551941e3579b9c2915d46cb3f44b.jpg",
+          "count": 1
+        },
+        {
           "id": 4,
           "title": "Продажное королевство",
           "author": "Тунсю Мосян",
@@ -51,6 +81,141 @@
           "rating": "0",
           "sale": "0",
           "image": "https://ndc.book24.ru/resize/440x568/iblock/fb1/fb12c4dc739b773cd4cd2e83ab1f1fa6/d6104ed71e959229e9af24d4f0419af2.jpg",
+          "count": 1
+        },
+        {
+          "id": 1,
+          "title": "Благословение небожителей. Том 5",
+          "author": "Тунсю Мосян",
+          "price": "1 250",
+          "category": "Зарубежное фэнтези",
+          "description": "Путешествие к Медной Печи становится всё более непредсказуемым. По дороге к вулкану Се Лянь узнаёт шокирующую правду о Хуа Чэне, но герои даже не успевают объясниться, ведь Поднебесной грозит страшная опасность — Безликий Бай вернулся! Се Ляню предстоит разгадать тайну личности демона и отразить новую волну поветрия ликов, но перед этим он столкнётся с призраками прошлого…\n\nЧто произошло с наследным принцем после первого низвержения? Как он всё потерял и опустился на самое дно? Какие страдания выпали на его долю? Кто заставил его блуждать во тьме, а кто помог обратиться к свету?",
+          "public": "\nЭксмо, Комильфо",
+          "limit": "18+",
+          "book": "Магкий",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/440x568/iblock/aa6/aa67e13d549d9227d4ef2b448ef5e42c/77ecfc01793e14871ff531eddf3391d3.jpg",
+          "count": 1
+        },
+        {
+          "id": 12,
+          "title": "Шестерка Атласа",
+          "author": "\nОливи Блейк",
+          "price": "1 250",
+          "category": "\nЗарубежное фэнтези",
+          "description": "ДОБРО ПОЖАЛОВАТЬ В АЛЕКСАНДРИЙСКОЕ ОБЩЕСТВО.\n\nРаз в десять лет только шесть самых талантливых магов могут заслужить место в самом известном тайном обществе — Александрийском.\n\nИзбранные получат власть и престиж, о которых и мечтать не могли. Но какую цену им придется заплатить за честь быть членом этого общества?\n\nУ каждого из новобранцев есть причины принять приглашение и бороться за место. Даже если это означает стать ближе, чем они могли себе представить, к своим опасным врагам.\n\nДаже если это означает быть преданными самыми, как казалось, надежными союзниками.\n\nДаже если это означает, что не все они переживут испытания…\n\n#The Atlas six #Шестерка Атласа",
+          "public": "\nАСТ",
+          "limit": "18+",
+          "book": "Твердый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/820x1180/iblock/6f2/6f2e5f774376b7ce55eb292e934462f8/07d1f24c44a81997d89002b7b2446155.jpg",
+          "count": 1
+        },
+        {
+          "id": 11,
+          "title": "Парадокс Атласа (со стикерпаком)",
+          "author": "Блейк О.",
+          "price": "845",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Эксклюзивный подарочный стикерпак внутри книги!\n\n\"ПАРАДОКС АТЛАСА\" — ДОЛГОЖДАННЫЙ СИКВЕЛ БЕСТСЕЛЛЕРА NEW YORK TIMES ОТ ОЛИВИ БЛЕЙК, СЕНСАЦИОННОГО РОМАНА В ДУХЕ ТЕМНОЙ АКАДЕМИИ \"ШЕСТЕРКА АТЛАСА\".\n\nПОДЛОСТЬ\n\nПРЕДАТЕЛЬСТВО\n\nХАОС\n\nШЕСТЕРО МАГОВ ПОЛУЧИЛИ ШАНС, КОТОРЫЙ ДАЕТСЯ РАЗ В ЖИЗНИ.\n\nПЯТЕРО СТАЛИ НОВЫМИ ЧЛЕНАМИ ОБЩЕСТВА.\n\nПЕРЕД НИМИ ЛЕЖИТ ДВА ПУТИ.\n\nКАЖДОМУ НАДО ВЫБРАТЬ, НА ЧЬЕЙ ОН СТОРОНЕ.\n\nСоюзы пройдут испытание на прочность, сердца будут разбиты, и наконец вскроется истинная суть Александрийцев: это тайное общество, обладающее чистой силой, способной влиять на мир, и возглавляемое тем, чьи планы изменить саму жизнь уже исполняются.\n\n\"Это упоительное состязание умов, воли, страсти, а также магических талантов… Тайны, загадки — чистое наслаждение\".\n\nХОЛЛИ БЛЭК, АВТОР БЕСТСЕЛЛЕРОВ NEW YORK TIMES",
+          "public": "\nАСТ",
+          "limit": "18+",
+          "book": "Мягкий",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/820x1180/iblock/9cd/9cd3fb89b9d12465e8b48ff9557d0a43/932853f6b81624bfa6933f2a6c5cb676.jpg",
+          "count": 1
+        },
+        {
+          "id": 10,
+          "title": "Малазанская книга павших. Книга 4. Дом Цепей",
+          "author": "Стивен Эриксон ",
+          "price": "1 123",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Семиградье, некогда оккупированное Малазанской империей и попавшее к ней под пяту, восстало. Само существование империи под угрозой. Императрица Ласин карательными мерами пытается подавить мятеж. Воинство Апокалипсиса — Вихрь Дриджны, — сосредоточенное в священной пустыне Рараку, во главе с Ша’ик Возрожденной, ведет свою двойную игру. В стане семиградских мятежников также нет единства и понимания: маги, пустынные племена, перебежчик Корболо Дом — все хотят переиграть ситуацию в свою пользу. Цепь судеб и обстоятельств, которая сковывает людей, вот-вот оборвется. Чем это закончится для планеты? Чередой новых несчастий? Миром? Покоем? Ответа нет…",
+          "public": "\nЭксмо, Комильфо",
+          "limit": "18+",
+          "book": "Мягкий",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/820x1180/iblock/79f/79fecea79b20a821122c059bbbfdb2de/ab041606e545c4500c56ae23ad9431f8.jpg",
+          "count": 1
+        },
+        {
+          "id": 9,
+          "title": "Король Неверленда",
+          "author": "Сент Кроу Никки",
+          "price": "566",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Вот уже две сотни лет все женщины рода Дарлинг исчезают в день, когда им исполняется восемнадцать.\n\nИногда их нет всего день. Иногда — неделю или месяц. Но они всегда возвращаются сломленными.\n\nСегодня мне восемнадцать, и моя мама бегает по дому, проверяя, закрыты ли все окна и заперты ли все двери. Но это бессмысленно. Когда наступит ночь, он придёт за мной, чтобы забрать в свою страну чудес и кошмаров.\n\nОн — Питер Пэн, Король Неверленда, владыка Потерянных Мальчишек. И я — их новая Дарлинг.\n\nПервая книга нашумевшей серии «Порочные Потерянные Мальчишки».\n\nСтрастный, тёмный, взрослый ретеллинг культовой истории о Питере Пэне, полный жарких сцен и неожиданных сюжетных поворотов.\n\nБольше 25 000 оценок и высочайшие рейтинги на Amazon: неизменный бестселлер вот уже больше года!\n\nВнутренние иллюстрации популярной художницы ALES (больше 50 000 подписчиков в ВК).\n\nУникальная обложка, которая светится в темноте.\n\nЦелая россыпь харизматичных мужчин, невероятные эмоции, поцелуи, ссоры и чувственность в каждом прикосновении.",
+          "public": "\nЭксмо, Редакция 1",
+          "limit": "18+",
+          "book": "Твердый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/440x568/iblock/ea6/ea6c214a05662d79c948408dc3d9f37e/5bfc513037ff698a7ad565d96cb0044c.jpg",
+          "count": 1
+        },
+        {
+          "id": 8,
+          "title": "Душа меча",
+          "author": "Джули Кагава",
+          "price": "559",
+          "category": "\nЗарубежное фэнтези",
+          "description": "\"Тысячу лет назад смертный воин из Клана Тени, снедаемый жаждой мести, загадал желание Великому Дракону, Предвестнику Перемен. Так появился меч Камигороши, убийца богов, который заточил в себе могущественного демона Хакаимоно. Прошла тысяча лет, и Хакаимоно вырвался на свободу.\n\nУ Хакаимоно одна цель: окончательно избавиться от проклятого меча. Для этого ему нужен Свиток тысячи молитв. И только кицунэ-полукровка Юмеко стоит у него на пути.\n\nУ Юмеко одна задача: отнести свою часть Драконьей молитвы в храм Стального Пера, чтобы никто больше не смог призвать Предвестника Перемен. Но Каге Тацуми из Клана Тени, отважный юноша, который должен был сопроводить Юмеко к храму, стал беспомощным пленником Хакаимоно. И Юмеко решительно настроена его спасти, пусть даже для этого ей придется сразиться с сильнейшим из демонов Дзигоку.\"",
+          "public": "\nЭксмо, Комильфо",
+          "limit": "18+",
+          "book": "Мягкий",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/820x1180/iblock/875/8752b0ac12d8b414fc36364f9d37220c/58ffe98185fe014d2757f8f8d58d9714.jpg",
+          "count": 1
+        },
+        {
+          "id": 7,
+          "title": "Царство Проклятых",
+          "author": "Керри Манискалко",
+          "price": "768",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Эмилия продала душу дьяволу и теперь готовится стать Королевой\n\nПроклятых.\n\nЧтобы добраться до замка будущего мужа, она отправляется в пу-\n\nтешествие по Семи Кругам Ада в компании загадочного принца Гнева\n\nи попадает в соблазнительный мир пороков.\n\nСреди роскошных дворцов и нарядов, таинственных приглашений\n\nна вечеринки и противоречивых подсказок о том, кто на самом деле\n\nубил ее сестру-близняшку, Эмилия чувствует себя как никогда одинокой.\n\nЗдесь никому нельзя доверять, даже бывшему союзнику в мире людей\n\nГневу.\n\nНо храбрая ведьма поклялась разгадать тайну гибели Виттории и\n\nотомстить, даже если для этого придется поднять руку на самого хозя-\n\nина этого мрачного места.",
+          "public": "\nАСТ",
+          "limit": "16+",
+          "book": "Тврдый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://img3.labirint.ru/rc/1ea19c0a49e3207ad7e2918f3ecbde00/363x561q80/books85/848447/cover.jpg?1646115913",
+          "count": 1
+        },
+        {
+          "id": 6,
+          "title": "Королевство серебряного пламени",
+          "author": "\nМаас Сара Дж.",
+          "price": "847",
+          "category": "\nЗарубежное фэнтези",
+          "description": "Неста, сестра Фейры, Верховной правительницы Двора ночи, после погружения в древний источник, содержащий первооснову жизни, обретает силу, непонятную и неподвластную ей самой. Она не знает, как справиться с этим даром, но мудрые родственники наставляют ее на путь истинный и отправляют в Дом ветра осваивать древнее воинское искусство валькирий, истребленных полностью в сражениях прошлого.\n\nТем временем Бриаллина, королева людей, вступает в союз с Косфеем, существом, неподвластным смерти. Она завладевает Короной — одним из трех магических артефактов из Сокровищницы ужасов, — и способна теперь подчинить своей воле любого смертного. Чтобы ей противостоять, нужно найти два других артефакта древности – Арфу, способную преодолевать пространство и останавливать время, и Маску, способную воскрешать мертвых.\n\nНеста, наделенная силой и обученная искусству воина, готова выполнить эту миссию…\n\nНа русском языке роман публикуется впервые!",
+          "public": "\nАзбука",
+          "limit": "\n18+",
+          "book": "Твердый",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://ndc.book24.ru/resize/440x568/iblock/5ac/5ac27d50b330b0249621ae251e566a1b/e53e6d915ed4782fec5714426b9861bf.jpg",
+          "count": 1
+        },
+        {
+          "id": 17,
+          "title": "Гордость и предубеждение",
+          "author": "Джейн Остен",
+          "price": "220",
+          "category": "\nКлассическая зарубежная литература",
+          "description": "\"Гордость и предубеждение\" – самый популярный женский роман в мире, провозглашенный интернет-пользователями Великобритании одной из лучших книг всех времен и народов.\n\nМистер Дарси – главный герой романа – стал для многих читательниц эталоном мужчины, благородный аристократ, который закрывает глаза на сословные предрассудки и женится по любви на женщине, стоящей гораздо ниже его по положению. На Элизабет Беннет, гордой, неприступной девушке, умной, начитанной и глубоко чувствующей.\n\nНесколько экранизаций, два сериала и армия поклонников по всему миру навеки вписали роман \"Гордость и предубеждение\" в летопись лучших историй о любви, побеждающей любые преграды.",
+          "public": "\nАСТ, Neoclassic",
+          "limit": "16+",
+          "book": "Мягкий",
+          "rating": "0",
+          "sale": "0",
+          "image": "https://cdn.book24.ru/v2/ASE000000000709815/COVER/cover13d__w410.webp",
           "count": 1
         }
       ],
@@ -1828,7 +1993,7 @@
       "name": "Мааc Сара Дж.",
       "description": "Сара Дж. Маас – американская писательница, автор романов-бестселлеров в жанре фэнтези. Ее самые знаменитые серии – «Стеклянный трон», «Королевство шипов и роз» и «Город Полумесяца». Книги Сары переведены на 35 языков.Сара Джей Маас родилась 5 марта 1986 г. в Нью-Йорке. В 2008 г. с отличием окончила Гамильтон-колледж по специальности “Писательское мастерство” и дополнительной специальности “Религиоведение”, сразу после учебы переехала в Калифорнию.\n\nСара начала работать над первым романом (ныне известный как «Стеклянный трон»), когда ей было всего шестнадцать лет. Написав первые несколько глав, она опубликовала их на сайте для начинающих писателей. Роман о приключениях девушки-ассасина Селены Сардотин мгновенно обрел невероятную популярность и спустя некоторое время стал самым читаемым произведением на сайте.\n\nНеожиданный успех сподвиг Сару Маас заняться поисками издателя для своего романа. В 2012 г. книга наконец-то вышла в печать. Опубликовало роман знаменитое издательство Bloomsbury.",
       "rating": "0",
-      "image": "https://api.azbooka.ru/upload/resize_cache/iblock/978/370_559_240cd750bba9870f18aada2478b24840a/978b33178a92ffcfb8b90825b198b23a.jpg"
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBcWFRgWFhYZGBgaGR4fHRwcHBwaHxocHhwaGhwcIRwcIS4lHB4rHxgYJjgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJCw2NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMkA+gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEHAP/EAEMQAAIAAwUEBwUFBgYCAwAAAAECAAMRBAUSITFBUWFxBiKBkaGxwRMyUtHwFEJykuEVIzNigvEWU6KywtIkc0ODk//EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAIxEAAgIDAAICAgMAAAAAAAAAAAECERIhMQNBUWEicQQTMv/aAAwDAQACEQMRAD8AHvqzJLVGTbWq78qadsZ6RMBfC2QoaV2ERfa7y9ocgSo1XaKaMDw3RXaZeIqwHvctchHNFVdjy+iwy8TGhypWEqgfbEQk4WdQabjDVpTJsOkLrncftCSW0x7fwtTxpF6qOiS2z0SRcshRTAGodsHGxy1zEtc6aKDFyGtN+3lHVmgEgbNRu403Ry5P2zopAtonogHV6zEKFFK1OnZTODAgUCuddYQJb0W0znmdVAEVS2+hJI7xDqz2xHUMjhgTSozpzjIxcqCmWXGOqd9BxrAtunFUYKRWmQ28aDlCu7r2DIcThVQgFjqSdBTfCuX5Y0YfTkxDMZc/lCS3WZwp9m7FSaFW1HI7obvM6mLPSu4mMhar5nS8Skq20VzIFeEJOUbpgD7dORU9iWLFQCeewfpCa/bUMElEUylI674aUOlMu0xRd16yau8wEkGpGeedaZa1idhvhHd1nSaIx91jTCDpk3pBjd3QG/RrLokpLloss9Wla6kk7SYPTZizNdmzdCizXnZpSqgnqVANBWpG4VESbpFJGhY8lPyhxhtMzFM8sxzjhlnCT97LP9IQP0pWpwypjckPrA46TTqnDZnw8oNGNS6GgqYpeW2VFxcch5xmH6Q2pq4LKw/E0d/aV4MMklpwOcajGxsiAMQDsgykY65Z1vEwmYZRUjTNc9mdIdTBayaoJIG4l699I11o1Ma1pCK0qcTZ7TE3l2/Kgsw41c+FBC212O3IC7NIYsakAMKcq66QJK0GLplrM2/Id8QKPStSd0KnNvpUKnZh9Y7JtN4EYcCAfEaehMJRSxktnc558ePCK5lhetdm6Kkstub3p8tOQr/xjn7MtZPWtXAUXWCkBsn9lcCuwfOLpgYEYanLdpWFc25bWxobXQcj6GPv8MTqjFa3PIEHvLQyaQri2NLErBw0zDgzFDsJ0OfEQ0+1SN6eEZ2d0RVxnaZ/awPpH3+EU/zZ35/0gNxNiyi6bvVVxsKODlFFqsSiYZq6qcRQ6Ag5sBuiF3WtpqBSVxL7pBBrThu4GApyTVfECMeKtSe/XZDv231CcX0M7S7zEDVVBTQZ17TpGYdEScHLkMrAii10NY2tjdGQJ1c64+H4flCO0XUC+EOKs1AKaxo+RProSSa4h/P6VyXQiUXxihoqsc9oNBA86/nIDYKuMqrqQaAih21i+yWRLNLbG0tiBXqijV3V2mM+1tEx8YGGhBPziM3UvxHX2aCbeImUVrM5O92C4dmw6ZeEfC+JiIVlyUwAUriK5/l8YXPavaHHjpmRhyqRBFjVCr43Kqo90H3iYR+TY6qqCrPabUc2WSinWmJj3nbCtLIUdnFMTOSpPupxw/eaHdgsgeUuZK0xEV1PHhGbtNtbG2AYgmRXUH5Rp5N/joDQ8VpzqUM8s/xBQKDblCOfOlozF8TsW+7upTSIWu9GlsAuWIe6DUivGBxMoDqK6nUk7gYSEJSdy4xe8KGlIjB1xahsLcNAd3bA9utgdy7AVJ259gBiu0zCctAPr6MQlWRnIAUsx0UZZb2OwR2xil0OJS1pc6A031AETkzG+NeWMfOGg6OgAGY2e4EBRwrqeyFtps8pCQtDyz8YoqfAUxjJtc1Mw7r2418aiHl0X/jcJNYLioARkK/rGJS0snukjhqDzBg0ETEJAoRqPUQHE1nqyAU00juIDIZGMx0Nv4OvsXbrLkuLUrurtIjVsoiTTTpjJpkJa4tTpB0qdTImAhaQlSwJHAV8BC+Z0kso0mUO7CT6RNjI0v2gHQwPeZxIKa1hJK6R2YazABxBgyZfNnmIfZurlRWinM0zyhk2Bo4zGtNsTSWc6b9ISp0wlFqCTPLHZgIPjBVn6Rgn+BPI/wDU1QYLgBSYeJJBqRWLRL1y21gZr9zys1oP9AHmY4l7knryHlgfEQTTfRK6QFGguVl7JXxiLpTSK5l5SQM3pzVh5iIft6y6GaoPGo8xCUPkESyacPGsSrwheeklkU0M4DmD8ol/iWy/5ojYsFnnFmt6M4ExEDZUdOoeBquTRpLUkthk2ypqaU/mB37xGbN0MExqFUHWWxqCf5WOh4ViFgmBzgVmXcHBoeTDTtjqTjLjOd3+x17NkOEHkRnUHQxKwWqk1cbYQCakjUEHThFVns05GqFOIaVFRwz0hhPs1oaWxfAcxkMiN+cR/kuKq6DBBRs1nOErTDm1N/EwJesgvJRmVEXYq6nmeyFxnsSVequpoKZig1pvgudPJCozVX/UvyMciUldFGLZVoXE4EvIaHYFA86wZYpxriIy9ni0zodngYqsElQXzLEmgXftMfXiaOAroilAjLWpGtdIfUm0TtjG6L/Cs6YRgp1CNijfFtomIqlg4XaTQZngIy90qiF2dsgKCmh29sPpIlzJGI9c4uroNDBnC3XpFFLJUArZcbl8zltyp9CO21MPYM+APqfAdsNbMAATsGW/E5z7h6CFt4KOe08eHEkxVOtFIxpANisRdxv1O5Rsruh0jKiH2ZCgCrzG2bqegipbOR+7BozAM7H7q/dHLIsRwpA942CZNColVStEX7zna7cfKHu2HHWhLeV4iYSqFsPxE5tz+UCS7DUgKddpyjcXb0DwirsK8Ie2fo0iLSgJh8q0hVC9yPLZ9hdDRhQ+cW2TqK1d0ek2/o+j90Zu9OjrgUAqOEZSvTNKFbRkZM3A4ZWIYGoI3x6hcF4CbLDYutow4jhsB17xsjy+3WJkOlIddFbRhcBjk2VQaUOw/W+D5EmrRKNp0eqWBQxJYCm6DxYpajqy0H9I+UJ7nmN1gamhFDSlR6w4L1GsST0MyLSEOqr3COyrLLU9VFHJQIrIG+Oo+cGzBOFdwj4xHGI+JgmOy2ygJmAd67h6wWBTthYTV5me0DwhZO0ZdLGnrtit5SGhwKewZRS0uOqQMq5RPFj2ia2NK1wrXkIl9lTcO6Ki9MxEftR3wcWDISo6O6jCMBw7BSvWHfWLpFmUHKWtQxB3n9aUhRPZZU0KtXVmFafdKsDmI0FpwlwyHVa606y6im8g+EPr0LYSFWlHUryGXhAF7qWZUQVDHQbhrXcINl4jkGNMiDWoIOmsBTMQdm91vdz0OWtNkLKOSoxkrdaESY6LmFJq/wDOTs3DKkV2myF3RlNCVqe+Dr7u7AqAOAhbESBVmY1qT2nSEs5nQI1cgSARqdvkYVxp66B6QetGfCg61Tz41MDXtdrvhIKBwuYGp3RyXaS3WBIPdmdp4RybPwMWV1J+9qe4wiyTtdFbTRRZbkbR22e6O+GsmzrLUKgNSaAHMliaDx8hHbmtpcMyqBnSpNTpqO2ghhY5XXyFcCk/1tkvdn3Q6lPeQ8IrqK54wjCprgGGu9z7x8+xYEWXimqmoHWbjT9aQfOTDQfDm3OBrCnWdz8FO8/pGTL1otnzMNCdXep/ANByyHfGpuay5Y2HWYZD4V2CMtaEV5meiFF7yK+BEbuQMqQyCuFqrHzJFiRxzDGBpqZQM+mcGvpAk2MHpm74u1H2ZxlFs+Aso1B9dY3VpWsYy3sFtNNh19IYnJJHo1xvjljeAKwxyjGXRapjtMlyWCuQSldKiuR7PIw5sYvACkyXJY78ZHhhMLTJDV1icsQvdrWBUSpZ4YyfTKDEkWja0ocgx9YCTNoM9nWOqkDqJgyLoDwQ/wDaOmVMP/yL+T9YJi/AYAsK1aaCK9c+Qi5rNMJ/jEDgqiJWeyMgYB8RJr1hn4QaNZA2amyPlkDdSBps+erEASzTb1s+HCItap+VRLXtY/2gOSRqYS0kbYH+zLFRn2k7ZIHJz6iKvbT/AI5P5H/7RskbFmFYu+L2ILuqh3JOZ2RRJtlpL9dTjU5Vyz0pXTSD7DeqSDOD0DuMQK57KBKbDHLVPZJft3UIcsCHVsQyZjCKOqS6D7DLBeNoUKBgStcIfOufuih3w4sizFq05g5OmEUAjAu7zmR1fCwIqBUhTsPDbG4uNpyqyTqPlVXGh4HjFKxQVsDvSzYiu6pNOyEsxG9myYVVjXN8qZ5YeYjU2lOoCxAofQwnv2ye6GatVrhGtTSh/SIPLPS0ZptaM9YHVQcTADCRTUknblyiqdMw5MManbShEHC45iqHKBlEyhH3qDYeEW9IUcYdMBPugaEb98M2lKvknTSI2GeElgja1Fy3a+NPGNLdyYZWLUua15DL5xmXk4mlIooKDsLDEfPwjS2yYEQDfkBuG3wB7o0vhHTBUhfbZ2oGp8q5d5ziy1r7OSDtmeQAPnWA5QLtn95gOwad1Ys6TWoYlQaIoHf65eMD3Q4FZ7RicjaXHhQR6nKXKPJLldFmhpjYVxk15adtaRrH6VWYdUWhgd+RA51EUUX6BarZsVMVu0ZqzXrMbNZiOm9QD5HWGcq0EiNYyQe5FIGmQJaLYFGZpC5r4bRULDfoO86wLDQbNXIx5p0gnf8AktwEb57c2GrJTkQY80vqditDkaZeUWhtkfK6Q/uK8ClpR60BZa8mpXzj15Z1RUx4FKmYqUNGHlsj1m5L/lewlibMGPCMVQdeJhZKifTUB6qaQO84A5xQL0kUoJqcsYgK13tJrX2qfmEK3oyQcXrnHVnAQma/7MB/GQf1RRM6R2YZ+2Q9sAYf/aREpM6vzjP/AOIrMcxOQGLrP0hswy9qmfhAtgoYzHqSeMQcZaZwML7s61xTVUE1BOQI4RNb+sp0nS++FcbdjJ0TIrpHfZHdFZvuzGlJ6V4sBH37bk/5ifmX5xsDZMzFhs0maUUphYMXoVoXPEnXWsNb6uZLQiIxw4TUU5UpErsl4kBLAkGoAI6i7F7oYslduUGNoXRnrJcyIhRBntY6k8YYXZOxJQ6qSD2ZQVKABJMJbRahLaYVqXL9VRtygvoUj685lEwA9Zjkupj67LpYH2001fQg6KukF9G7I1GmzB12JG/CNwg6+pzCQ5U50jSdbBehU1rZZZRNSWJbWmInvhGlkYqqM1Sr4s9aRZKMxmRUIVdp3/WcX2OWpdnBZqkgMc6gZEjcMohHKTtvQtZM+ssirlzvNOQ/sB2wPb5hepGgyHmx7sI7TBs9sKsdygdp6zQvlCq8MWGm81zPiIpe7OlLQTYZfWVRsWvafoQuvBC81gBUl/EUHcKCH1yyauTtJPh9CLrksYJZ2zJdiNwGI0ygLbKRjZXd/ROWU/eriqMgdm2vMnOOzOikoCirQbitdlBTvMbCyyQ4j5pFDFla9iSin1Gauq5Qj4lAQEAEKuEGm2lcjD9JAEX0Ait2pAezIztushdzSmWldK7KwgvW4nYkl5hzFKOctNgyyz8I1levB32cMIMXjwEllpnmNnu60rNohcoaDrGpA2VzhHf1k9naGU51APf+sew2lAo0EYK9rt9raHbUhFI/M1fSKRlW2TnDVIy1jkF3VRl1gN2Ue0WKzKiBMAIAA0G6PNbLdzJMBpowJ5VpHrKyiVBB2CElLInjiUyrFKBxBEB/CIuayodVXuESEqLFQwDFAsUsfcXP+UR8tilfAncIscQMQ1ctRs4RqDZf9klD7idwjos0vUIvcIrEsnfHRmKEUjGsCSwpNdkdAyA1oQKV2QxW7paigQACI2KVhxHSvnBJHGDFJIDdsDe6ZDe9KQ81Br3xT+wLN/ky/wAo+UMmGUcxRtAMV0daztUSkIcLVqgg7s679Ye+1yrSgjIXPfUpE9q7hCxK4dSwXf3w3tHSNMH7qjsTRaaZ7+Aiay9qhk7LbfeKy8lGOY3uqBt48I+u+7ylZj9ZyM8shtoIndFjReu5xzG1Y+Q3CGbkEGh2Q1BbK7teqZihqYItMgOjIRkRSEFpvJ0XCgFQedd+QiFxXo5d3n0QPTCpyNQNe0QmSlwUBslolyCRMBYmqhVBJ4ngKCCgwqQoCrXIbh/aC7psyMJswkYnZgvBYFMvU/Wf6CAliqGitgtpXqnjiPkB6wsuklmAOi1PaSYdT0ogJ+EeJJ8oX3LKpj4V84RPp0eh3cwwgtsCk+BjlzP+7Ujj5mKZcykmcdyMP9B+cXdGxWzo2uvmYMeDRdDiVaioit7WzNQaxXabK7DqNTsimxWtJTlHV1cfeYVDDSoYZU4ZRS2Zuw95gTN3A4k0HjFyupWoYHdtrHBORxk6HtELbXYmYH2bom/Ko55EZxkCimfNCvirpDiTPyjNS7iRes7u7aksxodvug0pwhgtqyJXMDWmyC2bpbeVooDGFa98Fpcj4MPbiBhlf17UUgV0jF2cEsXbae/lDxVxdk/LJJpI39jtau402eZPlGrSzTHzlzsAoOqVDUy2R55cFSHbiKfXZG7uS0Go4gjuJp4RJalQslaste7rXTq2lK8U+RgN7BeCnO1S6f8Ar/WNQjxTamqRyihIzbWG1P71pA4ogB8SYKF2OFH71iw+8QCSYaLrFk0dQnhGWzCJFtvxysv5DmOPWglHtRHWEmv9ecWe3OtYJlTN5jWGgFLU8vF7SUTXT2dWFBvxEEHlEH6SonvS54/+pj5Vhm04EbqQI0ymdIDaMgaX0nszD+MqHar9RhzVqGLP21I/zpf51+cdYI2bIpPFQYq+wyf8pPyL8oDCYtDZrOjGYgmYj1KitMWo4CtI0Vy3NLRFagZmFajQbaDhGbs1m9tgR5Z6q4WrsBWqsD2Rqej1jeWhV3DoPc3gbjGi3jvoFoZBanLSJTZIKMB1WpEaZ/KLsIA7IPQAtkuxFGlSdTtga87nScqqaijVB2gj0hpjpkB+nGBL+tDJKOAVdiFXmdsZRVUjAq2dEZkyFVqBXdkYg0vqDea+AAHmYDsvRp/fmuzTKhq1qCBnhpBsufiK8Cf9NT5kQk9Dw2B3qMK4eI8AYEsaURm+L5frF17vU8vOO2ZepTfEvRdA1palknHaaeJRfWL+hFqD2dRuLDxr6wPeeVkm869zy4zHRe9/YTije45ryO/tEW8cbixHKpUeuSTELdZMYquTjQwLY7SCAQaiGKTKxkPbTEMmYmLBNloTpUnAfzaHwiNrl2XOgmLwDAjvxGHdpsiuOsAYU2i5U/SphsvlFE4t3tfozU6xJNmKiPMArmMQqRzAy28Y1hlpJlBFAAA+uZgJLMkoVApCK/L5qyy1PWZqKPNuQjVZOclYLeVn9u+Ee7WrHfuHOBHunrUAyH0PI90auw2MKCBsUZ/zHbxgprKAvP1+She+EyZLQluax4UbLUekPbCSlOqxoa5bddIElEIx3VHgKedY0ViIZVPH0/SNHbBJ6FrdLJaGjypyf0Ejn1axZZ+ktlmnqvQ/zqV840UyWtKkDTdAySkAyVe4RaiQH9tknSan5l+cdm2lMJGNTUfEIKMlPgX8oiLInwjuECg2LUUMudB2xZKl0zxDlBMyySm95AeyBHuGzHMylr2jyMDHYbIs5xbO+K6E5wR+wbMQf3aZ7c69+sVL0csyimDvZj5mM0ayMuXQCucfZbzEH6MWcg0VhXc7inKjZQD/AIPkfFN//V/+0CjWfXRLDBmAzKrXuhhZkwk566cKQquQlTgJz2HZlWo5Q8ZK8PmIHsJ8ijU612R2bNCAsxAWlSYmgApTbGRv21s85kZqJLNabDkDU98CUsVYrZq5MwOoZDkfKJezFesOOsKp95S5dnDyyHyAGHPPeaaQssFlNoHtnn1I1CH3dtCdkbJozZqbTOCoxzyjL2F6sfxH5/XKChaHeWae5kAzEYnz8uMKrrmdamz6rE5NyK+MMtUrEeG3nBlls+YFNgjqS6ig1JhtZZYBP1rkIWijZkulPUs7rvy72T5GPP5Q66HkPP67I2vT2cC2AfED3A/9oxsmhZx3fXAiOrxKokZ7Zq7ptrqep1l+Hzw18o0tgv8ARtTTgciOBjE3BaiszrbSK86ip7fWNteNxpN6wOF/iG3nvictOi8aaVj1LwUjWKJ9qFIxNpstoka1K/EuY/SFNrvKaRTGYKthaSQ26V9IVQYFNWOwfWkZjo+GmWlZjZ0qeVQQAO/whVMUsxJqTGpueiFF0ORPGLOox105tykegyxrxQMOzXyjtsf3APrqwGZxXBz8CP1MUzbTUrXh/tjmbHoGtM2oJ4n/AHGGl0XiKBCaHI9kIQ+JDz9TBV22VXBYgVAp2FgKeMGCuQJcNstqV1IVgxpoCDFazMoVWPo0gRXQsjlRUqxBI1pXb2wSUmDIMCf5l+Rism4k4qwtZmcfNMFc4DV3GqoeRI86x81qb4CeRHzieQ2IcpEQd4EFvA1R/wAtfIxTMvmUvvNh4MCvmIbIFMYiZSIrNMJ2v+SGpVvxBHKjmQMo7NvyzUJM5VA1q1POFbYaQ49sBEPbjdCyRbEcVViV34WoeRpn2Rdl9AwG5BpCxEoXO1GxA8DF0y+UBBXE9RmFFQO0x9PsoOhNMwaQNZbrVgcWw5a7vHQxpZehfRfZr1xPR0ZFr1Tkew02GFdou4e1mG0GiOxbFWlVFMvIdkHzfYy8nZK7tSeY2QlUTTOZSyuopWlWCqVJAAO4UhadbdgexXaklNO/8SoQCj5kKeIMPhbUEn2ctcHxAaEfiii6buRh1ZLhK569cbDnn2RTOsoGJFxKcBBYnadBTl5xpy7ekaNJUy+0WxnJwjCqgAU2Ur3VrFFjmYecV3ajGWTmciKnedQN9CKRTMamnfuhaa6W8a0aO77UMQBOf1rBU+8gtaH++/1jNSZ+BcvebWAbxtppSsBJt0ilLoBfdrxuWrWpy5bIV2CXViO6Ps3Y12QfZbPgmA7KR2ajGiNZOw275OF8x/bSPR7MnUXlGNstlzU61PhG8kr1BTdEFtlm6RUZZIhDedySzmVoTtGXhGnlpAN6r1CRDPhk9nnc+7kQ0UZk1PIZj1gKUSJg4uPOnzjRTJfXz0qB4iFs6y9eo2GvccoCl8iuJpLTN93hTwML503NeBHqI5aZ1QDx8KwO7VYc/UfOJexq0H2BKoefrDTo9k7J8VPMRRdUg4ObeZ/SD7LKwTQ3w4SfXzisF7IyZrrGgwLsIURCfLrqM4KRaKN1BHHFY6SNCWbII+s/1itdKmGk1IGeTCS8a6gqT9gSCpJrBAl9cV2x1EoYjONCpiSVDN2WMADpAMxFaYFIBXM0IFMqU8TBbvlAQnfvAf5T6QzZqDieyI+0EDPPz1iv7RE8g4kJcxSFZSDWhrvBgabbVkh2fQVIG8g5Ac8QhfdV6yyFR8Mt1yUVyYcPlBM2Qk9xiaoBYgbz1fCDa9C+hVc91NOYzZmWJizbziOgO4aVjl92P2M1cFcDio1yZKUFeR04RsUAAAXIDSLJl2rOSkz3ag5ZHLOoOzd2xv67Wug4Zxb+w4ZcqW02YadVNBXedB2w9ui6QhaZMwvNc1O1UrsXfzhjZrGksFZaKldaClee+CRJGyLrxrTfRXbE99y1KA4cgTWnIivYTWMU9lBNfDjv5R6XNs4Iow17jGXvW5mBqg6tcxuHCJeaL6i/ilWmZCZZyWCjVjqdg2kwjvFqsVXQeMb63SAqEqM8AQb+tmT4mMZPs/WP4vX9YnF0Vf5IBscimHic+6H8qzg5EDrDuP1WAVlUHI18q/XGG0h6op3H68vCNKVuwqNKgmwZOtdKjuOfrG0kqKUjGqvWU93yh7Y7SSKbRGjJWZrQ1RqGkQtMgEUG/wCjEA9c4niijFoyV7oEDcPSkB2CarpU0riPo3rDLpUuR/mHjGSkTCtRvAPpEWitDe0y6KBwPeIFR9vIwfYW9pKp98NUccVa+MCeyo9OFIXhumuuagVN9a9xMN2subHetT3inhTvjO3YxqmeR08PnGzCUw12g17aZeAjohw5J9C7vfEgB1Ap6eYiL5GKLI+B2HaOR+jB0xAc4sibBJgrFZWJuKR9iyhgWDTVgCfMqVWhrXshhMMLrTJDZMKjdAlG0BOiTvQGsLDaArnFQDDkTkBpthkt3oRkzLyY+tYrFhCggszbycOfcIg0VsX+2RvdcHkQYh9mG898FWm4pT+8iHjhAPeMxAH+GZe9/wA7fOExGyRikXEy4xUKCMWzM7d0OLltiJOCu5VkyTP38R0O/ZCe9iyqqohOgO5q8s61iUiyoyq0wkFdBtHCo2Qq1UnwSvg9KlK7uB7qnM76DUcIdYtmyEfRmcXTGTUGoFdwoCe/yh4ojq8fL+RXtk0WLViKiJ0h2YsXPIxTNl1BEdVs4sbUQrQTEXohBpuI8DSMoZNS43AH5+kbvpLZSDiH3gT2giMhOl4WDHQmh5ERxy1KjqhtC6WNe7vIz8PGDLNkM+fz8qwMyGvgeBH0DBsgA+kBjMuQEZbNkGWabmDAsofcOozU+USVs694gfYTRSWqKjWCCYT2adoc4aS3rF4u0KxXf8nGnL5RhrVLwkx6TaZWJSAKnhnGIvuylWaohJakUi7VAtyzyDrsPeDUeMOZ6B2DKN1eFYzlgyYc/TP1h7dVqCsCdK58q0+XdAlHYljuUmAJzPkuQ7BXsjU2a11QK27qtsIhHa8OIAD7pYcCpHoW7o+kzioqpy3bjtFIMZYkXHI0sw1ZT2Ht/vBkl9kZiXbm1w5bSNB8ocSLSHzWOmLshJUET6jUb9N3GK2MWO+LmPlT1gUtSGQrKVJZjwyj60LlHZL0xZZ1rA092c4KanUbN8MYhKmZDPZHXmwt+3gTWl7AaLxIGY76xfMesc0rTKpaClmR97UQvebTPPLWIfbBGs1HmVracxdEViFYuafdA2+say45auiuyB+tTPuPPPOB7s1tf4P+Jhl0R/gp/wCw+cFVKKtCx4bSwWdUQKqhQBkBoK5kd+cHJA8rT63wSkX4BFixOsViJQAnMIi2uUVGLBGMA3vKxIOBAPI/QjK3xdlExD4h3xs7d7jdnmIR35/Df8SxDyxRXxydmHtMgiuWtD2xyzPQA7j4Qzt+n1uhSvu9h8o51w6BjNStGGzQ+Yi1lxDGlOI4xyyfwxzX1jlh0bt9IApbZJmz65GHV2hcXW+UI01PP0EM7P745DzikHsEuGswKEOEAZHTlGK6W3dQsRt/SNlK9xvwnyhJ0t+9yinlJeNvI8uljC5+thgqRMpUbj+sUWn3jyPrHV1PIQvS7NVYLdVlxAlQKEjMpQ5NTaN/ODJr4G1GehrVXHPZCS5/4q/1f7RDGyfwl/E0IxAr7bSoQ1xDTdlGjsK1RWQ0JUGh25eEZSdoPxD/AGxpbk/hS/wfOL+FkvKEWW01L7SGoQNhpx9Imz7xTnAMz3f6j/uMRXQxYgWWm1ZhUpiY0FfQbYjarT7JMORmHdsrtMSu7+M34F/5Qqt3vv8AiMBuikIqxPaU27fXfBlnvcFQGDFxrhUtXjlpFE6K7q/jrybyhP8AS2UloJmXgDWiTCT/ACERR7UfBM/JD94hCYoTJn//2Q=="
     },
     {
       "id": 4,
@@ -1927,7 +2092,8 @@
       "description": "Алексин Фарол Фоллмут, также известная под псевдонимом Оливи Блейк, любит и пишет истории, зачастую связанные с фантастикой, паранормальными явлениями и мистикой. Чаще всего ее работы вращаются вокруг глобальных вопросов о том, что значит быть человеком (или нет), бесконечно интересных сложностей жизни и любви.\nАлексин погрузилась в писательство после того, как отказалась от давно задуманного проторенного пути во время учебы в юридической школе, и теперь сосредоточилась в основном на ремесле автора и головной боли при создании новых историй. Из-под ее пера вышел бестселлер New York Times и Sunday Times «Шестерка Атласа», который был выпущен в 2022 году и уже в ближайшее время ожидается продолжение.\nАлексин живет и работает в Лос-Анджелесе со своим мужем и ребенком.\nПодробнее: https://www.labirint.ru/authors/262758/",
       "rating": "0",
       "image": "data:image/jpeg;base64,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"
-    },{
+    },
+    {
       "id": 18,
       "name": "Роберт Льюис Стивенсон",
       "description": "Роберт Льюис Балфур Стивенсон (англ. Robert Louis Balfour Stevenson; 13 ноября 1850, Эдинбург — 3 декабря 1894, Уполу, Самоа) – шотландский писатель, автор культовых авантюрных романов в жанре неоромантизма, оказавший значительное влияние на мировую культуру.\n\nКаждое путешествие – по Шотландии, во Францию, по Северной Америке – давало богатый материал для путевых очерков и повестей. Первые художественные произведения, принесшие славу – рассказы о приключениях принца Богемии Флоризеля, изначально публиковавшиеся в журнале «Лондон». Первая публикация знаменитого «Острова сокровищ» прошла бесславно. Критика и читатели заметили только третье – иллюстрированное – издание, переведенное на множество языков и ставшее каноном авантюрного жанра.\n\nСтивенсон выпустил также ставший классическим «Детский дневник стихов» и собрание стихотворений для взрослых «Подлесок». Под влиянием книги «Преступление и наказание» написал рассказ «Маркхейм» и «Странную историю доктора Джекила и мистера Хайда». Позже он издал сборник шотландских рассказов и дилогию о Дэвиде Бэлфоре – своеобразный трибьют предкам.",
@@ -1968,10 +2134,11 @@
       "description": "Николас Спаркс — один из самых популярных авторов в мире, написавший свой первый международный бестселлер в 26 лет. Тираж его книг превысил 105 миллионов экземпляров. Романы Николаса Спаркса, переведенные на более чем 50 языков, послужили основой для ярких экранизаций, среди которых «Спеши любить», «Дневник памяти» и «Дальняя дорога». Его произведения, простые и трогательные, романтичные и искренние, вот уже более двадцати лет покоряют миллионы читательских сердец.",
       "rating": "0",
       "image": "https://ndc.book24.ru/resize/280x280/iblock/f6c/f6ce080a91ff09d7628bcae3b69300e4/2cb3b1687d492a78d4389148d6b62f44.jpg"
-    },{
+    },
+    {
       "id": 24,
-      "name": "Антуан де Сент-ЭкзюпериАнтуан де Сент-Экзюпери прожил лишь 44 года и оставил после себя не так уж много литературного наследия, но «Маленький принц» остается одной из самых популярных книг по сей день.\n\nЭкзюпери всегда жил небом. В армии получил права военного летчика и уже в 1923 году попал в свою первую авиакатастрофу. Параллельно Антуан занимался литературным трудом. Первый роман «Южный почтовый» он написал, когда находился на самом краю пустыни Сахара. Практически все его произведения так или иначе связаны с небом, которое он беззаветно любил.\n\nПисатель очень много путешествовал как по работе, так и по личным делам. Он даже участвовал в поисково-спасательной операции летчика Анри Гийоме, потерпевшего крушение над Андами. Тогда же был написал «Ночной полет».\nПричиной смерти писателя так же стало небо: в 1944 году Антуан де Сент-Экзюпери отправился в полет, из которого не вернулся. Обстоятельства его гибели до сих пор доподлинно неизвестны.\n\nВ своих произведениях и на личном примере автор показывал, как важно следовать за своей мечтой.",
-      "description": "",
+      "name": "Антуан де Сент-Экзюпери",
+      "description": "Антуан де Сент-Экзюпери прожил лишь 44 года и оставил после себя не так уж много литературного наследия, но «Маленький принц» остается одной из самых популярных книг по сей день.\n\nЭкзюпери всегда жил небом. В армии получил права военного летчика и уже в 1923 году попал в свою первую авиакатастрофу. Параллельно Антуан занимался литературным трудом. Первый роман «Южный почтовый» он написал, когда находился на самом краю пустыни Сахара. Практически все его произведения так или иначе связаны с небом, которое он беззаветно любил.\n\nПисатель очень много путешествовал как по работе, так и по личным делам. Он даже участвовал в поисково-спасательной операции летчика Анри Гийоме, потерпевшего крушение над Андами. Тогда же был написал «Ночной полет».\nПричиной смерти писателя так же стало небо: в 1944 году Антуан де Сент-Экзюпери отправился в полет, из которого не вернулся. Обстоятельства его гибели до сих пор доподлинно неизвестны.\n\nВ своих произведениях и на личном примере автор показывал, как важно следовать за своей мечтой.",
       "rating": "0",
       "image": "https://ndc.book24.ru/resize/280x280/iblock/eef/eefc5896f229021519ea4bef8187729f.jpg"
     },
@@ -2087,6 +2254,5 @@
       "rating": "0",
       "image": "https://ndc.book24.ru/resize/280x280/iblock/025/025f44535f6c49e10b95495c97778c25.jpg"
     }
-
   ]
 }

@@ -1,0 +1,23 @@
+.authorSlide{
+  background: #7d8290;
+  padding: 30px 0;
+  &__card{
+    margin-top: 40px ;
+  }
+  &__img{
+    width: 70%;
+    height: 150px;
+    border-radius: 50%;
+  }
+  &__title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  &__titles{
+    color: white;
+  }
+
+}

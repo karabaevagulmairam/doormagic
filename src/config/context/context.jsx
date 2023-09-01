@@ -9,11 +9,11 @@ export const Context = (props) => {
     const [user, setUser] = useState({email: ''});
 
     const [favorites, setFavorites] = useState([]);
-
+    const [authorSlide, setAuthorSlide] =useState([]);
     const [hit, setHit] =useState([]);
     const [catalog, setCatalog] =useState([]);
     const [search, setSearch] = useState('');
-
+    const [author, setAuthor] =useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -98,9 +98,9 @@ export const Context = (props) => {
     }, [favorites]);
 
     const getCatalog = () =>{ api('products').json().then((res)=>setCatalog(res))};
-
+    const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
     //end favorites
-
+    const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
 
     //start countCarts
 
@@ -161,7 +161,7 @@ export const Context = (props) => {
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
-        search, setSearch , getCatalog ,catalog
+        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor
     };
 
     return <CustomContext.Provider value={value}>
