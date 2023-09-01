@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import {Link} from "react-router-dom";
 import {CustomContext} from "../../config/context/context";
 
 const Cart = () => {
@@ -54,9 +55,11 @@ const Cart = () => {
                     <p className="cart__bottom-count">
                         Итоговая стоимость: {user.carts?.reduce((acc, rec) => acc + rec.price * rec.count, 0)} сом
                     </p>
-                    <button className="cart__bottom-order">
-                        Оформить заказ
-                    </button>
+                    <Link to={'/checkout'}>
+                        <button className="cart__bottom-order">
+                            Оформить заказ
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

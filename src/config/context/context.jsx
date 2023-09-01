@@ -156,12 +156,30 @@ export const Context = (props) => {
         })
     };
 
+    const addOrder = (order,setPopup, redirect) => {
+        api.patch(`users/${user.id}`, {
+            headers: {
+                'content-type': 'application/json'
+            },
+            json: {
+                orders: [...user.orders, order],
+                carts: []
+            }
+        }).json().then((res) => {
+            setUser(res);
+            localStorage.setItem('user', JSON.stringify(res));
+            setPopup(true);
+            redirect()
+        })
+    };
+
     //end countCarts
 
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
-        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor
+        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder
+
     };
 
     return <CustomContext.Provider value={value}>
