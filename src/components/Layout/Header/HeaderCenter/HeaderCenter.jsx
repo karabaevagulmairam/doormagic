@@ -5,7 +5,7 @@ import {BsSearch} from "react-icons/bs"
 import {RiUserHeartLine} from "react-icons/ri"
 import {BiBookHeart} from "react-icons/bi"
 import {LiaOpencart} from   "react-icons/lia"
-import {useContext, useEffect} from "react";
+import {useContext, useEffect, useState} from "react";
 import {CustomContext} from "../../../../config/context/context";
 import api from "../../../../config/api/api";
 
@@ -16,6 +16,22 @@ const HeaderCenter = () => {
 
     const location = useLocation();
 
+    const [result, setResult] = useState([])
+
+    const getSearch = (search) => {
+        api(`products?title_like=${search}`).json()
+            .then((res) => {
+                setSearch(res)
+                setResult(res)
+            })
+
+    }
+
+    useEffect(() => {
+        getSearch(search)
+    },[])
+
+    console.log(search)
 
     return (
         <nav className="header__center">

@@ -1,6 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useContext, useEffect, useState} from 'react';
 import api from "../../config/api/api";
 import {useParams} from "react-router-dom";
+import {CustomContext} from "../../config/context/context";
+import Card from "../../components/Card/Card";
+
 
 const Author = () => {
 
@@ -15,6 +18,12 @@ const Author = () => {
 
     console.log(author)
 
+    const{catalog, getCatalog} = useContext(CustomContext);
+
+    useEffect(()=>{
+            getCatalog()
+    },[]);
+
     if ('id' in author) {
         return (
             <>
@@ -28,6 +37,13 @@ const Author = () => {
                             </div>
                         </div>
                         <h2 className="author__title">Все книги</h2>
+                        {
+                            catalog.map((item, idx)=>(
+                                <Fragment key={item.id || idx}>
+                                    <Card item={item}/>
+                                </Fragment>
+                            ))
+                        }
                     </div>
                 </div>
             </>
