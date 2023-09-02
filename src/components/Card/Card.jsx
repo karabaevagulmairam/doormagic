@@ -16,10 +16,6 @@ const Card = ({item}) => {
 
     return (
             <div className="cards">
-<<<<<<< HEAD
-
-=======
->>>>>>> 47544f2e376df57aeebb81a94cfdcc86c65dccf2
                 <div className="cards__row">
                     <div className="card">
                         <Link to={`/product/${item.id}`}>
@@ -29,11 +25,6 @@ const Card = ({item}) => {
                         <p className="card__title">{item.title}</p>
                         <p className="card__name">{item.author}</p>
                     </div>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 47544f2e376df57aeebb81a94cfdcc86c65dccf2
 
                     <div className="card__dop">
 

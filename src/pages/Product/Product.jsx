@@ -25,7 +25,7 @@ const Product = () => {
                 <section className="product">
                     <div className="container">
                         <div className="product__row">
-                            <ProductSlider/>
+                            <ProductSlider product={product}/>
                             <ProductInfo product={product}/>
                         </div>
 

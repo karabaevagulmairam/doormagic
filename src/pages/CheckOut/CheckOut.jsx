@@ -37,13 +37,13 @@ const CheckOut = () => {
                 navigate('/')
             }
             setCount(prev => prev - 1)
-        }, 1000)
+        }, 10000)
     };
 
     return (
         <section className="checkout">
             <div className="container">
-                <div className="checkout__out">
+                <form className="checkout__out" onSubmit={handleSubmit(submitForm)}>
                     <div className="checkout__left">
                         <div className="checkout__subs">
                             <span className="checkout__subs-num">01</span>
@@ -70,7 +70,7 @@ const CheckOut = () => {
                             </div>
                         </div>
 
-                        <form action="" className="checkout__form" onSubmit={handleSubmit(submitForm)}>
+                        <div className="checkout__form" >
                             <div className="checkout__subs">
                                 <span className="checkout__subs-num">02</span>
                                 <h2 className="cart__title">Адрес</h2>
@@ -102,11 +102,11 @@ const CheckOut = () => {
                                     <input {...register('home')} type="text" className="checkout__block-field" placeholder="Дом"/>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div className="checkout__right">
-                        <form action="" className="checkout__orders">
+                        <div className="checkout__orders">
                             <div className="checkout__subsS">
                                 <h2 className="checkout__subsS-title">Ваш заказ</h2>
                                 <span className="checkout__subsS-numb">(1)</span>
@@ -152,13 +152,13 @@ const CheckOut = () => {
                                     <label className="checkout__pay-label">
                                         <input type="checkbox" className="checkout__pay-box"/>Оплата наличными
                                     </label>
-                                    <button className="cart__bottom-order">Разместить заказ</button>
+                                    <button className="cart__bottom-order" type="submit">Разместить заказ</button>
                                 </div>
                             </div>
 
-                        </form>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
             {
                 popup ? <div className="checkout__popup">
