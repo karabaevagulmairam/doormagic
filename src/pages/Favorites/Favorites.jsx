@@ -1,7 +1,8 @@
 import React, {Fragment, useContext, useEffect, useState} from 'react';
 import {CustomContext} from "../../config/context/context";
+import {Swiper,SwiperSlide} from "swiper/react";
 import Card from "../../components/Card/Card";
-
+import { Pagination, Autoplay } from 'swiper/modules';
 const Favorites = () => {
 
     const {favorites} = useContext(CustomContext);
