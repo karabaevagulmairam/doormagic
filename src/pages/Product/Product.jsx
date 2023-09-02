@@ -12,9 +12,13 @@ const Product = () => {
 
     const [product, setProduct] = useState({});
 
-    useEffect(() => {
+    const getOne = (id) => {
         api(`products/${id}`).json()
             .then((res) => setProduct(res))
+    }
+
+    useEffect(() => {
+        getOne(id)
     }, []);
 
     console.log(product);
