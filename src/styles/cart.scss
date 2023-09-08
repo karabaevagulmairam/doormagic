@@ -9,17 +9,19 @@
   &__title{
     color: #000;
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 700;
   }
   &__count{
     color: #000;
     font-family: "Montserrat",sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
   }
   &__row{
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
     padding: 10px 15px;
+    background: #fff;
   }
   &__card{
     display: flex;
@@ -28,40 +30,39 @@
     &-item{
       display: flex;
       width: 40%;
-      padding-bottom: 30px;
+      padding: 20px 10px;
     }
     &-quantity {
       display: flex;
       align-items: center;
       column-gap: 10px;
     }
-
     &-info{
       display: flex;
       flex-direction: column;
       row-gap: 10px;
-      padding-left: 50px;
+      padding: 5px 0 0 50px;
     }
     &-title{
       color: #000;
       font-family: "Montserrat", sans-serif;
-      font-size: 19px;
+      font-size: 22px;
       font-weight: 700;
     }
     &-author{
       color: #000;
       font-family: "Montserrat", sans-serif;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 300;
     }
     &-min{
       border: 1px solid #c7ccd7;
       border-radius: 5px;
       background: transparent;
-      width: 32px;
-      height: 100%;
+      width: 42px;
+      height: 38px;
 
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 500;
       color: #7d8290;
     }
@@ -69,27 +70,29 @@
       border: 1px solid #c7ccd7;
       border-radius: 5px;
       background: transparent;
-      width: 32px;
-      height: 100%;
+      width: 42px;
+      height: 38px;
 
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 500;
       color: #7d8290;
     }
     &-num{
-      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
       outline: none;
       font-weight: 500;
-      text-align: center;
       border: 1px solid #c7ccd7;
       border-radius: 5px;
-      width: 43px;
-      height: 26px;
+      width: 75px;
+      height: 38px;
     }
     &-price{
       color: #000;
       font-family: "Montserrat", sans-serif;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 700;
     }
     &-deleted{
@@ -107,19 +110,19 @@
     &-count{
       color: #000;
       font-family: "Montserrat", sans-serif;
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 500;
     }
     &-order{
       padding: 10px 15px;
+      border-radius: 3px;
       background: #525252;
       color: #fff;
       font-family: "Montserrat", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   img{
-    width: 100px;
-    height: 150px;
+    width: 20%;
   }
 }
