@@ -14,6 +14,9 @@ export const Context = (props) => {
     const [catalog, setCatalog] =useState([]);
     const [search, setSearch] = useState('');
     const [author, setAuthor] =useState([]);
+
+    const [isLoading, setIsLoading] = useState('true');
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -76,7 +79,10 @@ export const Context = (props) => {
 
     const getHit = () =>{
         api('products?_sort=rating&_order=desc&_limit=12').json()
-            .then((res)=>setHit(res))
+            .then((res)=> {
+                setHit(res);
+                setIsLoading(false)
+            })
     };
 
     //end hit
@@ -178,8 +184,8 @@ export const Context = (props) => {
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
-        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder
-
+        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
+        setIsLoading, isLoading
     };
 
     return <CustomContext.Provider value={value}>

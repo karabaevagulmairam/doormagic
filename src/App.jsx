@@ -16,6 +16,7 @@ import Sale from "./pages/Sale/Sale";
 import Authors from "./pages/Authors/Authors";
 import Rating from "./pages/Rating/Rating";
 import Author from "./pages/Author/Author";
+import Delivery from "./pages/Delivery/Delivery";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path='/product/:id' element={<Product/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='*' element={<NotFound/>}/>
+          <Route path='/delivery' element={<Delivery/>}/>
         </Route>
 
         <Route path='/login' element={<LogIn/>}/>

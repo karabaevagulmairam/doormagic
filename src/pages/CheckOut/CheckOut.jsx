@@ -17,7 +17,7 @@ const CheckOut = () => {
 
     const [popup, setPopup] = useState(false);
 
-    const [count, setCount] = useState(false);
+    const [count, setCount] = useState(15);
 
     const navigate = useNavigate();
 
@@ -33,11 +33,14 @@ const CheckOut = () => {
 
     const redirect = () => {
         setInterval(() => {
-            if (count < 1) {
-                navigate('/')
-            }
-            setCount(prev => prev - 1)
-        }, 10000)
+            setCount(prev => {
+                if (prev < 2) {
+                    navigate('/');
+                    return 1
+                }
+                return prev - 1
+            })
+        }, 1000)
     };
 
     return (
@@ -54,19 +57,19 @@ const CheckOut = () => {
                             <div className="checkout__delivery-del">
                                 <input type="radio" className="checkout__delivery-check"/>
                                 <div className="checkout__delivery-box">
-                                    <span className="checkout__delivery-comp">DHL Parsel Service</span>
-                                    <span className="checkout__delivery-exp">Экспресс доставка до 48 часов</span>
+                                    <span className="checkout__delivery-comp">Yandex доставка</span>
+                                    <span className="checkout__delivery-exp">Доставка до 5 часов</span>
                                 </div>
-                                <span className="checkout__delivery-comp">$19.99</span>
+                                <span className="checkout__delivery-comp">200с</span>
                             </div>
 
                             <div className="checkout__delivery-del">
                                 <input type="radio" className="checkout__delivery-check"/>
                                 <div className="checkout__delivery-box">
-                                    <span className="checkout__delivery-comp">FedEx Доставка</span>
-                                    <span className="checkout__delivery-exp">Доставка до 2-4 недель</span>
+                                    <span className="checkout__delivery-comp">Доставка In-Cargo</span>
+                                    <span className="checkout__delivery-exp">Доставка в регионы до 2-5 дней</span>
                                 </div>
-                                <span className="checkout__delivery-comp">$4.99</span>
+                                <span className="checkout__delivery-comp">300c</span>
                             </div>
                         </div>
 
@@ -90,9 +93,6 @@ const CheckOut = () => {
                                     <input {...register('phone')} value={user.phone} type="phone" className="checkout__block-field" placeholder="Телефон"/>
                                 </div>
                                 <div className="checkout__block-fields">
-                                    <input {...register('country')} type="text" className="checkout__block-field" placeholder="Страна"/>
-                                </div>
-                                <div className="checkout__block-fields">
                                     <input {...register('city')} type="text" className="checkout__block-field" placeholder="Город"/>
                                 </div>
                                 <div className="checkout__block-fields">
@@ -109,7 +109,9 @@ const CheckOut = () => {
                         <div className="checkout__orders">
                             <div className="checkout__subsS">
                                 <h2 className="checkout__subsS-title">Ваш заказ</h2>
-                                <span className="checkout__subsS-numb">(1)</span>
+                                <span className="checkout__subsS-numb">({
+                                    user.carts?.reduce((acc, rec) => acc + rec.count, 0)
+                                })</span>
                             </div>
 
                             <div className="checkout__row">
@@ -138,7 +140,7 @@ const CheckOut = () => {
                                 </div>
 
                                 <div className="checkout__total">
-                                    <p className="checkout__total-ship">Доставка до Баткена</p>
+                                    <p className="checkout__total-ship">Yandex доставка</p>
                                     <p className="checkout__total-shipping">300 сом</p>
                                 </div>
 

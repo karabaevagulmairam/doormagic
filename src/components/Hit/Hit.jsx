@@ -6,11 +6,12 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import Card from "../Card/Card";
 import {CustomContext} from "../../config/context/context";
+import CardSkeleton from "../CardSkeleton/CardSkeleton";
 
 
 const Hit = () => {
 
-    const{hit, getHit} = useContext(CustomContext);
+    const{hit, getHit, isLoading} = useContext(CustomContext);
 
     useEffect(()=>{
         getHit()
@@ -35,6 +36,7 @@ const Hit = () => {
                     >
 
                         {
+                            isLoading ? <CardSkeleton cards={12}/> :
                             hit.map((item, idx)=>(
                                 <Fragment key={item.id || idx}>
                                     <SwiperSlide>

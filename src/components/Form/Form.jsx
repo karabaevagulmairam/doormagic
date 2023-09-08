@@ -51,7 +51,9 @@ const Form = () => {
     return (
         <div className="form">
             <div className="form__left">
-                <img src={Logo} width={200} alt="" className="form__logo" ref={password}/>
+                <Link to={'/'}>
+                    <img src={Logo} width={300} alt="" className="form__logo" ref={password}/>
+                </Link>
                 <form noValidate action="" className="form__content" onSubmit={handleSubmit(submitForm)}>
                     <h2 className="form__content-title">
                         {
@@ -60,10 +62,10 @@ const Form = () => {
                     </h2>
                     <p className="form__content-text">
                         {
-                            location.pathname === '/login' ? 'Don’t have a account' : 'If you already have an account'
+                            location.pathname === '/login' ? 'Если у вас нет аккаунта' : 'Если у вас есть аккаунт, то'
                         }
                         {
-                            location.pathname === '/login' ? <Link to='/register' className="form__content-link"> Sign up</Link> : <Link to='/login' className="form__content-link"> Sign in</Link>
+                            location.pathname === '/login' ? <Link to='/register' className="form__content-link"> зарегистрируйтесь</Link> : <Link to='/login' className="form__content-link"> войдите</Link>
                         }
                     </p>
 
@@ -86,7 +88,7 @@ const Form = () => {
                                     message: "Напишите правильно свой email",
                                     value: /^[^ ]+@[^ ]+\.[a-z]{2,5}$/
                                 }
-                            })} className="form__label-input" type="email" placeholder="Enter your email address"/>
+                            })} className="form__label-input" type="email" placeholder="Введите свой Email"/>
                         </div>
 
                         <p className="register__label-error">
@@ -95,7 +97,7 @@ const Form = () => {
                     </label>
                     {
                         location.pathname === '/register' && <label className="form__label">
-                            <span className="form__label-text">Name</span>
+                            <span className="form__label-text">Имя</span>
                             <div className="form__label-field">
                             <span className="form__label-icon">
                                 <CiUser/>
@@ -113,7 +115,7 @@ const Form = () => {
                                         message: "Напишите правильно свое имя",
                                         value: /^[а-яА-ЯёЁa-zA-Z]+$/
                                     }
-                                })} className="form__label-input" type="text" placeholder="Enter your name"/>
+                                })} className="form__label-input" type="text" placeholder="Введите имя"/>
                             </div>
 
                             <p className="register__label-error">
@@ -123,7 +125,7 @@ const Form = () => {
                     }
                     {
                         location.pathname === '/register' && <label className="form__label">
-                            <span className="form__label-text">Surname</span>
+                            <span className="form__label-text">Фамилия</span>
                             <div className="form__label-field">
                             <span className="form__label-icon">
                                 <HiUser/>
@@ -141,7 +143,7 @@ const Form = () => {
                                         message: "Напишите правильно свою фамилию",
                                         value: /^[а-яА-ЯёЁa-zA-Z]+$/
                                     }
-                                })} className="form__label-input" type="text" placeholder="Enter your surname"/>
+                                })} className="form__label-input" type="text" placeholder="Введите фамилию"/>
                             </div>
 
                             <p className="register__label-error">
@@ -151,7 +153,7 @@ const Form = () => {
                     }
                     {
                         location.pathname === '/register' && <label className="form__label">
-                            <span className="form__label-text">Phone</span>
+                            <span className="form__label-text">Номер телефона</span>
                             <div className="form__label-field">
                              <span className="form__label-icon">
                                 <BsPhone/>
@@ -165,7 +167,7 @@ const Form = () => {
                                         message: "Заполните номер телефона",
                                         value: /^\+996\(\d{3}\)\d{2}-\d{2}-\d{2}$/
                                     }
-                                })} className="form__label-input" type="tel" placeholder="Enter your phone"/>
+                                })} className="form__label-input" type="tel" placeholder="Введите номер телефона"/>
                             </div>
 
                             <p className="register__label-error">
@@ -175,7 +177,7 @@ const Form = () => {
                     }
 
                     <label className="form__label">
-                        <span className="form__label-text">Password</span>
+                        <span className="form__label-text">Пароль</span>
                         <div className="form__label-field">
                                 <span className="form__label-icon" onClick={() => setPasswordView(prev => !prev)}>
                                     {
@@ -191,7 +193,7 @@ const Form = () => {
                                     message: "Пароль должен содержать не менее 8 символов, заглавную букву, число!",
                                     value: /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g
                                 }
-                            })} className="form__label-input" type={passwordView ? "text" : "password"} placeholder="Enter your password"/>
+                            })} className="form__label-input" type={passwordView ? "text" : "password"} placeholder="Введите пароль"/>
 
 
 
@@ -204,7 +206,7 @@ const Form = () => {
 
                     {
                         location.pathname === '/register' && <label className="form__label">
-                            <span className="form__label-text">Confirm password</span>
+                            <span className="form__label-text">Подтвердите пароль</span>
                             <div className="form__label-field">
                                 {/*<span className="form__label-icon" onClick={() => setPasswordView(prev => !prev)}>*/}
                                 {/*    {*/}
@@ -214,7 +216,7 @@ const Form = () => {
                                 <input {...register('confirmPwd', {
                                     validate: value =>
                                         value === password.current || "The password do not match"
-                                })} className="form__label-input" type={passwordView ? "text" : "password"} placeholder="Enter your password again"/>
+                                })} className="form__label-input" type={passwordView ? "text" : "password"} placeholder="Введите пароль еще раз"/>
                             </div>
                             <p className="register__label-error">
                                 {errors. confirmPwd && errors.confirmPwd?.message}

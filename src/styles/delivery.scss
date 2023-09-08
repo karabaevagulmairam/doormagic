@@ -1,0 +1,45 @@
+.delivery{
+  padding: 100px;
+  background: #fff;
+  &__del{
+    display: flex;
+    width: 90%;
+    &-delImg{
+      width: 80%;
+    }
+    &-info{
+      width: 50%;
+    }
+    &-title{
+      color: #292929;
+      font-family: "Montserrat",sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      padding-bottom: 17px;
+    }
+    &-desc{
+      color: #292929;
+      font-family: "Montserrat",sans-serif;
+      font-size: 16px;
+      padding-bottom: 35px;
+    }
+    &-span{
+      color: #292929;
+      font-family: "Montserrat",sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  &__pickup{
+    display: flex;
+    width: 90%;
+    padding-top: 90px;
+    &-pick {
+      width: 50%;
+      position: absolute;
+      right: 80px;
+      top: 750px;
+      z-index: 0;
+    }
+  }
+}

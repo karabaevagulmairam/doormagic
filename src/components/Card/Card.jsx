@@ -16,10 +16,6 @@ const Card = ({item}) => {
 
     return (
             <div className="cards">
-
-
-
-
                 <div className="cards__row">
                     <div className="card">
                         <Link to={`/product/${item.id}`}>
@@ -31,11 +27,7 @@ const Card = ({item}) => {
                         <p className="card__name">{item.author}</p>
                     </div>
 
-
-
-
                     <div className="card__dop">
-
                         {
                             user.carts?.some(el => el.id === item.id) ?
                                 <button type="button" className="card__add">ДОБАВЛЕНО</button>

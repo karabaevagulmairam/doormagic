@@ -16,22 +16,22 @@ const HeaderCenter = () => {
 
     const location = useLocation();
 
-    const [result, setResult] = useState([])
+    const [result, setResult] = useState([]);
 
     const getSearch = (search) => {
         api(`products?title_like=${search}`).json()
             .then((res) => {
-                setSearch(res)
+                setSearch(res);
                 setResult(res)
             })
 
-    }
+    };
 
     useEffect(() => {
         getSearch(search)
-    },[])
+    },[]);
 
-    console.log(search)
+    console.log(search);
 
     return (
         <nav className="header__center">
@@ -54,18 +54,18 @@ const HeaderCenter = () => {
             </div>
 
             <div className="header__center-icons">
-                {
-                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
-                        <RiUserHeartLine/>
-                    </Link>
-                }
-
                 <Link to={'/favorites'} className="header__center-icon">
                     <BiBookHeart/>
                 </Link>
                 <Link to={user.email?.length ? '/cart' : '/login'} className="header__center-icon">
                     <LiaOpencart/>
                 </Link>
+                {
+                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
+                        <RiUserHeartLine/>
+                    </Link>
+                }
+
             </div>
         </nav>
     );

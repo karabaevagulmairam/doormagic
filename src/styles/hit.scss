@@ -11,8 +11,14 @@
       font-weight: 600;
       line-height: 21px;
       color: #1A1919;
-      margin: 35px;
+      margin: 50px;
+      text-align: center;
+    }
+    &-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
     }
   }
-
 }

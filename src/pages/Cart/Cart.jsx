@@ -11,7 +11,11 @@ const Cart = () => {
             <div className="container">
                 <div className="cart__top">
                     <h2 className="cart__title">Корзина</h2>
-                    <p className="cart__count">Удалить всё</p>
+                    <p className="cart__count">
+                        {
+                            user.carts?.reduce((acc, rec) => acc + rec.count, 0)
+                        } товара
+                    </p>
                 </div>
 
                 <div className="cart__row">
@@ -53,16 +57,19 @@ const Cart = () => {
 
                 </div>
 
-                <div className="cart__bottom">
-                    <p className="cart__bottom-count">
-                        Итоговая стоимость: {user.carts?.reduce((acc, rec) => acc + rec.price * rec.count, 0)} сом
-                    </p>
-                    <Link to={'/checkout'}>
-                        <button className="cart__bottom-order">
-                            Оформить заказ
-                        </button>
-                    </Link>
-                </div>
+                {
+                    user.carts?.length ? <div className="cart__bottom">
+                        <p className="cart__bottom-count">
+                            Итоговая стоимость: {user.carts?.reduce((acc, rec) => acc + rec.price * rec.count, 0)} сом
+                        </p>
+                        <Link to={'/checkout'}>
+                            <button className="cart__bottom-order">
+                                Оформить заказ
+                            </button>
+                        </Link>
+                    </div> : ''
+                }
+                {/*<img src="https://tedacar.cc/static/store/img/empty_cart.f1a74451e1af.jpg" alt=""/>*/}
             </div>
         </section>
     );
