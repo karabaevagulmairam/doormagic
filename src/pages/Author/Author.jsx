@@ -18,11 +18,6 @@ const Author = () => {
 
     console.log(author)
 
-    const{catalog, getCatalog} = useContext(CustomContext);
-
-    useEffect(()=>{
-            getCatalog()
-    },[]);
 
     if ('id' in author) {
         return (
@@ -37,13 +32,13 @@ const Author = () => {
                             </div>
                         </div>
                         <h2 className="author__title">Все книги</h2>
-                        {
-                            catalog.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <Card item={item}/>
-                                </Fragment>
-                            ))
-                        }
+                        {/*{*/}
+                        {/*    ca.map((item, idx)=>(*/}
+                        {/*        <Fragment key={item.id || idx}>*/}
+                        {/*            <Card item={item}/>*/}
+                        {/*        </Fragment>*/}
+                        {/*    ))*/}
+                        {/*}*/}
                     </div>
                 </div>
             </>

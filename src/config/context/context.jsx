@@ -7,7 +7,7 @@ export const CustomContext = createContext();
 export const Context = (props) => {
 
     const [user, setUser] = useState({email: ''});
-
+    const [book, setBook] =useState([]);
     const [favorites, setFavorites] = useState([]);
     const [authorSlide, setAuthorSlide] =useState([]);
     const [hit, setHit] =useState([]);
@@ -101,7 +101,7 @@ export const Context = (props) => {
     const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
     //end favorites
     const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
-
+    const getBook = () =>{ api('products').json().then((res)=>setBook(res))};
     //start countCarts
 
     const addCarts = (product) => {
@@ -178,8 +178,8 @@ export const Context = (props) => {
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
-        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder
-
+        search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
+        book,getBook
     };
 
     return <CustomContext.Provider value={value}>
