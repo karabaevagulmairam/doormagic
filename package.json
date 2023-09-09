@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.9.0",
     "concurrently": "^8.2.0",
     "json-server": "^0.17.3",
     "json-server-auth": "^2.1.0",

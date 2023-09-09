@@ -11,6 +11,7 @@ export const Context = (props) => {
     const [favorites, setFavorites] = useState([]);
     const [hit, setHit] =useState([]);
     const [catalog, setCatalog] =useState([]);
+    const [authorCatalog, setAuthorCatalog] =useState([]);
     const [search, setSearch] = useState('');
 
     const [authorSlide, setAuthorSlide] =useState([]);
@@ -86,6 +87,7 @@ export const Context = (props) => {
             })
     };
 
+
     //end hit
 
     //start favorites
@@ -104,7 +106,8 @@ export const Context = (props) => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
 
-    const getCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setCatalog(res))};
+    const getCatalog = () =>{ api(`products`).json().then((res)=> setCatalog(res))};
+    const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
 
     //end favorites
     const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
@@ -197,7 +200,7 @@ export const Context = (props) => {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
         search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
-        setIsLoading, isLoading, getOneAuthor
+        setIsLoading, isLoading, getOneAuthor, setAuthorCatalog, authorCatalog, getAuthorCatalog
     };
 
     return <CustomContext.Provider value={value}>

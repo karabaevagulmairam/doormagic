@@ -19,6 +19,9 @@ const Hit = () => {
 
 
 
+
+
+
     return (
         <section className="hit">
             <div className="container">
