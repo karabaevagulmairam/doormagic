@@ -11,7 +11,7 @@ import CardSkeleton from "../CardSkeleton/CardSkeleton";
 
 const Hit = () => {
 
-    const{hit, getHit, isLoading} = useContext(CustomContext);
+    const {hit, getHit, isLoading} = useContext(CustomContext);
 
     useEffect(()=>{
         getHit()
@@ -38,8 +38,8 @@ const Hit = () => {
                         {
                             isLoading ? <CardSkeleton cards={12}/> :
                             hit.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <SwiperSlide>
+                                <Fragment >
+                                    <SwiperSlide key={item.id || idx}>
                                         <Card item={item}/>
                                     </SwiperSlide>
                                 </Fragment>

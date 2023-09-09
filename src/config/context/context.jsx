@@ -9,10 +9,11 @@ export const Context = (props) => {
     const [user, setUser] = useState({email: ''});
 
     const [favorites, setFavorites] = useState([]);
-    const [authorSlide, setAuthorSlide] =useState([]);
     const [hit, setHit] =useState([]);
     const [catalog, setCatalog] =useState([]);
     const [search, setSearch] = useState('');
+
+    const [authorSlide, setAuthorSlide] =useState([]);
     const [author, setAuthor] =useState([]);
 
     const [isLoading, setIsLoading] = useState('true');
@@ -103,8 +104,8 @@ export const Context = (props) => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
 
-    const getCatalog = () =>{ api('products').json().then((res)=>setCatalog(res))};
-    const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
+    const getCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setCatalog(res))};
+
     //end favorites
     const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
 
@@ -181,11 +182,22 @@ export const Context = (props) => {
 
     //end countCarts
 
+
+    //author functions
+
+    const getOneAuthor = (id) => {
+        api(`authors/${id}`).json()
+            .then((res) => setAuthor(res))
+    }
+
+
+    const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
+
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
         search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
-        setIsLoading, isLoading
+        setIsLoading, isLoading, getOneAuthor
     };
 
     return <CustomContext.Provider value={value}>

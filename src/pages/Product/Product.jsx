@@ -19,7 +19,7 @@ const Product = () => {
 
     useEffect(() => {
         getOne(id)
-    }, []);
+    }, [id]);
 
     console.log(product);
 

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import {AiOutlineHeart, AiFillHeart} from "react-icons/ai";
 import {LiaOpencart} from   "react-icons/lia"
@@ -6,20 +6,27 @@ import {CustomContext} from "../../config/context/context";
 
 const ProductInfo = ({product}) => {
 
-    const {favorites, favoritesHandler} = useContext(CustomContext);
 
-    const {addCarts, user} = useContext(CustomContext);
+    const {addCarts, user, favorites, favoritesHandler, authorSlide, getAuthorSlide} = useContext(CustomContext);
+
+
+    // useEffect(()=>{
+    //     getAuthorSlide()
+    // },[]);
+    //
+    // const oneAuthor = authorSlide.filter((item) => item.name === product.author)
+
+    // console.log(oneAuthor)
 
     const navigate = useNavigate();
 
     return (
         <div className="product__info">
-            <div className="container">
                 <div className="product__info-info">
                     <h2 className="product__info-title">
                         {product.title}
                     </h2>
-                    <Link to={'/'} className="product__info-author">
+                    <Link to={`/`} className="product__info-author">
                         {product.author} (Автор)
                     </Link>
 
@@ -60,9 +67,6 @@ const ProductInfo = ({product}) => {
                         </div>
                     </div>
                 </div>
-
-            </div>
-
         </div>
     );
 };

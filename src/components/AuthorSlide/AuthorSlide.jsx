@@ -28,8 +28,8 @@ const AuthorSlide = () => {
 
                         {
                             authorSlide.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <SwiperSlide>
+                                <Fragment>
+                                    <SwiperSlide key={item.id || idx}>
                                         <div className="authorSlide__card">
                                             <Link to={`/author/${item.id}`}>
                                                 <img src={location.pathname === '/' ? item.image : `${item.image}`} alt="" className="authorSlide__img"/>

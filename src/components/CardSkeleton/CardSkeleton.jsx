@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 
 const CardSkeleton = ({cards}) => {
     return (
-        Array(cards).fill(0).map((item) => (
-            <div className="cards">
+        Array(cards).fill(0).map((item, idx) => (
+            <div className="cards" key={item.id || idx}>
                 <div className="cards__row">
                     <div className="card">
                         <Link>

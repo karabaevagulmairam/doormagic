@@ -9,20 +9,21 @@ const Author = () => {
 
     const {id} = useParams();
 
-    const [author, setAuthor] = useState({});
+
+
+    const{catalog, getCatalog, author, getOneAuthor} = useContext(CustomContext);
 
     useEffect(() => {
-        api(`authors/${id}`).json()
-            .then((res) => setAuthor(res))
+        getOneAuthor(id)
     }, []);
+
+    useEffect(()=>{
+        getCatalog(author.name)
+    },[author]);
 
     console.log(author)
 
-    const{catalog, getCatalog} = useContext(CustomContext);
-
-    useEffect(()=>{
-            getCatalog()
-    },[]);
+    console.log(catalog)
 
     if ('id' in author) {
         return (
@@ -37,13 +38,15 @@ const Author = () => {
                             </div>
                         </div>
                         <h2 className="author__title">Все книги</h2>
-                        {
-                            catalog.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <Card item={item}/>
-                                </Fragment>
-                            ))
-                        }
+                        <div className="catalog__row">
+                            {
+                                catalog.map((item, idx)=>(
+                                    <Fragment key={item.id || idx}>
+                                        <Card item={item}/>
+                                    </Fragment>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </>
