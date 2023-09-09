@@ -1,4 +1,4 @@
-import {Link, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 //media
 import Logo from "../../../../assets/Logo.svg"
 import {BsSearch} from "react-icons/bs"
@@ -19,6 +19,8 @@ const HeaderCenter = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [searchQuery, setSearchQuery] = useState(search);
     const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         const delaySearch = setTimeout(() => {
@@ -75,7 +77,7 @@ const HeaderCenter = () => {
                         <ul className="header__center-results">
                             {result.map((item) => (
                                 <li key={item.id}>
-                                    <Link to={`/product/${item.id}`}>{item.title}</Link>
+                                    <p onClick={() => navigate(`/product/${item.id}`)}>{item.title}</p>
                                 </li>
                             ))}
                         </ul>
