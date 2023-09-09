@@ -7,7 +7,7 @@ export const CustomContext = createContext();
 export const Context = (props) => {
 
     const [user, setUser] = useState({email: ''});
-    const [book, setBook] =useState([]);
+    const [authorCatalog, setAuthorCatalog] =useState([]);
     const [favorites, setFavorites] = useState([]);
     const [authorSlide, setAuthorSlide] =useState([]);
     const [hit, setHit] =useState([]);
@@ -96,12 +96,12 @@ export const Context = (props) => {
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
-
+    const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
     const getCatalog = () =>{ api('products').json().then((res)=>setCatalog(res))};
     const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
     //end favorites
     const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
-    const getBook = () =>{ api('products').json().then((res)=>setBook(res))};
+
     //start countCarts
 
     const addCarts = (product) => {
