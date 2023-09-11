@@ -35,7 +35,7 @@ const Cataloge = () => {
 
                 <ul className='catalog__filter'>
                     <li>
-                        <select onChange={(e) => console.log(setCategory(e.target.value))}>
+                        <select onChange={(e) => console.log(setCategory(e.target.value))} className="catalog__filter-select">
                             <option value="all" selected>{category === 'all' ? "Все" : "По умолчанию"}</option>
                             {
                                 uniqueCategories.map((item, idx) => (
@@ -57,7 +57,7 @@ const Cataloge = () => {
                         ))
                     }
                 </div>
-                <p>Показано {showCount} из {showCountLength} товаров</p>
+                <p className="catalog__row-text">Показано {showCount} из {showCountLength} товаров</p>
                 {
                     showCountLength > 10 ?
                         <Pagination

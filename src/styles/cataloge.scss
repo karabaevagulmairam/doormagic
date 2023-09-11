@@ -1,5 +1,18 @@
 .catalog{
   padding: 40px 0;
+  &__filter{
+    display: flex;
+    padding: 20px 0;
+    &-select{
+      padding: 10px 15px;
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      width: 40%;
+      border-radius: 5px;
+    }
+  }
   &__row{
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +20,12 @@
     .cards{
       margin-bottom: 40px;
       width: calc(20% - 16px);
+    }
+    &-text{
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding-bottom: 20px;
     }
   }
 }

@@ -21,9 +21,9 @@ const Author = () => {
         getAuthorCatalog(author.name)
     },[author]);
 
-    console.log(author)
+    console.log(author);
 
-    console.log(authorCatalog)
+    console.log(authorCatalog);
 
     if ('id' in author) {
         return (
