@@ -7,7 +7,6 @@ export const CustomContext = createContext();
 export const Context = (props) => {
 
     const [user, setUser] = useState({email: ''});
-
     const [favorites, setFavorites] = useState([]);
     const [hit, setHit] =useState([]);
     const [catalog, setCatalog] =useState([]);
@@ -106,6 +105,9 @@ export const Context = (props) => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
 
+
+    const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
+
     const getCatalog = () =>{ api(`products`).json().then((res)=> setCatalog(res))};
     const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
 
@@ -194,13 +196,15 @@ export const Context = (props) => {
     }
 
 
-    const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
+
 
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
         search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
+
         setIsLoading, isLoading, getOneAuthor, setAuthorCatalog, authorCatalog, getAuthorCatalog
+
     };
 
     return <CustomContext.Provider value={value}>

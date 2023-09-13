@@ -7,4 +7,4 @@ const api = ky.create(
 
 export default api
 
-
+export const instance = 'http://localhost:8080/';

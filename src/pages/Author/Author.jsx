@@ -9,8 +9,6 @@ const Author = () => {
 
     const {id} = useParams();
 
-
-
     const{authorCatalog, getAuthorCatalog, author, getOneAuthor} = useContext(CustomContext);
 
     useEffect(() => {
@@ -23,7 +21,27 @@ const Author = () => {
 
     console.log(author);
 
+    const addPoint = () => {
+
+        const rating = {
+            count: author.ratingView.count + 1,
+            point: author.ratingView.point + 10
+        }
+
+        api(`authors/${id}`,{
+            method:'PATCH',
+            headers: {
+                'content-type': 'application/json'
+            },
+            json:{
+                ratingView: rating
+            }
+        } )
+            .then(res => alert('все изменилось'))
+    }
+
     console.log(authorCatalog);
+
 
     if ('id' in author) {
         return (
@@ -37,7 +55,8 @@ const Author = () => {
                                 <p className="author__desc">{author.description}</p>
                             </div>
                         </div>
-                        <h2 className="author__title">Все книги</h2>
+                        <button onClick={addPoint}>добавить балл</button>
+                        <h2 className="author__title">Все книги автора</h2>
                         <div className="catalog__row">
                             {
                                 authorCatalog.map((item, idx)=>(

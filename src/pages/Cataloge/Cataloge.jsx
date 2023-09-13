@@ -2,32 +2,38 @@ import React, {Fragment, useContext, useEffect, useState} from 'react';
 import {CustomContext} from "../../config/context/context";
 import Card from "../../components/Card/Card";
 import {Pagination} from "antd"
+import {useGetProductsQuery} from "../../redux/api/api.js";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllBooks} from "../../redux/reducers/books.js";
 
 
 const Cataloge = () => {
-    const {catalog, getCatalog} = useContext(CustomContext);
+
+
+    // const {catalog, getCatalog} = useContext(CustomContext);
+
+    const dispatch = useDispatch()
     const [category, setCategory] = useState('all');
     const [page, setPage] = useState(1);
 
+    const { data } = useSelector(store => store.books);
+
     useEffect(() => {
-        getCatalog()
+       dispatch(getAllBooks())
     }, []);
 
-    console.log(catalog);
 
-    const categories = [...catalog.map((item) => item.category)];
+    const categories = [...data.map((item) => item.category)];
 
     const uniqueCategories = [...new Set(categories)];
 
-    const showCount = catalog
+    const showCount = data
         .filter(item => category === "all" ? item : item.category === category)
         .filter((item, idx) => idx + 1 <= page * 10 && idx >= page * 10 - 10).length;
 
-    const showCountLength = catalog
+    const showCountLength = data
         .filter(item => category === "all" ? item : item.category === category).length;
 
-
-    console.log(category);
 
     return (
         <div className="catalog">
@@ -35,7 +41,7 @@ const Cataloge = () => {
 
                 <ul className='catalog__filter'>
                     <li>
-                        <select onChange={(e) => console.log(setCategory(e.target.value))} className="catalog__filter-select">
+                        <select onChange={(e) => setCategory(e.target.value)} className="catalog__filter-select">
                             <option value="all" selected>{category === 'all' ? "Все" : "По умолчанию"}</option>
                             {
                                 uniqueCategories.map((item, idx) => (
@@ -48,7 +54,7 @@ const Cataloge = () => {
 
                 <div className="catalog__row">
                     {
-                        catalog.filter(item => category === 'all' ? item : item.category === category)
+                        data.filter(item => category === 'all' ? item : item.category === category)
                             .filter((item, idx) => idx + 1 <= page * 10 && idx >= page * 10 - 10)
                             .map((item, idx) => (
                             <Fragment key={item.id || idx}>
@@ -58,19 +64,13 @@ const Cataloge = () => {
                     }
                 </div>
                 <p className="catalog__row-text">Показано {showCount} из {showCountLength} товаров</p>
-                {
-                    showCountLength > 10 ?
-                        <Pagination
-                            simple
-                            onChange={setPage}
-                            current={page}
-                            total={
-                                catalog
-                                    .filter(item => category === "all" ? item : item.category === category).length
-                            }
-                            pageSize={10}
-                        /> : ''
-                }
+                <Pagination
+                    simple
+                    onChange={setPage}
+                    current={page}
+                    total={showCountLength}
+                    pageSize={10}
+                />
             </div>
         </div>
     );

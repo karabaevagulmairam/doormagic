@@ -16,6 +16,7 @@ const Banner = () => {
     return (
         <section className="banner">
             <div className="container">
+                <div className="banner__row active">
                 <Swiper
                     loop={true}
                     autoplay={
@@ -28,32 +29,34 @@ const Banner = () => {
                     modules={[Scrollbar, Autoplay]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <Link to={'/sale'}>
-                            <img src={b1} alt="" className="banner__img"/>
-                        </Link>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Link to={'/sale'}>
-                            <img src={b2} alt="" className="banner__img"/>
-                        </Link>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Link to={'/sale'}>
-                            <img src={b3} alt="" className="banner__img"/>
-                        </Link>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Link to={'/sale'}>
-                            <img src={b4} alt="" className="banner__img"/>
-                        </Link>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Link to={'/sale'}>
-                            <img src={b5} alt="" className="banner__img"/>
-                        </Link>
-                    </SwiperSlide>
+
+                       <SwiperSlide>
+                           <Link to={'/sale'}>
+                               <img src={b1} alt="" className="banner__img"/>
+                           </Link>
+                       </SwiperSlide>
+                       <SwiperSlide>
+                           <Link to={'/sale'}>
+                               <img src={b2} alt="" className="banner__img"/>
+                           </Link>
+                       </SwiperSlide>
+                       <SwiperSlide>
+                           <Link to={'/sale'}>
+                               <img src={b3} alt="" className="banner__img"/>
+                           </Link>
+                       </SwiperSlide>
+                       <SwiperSlide>
+                           <Link to={'/sale'}>
+                               <img src={b4} alt="" className="banner__img"/>
+                           </Link>
+                       </SwiperSlide>
+                       <SwiperSlide>
+                           <Link to={'/sale'}>
+                               <img src={b5} alt="" className="banner__img"/>
+                           </Link>
+                       </SwiperSlide>
                 </Swiper>
+                </div>
             </div>
         </section>
     );

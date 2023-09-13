@@ -11,7 +11,7 @@ const HeaderBot = () => {
             <div className="header__bot-list">
 
                 <Link to={'/sale'} className="header__bot-link">
-                    Скидки
+                    Акции
                 </Link>
                 <Link to={'/rating'} className="header__bot-link">
                     Рейтинги

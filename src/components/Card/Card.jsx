@@ -16,6 +16,10 @@ const Card = ({item}) => {
 
     return (
             <div className="cards">
+
+
+
+
                 <div className="cards__row">
                     <div className="card">
                         <Link to={`/product/${item.id}`}>

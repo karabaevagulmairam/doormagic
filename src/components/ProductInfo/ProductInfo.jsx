@@ -26,6 +26,7 @@ const ProductInfo = ({product}) => {
                     <h2 className="product__info-title">
                         {product.title}
                     </h2>
+
                     <Link to={`/`} className="product__info-author">
                         {product.author} (Автор)
                     </Link>

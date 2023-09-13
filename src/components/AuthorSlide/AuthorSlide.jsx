@@ -7,15 +7,24 @@ import 'swiper/css/pagination';
 
 import {CustomContext} from "../../config/context/context";
 import {Link} from "react-router-dom";
+import {useGetAuthorsQuery} from "../../redux/api/api.js";
+import logIn from "../../pages/LogIn/LogIn.jsx";
 
 
 const AuthorSlide = () => {
 
-    const{authorSlide, getAuthorSlide} = useContext(CustomContext);
+    // const{authorSlide, getAuthorSlide} = useContext(CustomContext);
 
-    useEffect(()=>{
-        getAuthorSlide()
-    },[]);
+    // useEffect(()=>{
+    //     getAuthorSlide()
+    // },[]);
+
+
+    const {data} = useGetAuthorsQuery({_limit: 12})
+
+    console.log(data)
+
+
 
     return (
         <div className="authorSlide">
@@ -27,7 +36,7 @@ const AuthorSlide = () => {
                     className="mySwiper">
 
                         {
-                            authorSlide.map((item, idx)=>(
+                            data?.map((item, idx)=>(
                                 <Fragment>
                                     <SwiperSlide key={item.id || idx}>
                                         <div className="authorSlide__card">
