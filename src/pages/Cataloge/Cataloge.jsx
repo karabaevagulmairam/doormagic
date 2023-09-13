@@ -1,36 +1,33 @@
 import React, {Fragment, useContext, useEffect, useState} from 'react';
 import {CustomContext} from "../../config/context/context";
 import Card from "../../components/Card/Card";
-import {Pagination} from "antd";
+import {Pagination} from "antd"
 
 
 const Cataloge = () => {
-
     const {catalog, getCatalog} = useContext(CustomContext);
-
-    const [category, setCategory] = useState('all')
-
-    const [page, setPage] = useState(1)
+    const [category, setCategory] = useState('all');
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
         getCatalog()
     }, []);
 
-    console.log(catalog)
+    console.log(catalog);
 
-    const categories = [...catalog.map((item) => item.category)]
+    const categories = [...catalog.map((item) => item.category)];
 
-    const uniqueCategories = [...new Set(categories)]
+    const uniqueCategories = [...new Set(categories)];
 
     const showCount = catalog
         .filter(item => category === "all" ? item : item.category === category)
-        .filter((item, idx) => idx + 1 <= page * 10 && idx >= page * 10 - 10).length
+        .filter((item, idx) => idx + 1 <= page * 10 && idx >= page * 10 - 10).length;
 
     const showCountLength = catalog
-        .filter(item => category === "all" ? item : item.category === category).length
+        .filter(item => category === "all" ? item : item.category === category).length;
 
 
-    console.log(category)
+    console.log(category);
 
     return (
         <div className="catalog">
@@ -38,7 +35,7 @@ const Cataloge = () => {
 
                 <ul className='catalog__filter'>
                     <li>
-                        <select onChange={(e) => console.log(setCategory(e.target.value))}>
+                        <select onChange={(e) => console.log(setCategory(e.target.value))} className="catalog__filter-select">
                             <option value="all" selected>{category === 'all' ? "Все" : "По умолчанию"}</option>
                             {
                                 uniqueCategories.map((item, idx) => (
@@ -60,7 +57,7 @@ const Cataloge = () => {
                         ))
                     }
                 </div>
-                <p>Показано {showCount} из {showCountLength} товаров</p>
+                <p className="catalog__row-text">Показано {showCount} из {showCountLength} товаров</p>
                 {
                     showCountLength > 10 ?
                         <Pagination

@@ -19,9 +19,8 @@ const Author = () => {
         getAuthorCatalog(author.name)
     },[author]);
 
-    console.log(author)
+    console.log(author);
 
-    console.log(authorCatalog)
     const addPoint = () => {
 
         const rating = {
@@ -40,6 +39,8 @@ const Author = () => {
         } )
             .then(res => alert('все изменилось'))
     }
+
+    console.log(authorCatalog);
 
 
     if ('id' in author) {

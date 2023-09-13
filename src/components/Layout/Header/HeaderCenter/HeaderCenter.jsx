@@ -1,4 +1,4 @@
-import {Link, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 //media
 import Logo from "../../../../assets/Logo.svg"
 import {BsSearch} from "react-icons/bs"
@@ -19,6 +19,10 @@ const HeaderCenter = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [searchQuery, setSearchQuery] = useState(search);
     const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
+    const [isSearchResultsOpen, setIsSearchResultsOpen] = useState(false);
+
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         const delaySearch = setTimeout(() => {
@@ -50,6 +54,7 @@ const HeaderCenter = () => {
     const handleInputChange = (e) => {
         const value = e.target.value;
         setSearchQuery(value);
+        setIsSearchResultsOpen(value.length > 0);
     };
 
     return (
@@ -70,16 +75,17 @@ const HeaderCenter = () => {
                     onChange={handleInputChange}
                 />
                 {isLoading && <div className="loading-indicator">Идет поиск...</div>}
-                {result.length > 0 && (
-
-                        <ul className="header__center-results">
-                            {result.map((item) => (
-                                <li key={item.id}>
-                                    <Link to={`/product/${item.id}`}>{item.title}</Link>
-                                </li>
-                            ))}
-                        </ul>
-
+                {isSearchResultsOpen && result.length > 0 && (
+                    <ul className="header__center-results">
+                        {result.map((item) => (
+                            <li key={item.id}>
+                                <p onClick={() => {
+                                    navigate(`/product/${item.id}`);
+                                    setIsSearchResultsOpen(false); // Закрываем результаты поиска после выбора книги
+                                }}>{item.title}</p>
+                            </li>
+                        ))}
+                    </ul>
                 )}
             </div>
 
