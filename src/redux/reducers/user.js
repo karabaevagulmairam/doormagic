@@ -21,6 +21,25 @@ const userSlice = createSlice({
         },
     },
     reducers: {
+        loginAcc: (state,{payload}) => {
+            state.user = payload
+        },
+        logOutAcc: (state, {payload}) => {
+            state.user = {
+                id: "",
+                email: "",
+                name:  "",
+                surname: "",
+                phone: "",
+                carts: [],
+                orders:  [],
+                favorites:  [],
+                home:  "",
+                city:  "",
+                street:  "",
+                point: "",
+            }
+        },
         addCart: (state,{payload}) => {
             state.user.cart.find(item => item.id === payload.id) ?
                 state.user.cart =  state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
@@ -36,11 +55,12 @@ const userSlice = createSlice({
             state.user.cart = state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
         },
         deleteCount:(state,{payload}) => {
-
             state.user.cart = state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count !==  1 ? item.count - 1 : 1 } : item)
         }
     }
 })
 
 
+
+export const {loginAcc,logOutAcc, addCart, deleteCard, addCount, deleteCount} = userSlice.actions
 export default userSlice.reducer

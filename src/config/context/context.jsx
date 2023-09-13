@@ -32,41 +32,9 @@ export const Context = (props) => {
 
     //start userContent
 
-    const registerUser = (user) => {
-        api.post('register', {
-            headers: {
-                'content-type': 'application/json'
-            },
-            json: {
-                ...user,
-                point: 0,
-                orders: [],
-                carts: [],
-                city: '',
-                home: '',
-                street: ''
-            }
-        }).json().then((res) => {
-            setUser(res.user);
-            navigate('/');
-            localStorage.setItem('user', JSON.stringify(res.user))
-        })
-    };
 
-    const loginUser = (user) => {
-        api.post('login', {
-            headers: {
-                'content-type': 'application/json'
-            },
-            json: {
-                ...user
-            }
-        }).json().then((res) => {
-            setUser(res.user);
-            navigate('/');
-            localStorage.setItem('user', JSON.stringify(res.user))
-        })
-    };
+
+
 
     const logOutUser = () => {
         setUser({email: ''});
@@ -199,7 +167,7 @@ export const Context = (props) => {
 
 
     let value = {
-        user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
+        user, setUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
         search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
 

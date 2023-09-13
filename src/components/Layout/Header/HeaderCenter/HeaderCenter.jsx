@@ -9,11 +9,15 @@ import {useContext, useEffect, useState} from "react";
 import {CustomContext} from "../../../../config/context/context";
 import api from "../../../../config/api/api";
 import {useGetProductsQuery} from "../../../../redux/api/api.js";
+import {useDispatch, useSelector} from "react-redux";
+import {logOutAcc} from "../../../../redux/reducers/user.js";
 
 
 const HeaderCenter = () => {
 
-    const {user, logOutUser} = useContext(CustomContext);
+    // const {user, logOutUser} = useContext(CustomContext);
+
+    const {user} = useSelector(store => store.user)
 
     const location = useLocation();
     // const [result, setResult] = useState([]);
@@ -28,6 +32,8 @@ const HeaderCenter = () => {
 
 
     const navigate = useNavigate()
+
+    const dispatch = useDispatch()
 
     // useEffect(() => {
     //     const delaySearch = setTimeout(() => {
@@ -103,7 +109,10 @@ const HeaderCenter = () => {
                     <LiaOpencart/>
                 </Link>
                 {
-                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
+                    location.pathname === '/room' ? <span onClick={() => {
+                        dispatch(logOutAcc())
+                        localStorage.removeItem('user')
+                    }} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
                         <RiUserHeartLine/>
                     </Link>
                 }
