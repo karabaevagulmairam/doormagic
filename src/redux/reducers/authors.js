@@ -8,7 +8,7 @@ export const getAllAuthors = createAsyncThunk(
     async (filter,thunkAPI) => {
         try {
             const res = await axios(`${instance}authors`)
-            return res.guls
+            return res.data
         } catch (error) {
             return thunkAPI.rejectWithValue(error)
         }
@@ -18,7 +18,7 @@ export const getAllAuthors = createAsyncThunk(
 const authorsSlice = createSlice({
     name: "authors",
     initialState: {
-        guls: [],
+        data: [],
         filter: {
             limit: 6
         }
@@ -31,7 +31,7 @@ const authorsSlice = createSlice({
             })
             .addCase(getAllAuthors.fulfilled, (state, {payload}) => {
                 state.isLoding = 'done'
-                state.guls = payload
+                state.data = payload
             })
             .addCase(getAllAuthors.rejected, (state, {payload}) => {
                 state.isLoding = 'false'

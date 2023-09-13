@@ -108,7 +108,6 @@ export const Context = (props) => {
 
     const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
 
-
     const getCatalog = () =>{ api(`products`).json().then((res)=> setCatalog(res))};
     const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
 

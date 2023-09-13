@@ -8,48 +8,53 @@ import {LiaOpencart} from   "react-icons/lia"
 import {useContext, useEffect, useState} from "react";
 import {CustomContext} from "../../../../config/context/context";
 import api from "../../../../config/api/api";
+import {useGetProductsQuery} from "../../../../redux/api/api.js";
 
 
 const HeaderCenter = () => {
 
-    const {user, logOutUser, search, setSearch} = useContext(CustomContext);
+    const {user, logOutUser} = useContext(CustomContext);
 
     const location = useLocation();
-    const [result, setResult] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
-    const [searchQuery, setSearchQuery] = useState(search);
-    const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
+    // const [result, setResult] = useState([]);
+    // const [isLoading, setIsLoading] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
+    // const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
+
     const [isSearchResultsOpen, setIsSearchResultsOpen] = useState(false);
+
+
+    const {data, isLoading} = useGetProductsQuery({title_like: searchQuery})
 
 
     const navigate = useNavigate()
 
-    useEffect(() => {
-        const delaySearch = setTimeout(() => {
-            setDebouncedSearchQuery(searchQuery);
-        }, 500);
+    // useEffect(() => {
+    //     const delaySearch = setTimeout(() => {
+    //         setDebouncedSearchQuery(searchQuery);
+    //     }, 500);
+    //
+    //     return () => clearTimeout(delaySearch);
+    // }, [searchQuery]);
 
-        return () => clearTimeout(delaySearch);
-    }, [searchQuery]);
-
-    useEffect(() => {
-        if (debouncedSearchQuery) {
-            setIsLoading(true);
-            api(`products?title_like=${debouncedSearchQuery}`)
-                .json()
-                .then((res) => {
-                    setSearch(debouncedSearchQuery);
-                    setResult(res);
-                    setIsLoading(false);
-                })
-                .catch((error) => {
-                    console.error("Ошибка при выполнении поиска:", error);
-                    setIsLoading(false);
-                });
-        } else {
-            setResult([]);
-        }
-    }, [debouncedSearchQuery]);
+    // useEffect(() => {
+    //     if (debouncedSearchQuery) {
+    //         setIsLoading(true);
+    //         api(`products?title_like=${debouncedSearchQuery}`)
+    //             .json()
+    //             .then((res) => {
+    //                 setSearch(debouncedSearchQuery);
+    //                 setResult(res);
+    //                 setIsLoading(false);
+    //             })
+    //             .catch((error) => {
+    //                 console.error("Ошибка при выполнении поиска:", error);
+    //                 setIsLoading(false);
+    //             });
+    //     } else {
+    //         setResult([]);
+    //     }
+    // }, [debouncedSearchQuery]);
 
     const handleInputChange = (e) => {
         const value = e.target.value;
@@ -75,13 +80,14 @@ const HeaderCenter = () => {
                     onChange={handleInputChange}
                 />
                 {isLoading && <div className="loading-indicator">Идет поиск...</div>}
-                {isSearchResultsOpen && result.length > 0 && (
+                {isSearchResultsOpen && data.length > 0 && (
                     <ul className="header__center-results">
-                        {result.map((item) => (
+                        {data.map((item) => (
                             <li key={item.id}>
                                 <p onClick={() => {
                                     navigate(`/product/${item.id}`);
-                                    setIsSearchResultsOpen(false); // Закрываем результаты поиска после выбора книги
+                                    setIsSearchResultsOpen(false);
+                                    setSearchQuery('')
                                 }}>{item.title}</p>
                             </li>
                         ))}

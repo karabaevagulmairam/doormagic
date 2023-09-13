@@ -18,7 +18,7 @@ const Product = () => {
 
     useEffect(() => {
         dispatch(getOneBook(params.id))
-    },[])
+    },[params.id])
 
     console.log(product)
 

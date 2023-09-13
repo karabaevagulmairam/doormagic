@@ -29,7 +29,6 @@ const Hit = () => {
     //     dispatch(getAllBooks())
     // },[])
 
-    console.log(data)
 
 
 
