@@ -15,23 +15,42 @@ const HeaderCenter = () => {
     const {user, logOutUser, search, setSearch} = useContext(CustomContext);
 
     const location = useLocation();
-
-    const [result, setResult] = useState([])
-
-    const getSearch = (search) => {
-        api(`products?title_like=${search}`).json()
-            .then((res) => {
-                setSearch(res)
-                setResult(res)
-            })
-
-    }
+    const [result, setResult] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [searchQuery, setSearchQuery] = useState(search);
+    const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
 
     useEffect(() => {
-        getSearch(search)
-    },[])
+        const delaySearch = setTimeout(() => {
+            setDebouncedSearchQuery(searchQuery);
+        }, 500);
 
-    console.log(search)
+        return () => clearTimeout(delaySearch);
+    }, [searchQuery]);
+
+    useEffect(() => {
+        if (debouncedSearchQuery) {
+            setIsLoading(true);
+            api(`products?title_like=${debouncedSearchQuery}`)
+                .json()
+                .then((res) => {
+                    setSearch(debouncedSearchQuery);
+                    setResult(res);
+                    setIsLoading(false);
+                })
+                .catch((error) => {
+                    console.error("Ошибка при выполнении поиска:", error);
+                    setIsLoading(false);
+                });
+        } else {
+            setResult([]);
+        }
+    }, [debouncedSearchQuery]);
+
+    const handleInputChange = (e) => {
+        const value = e.target.value;
+        setSearchQuery(value);
+    };
 
     return (
         <nav className="header__center">
@@ -44,28 +63,39 @@ const HeaderCenter = () => {
                     <BsSearch/>
                 </span>
                 <input
-                    value={search}
+                    value={searchQuery}
                     type="search"
                     className="header__center-field"
                     placeholder="Поиск"
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={handleInputChange}
                 />
-                
+                {isLoading && <div className="loading-indicator">Идет поиск...</div>}
+                {result.length > 0 && (
+
+                        <ul className="header__center-results">
+                            {result.map((item) => (
+                                <li key={item.id}>
+                                    <Link to={`/product/${item.id}`}>{item.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                )}
             </div>
 
             <div className="header__center-icons">
-                {
-                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
-                        <RiUserHeartLine/>
-                    </Link>
-                }
-
                 <Link to={'/favorites'} className="header__center-icon">
                     <BiBookHeart/>
                 </Link>
                 <Link to={user.email?.length ? '/cart' : '/login'} className="header__center-icon">
                     <LiaOpencart/>
                 </Link>
+                {
+                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
+                        <RiUserHeartLine/>
+                    </Link>
+                }
+
             </div>
         </nav>
     );

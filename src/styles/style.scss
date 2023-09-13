@@ -36,7 +36,22 @@ button{
   margin-top: 20px;
 }
 
+.skeleton{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+  border: 1px solid gray;
+  &__img{
+    margin-top: 10px;
+  }
+  &__block{
+    height: 40px;
+  }
+}
 
+@import "authors";
 @import "author";
 @import "header";
 @import "form";
@@ -50,4 +65,7 @@ button{
 @import "cataloge";
 @import "checkout";
 @import "authorSlide";
-@import "authors";
+@import "delivery";
+@import "room";
+@import "footer";
+@import "sale";

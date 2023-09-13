@@ -6,15 +6,33 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import Card from "../Card/Card";
 import {CustomContext} from "../../config/context/context";
+import CardSkeleton from "../CardSkeleton/CardSkeleton";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllBooks} from "../../redux/reducers/books";
+import {instance} from "../../config/api/api";
+import {useGetProductsQuery} from "../../redux/api/api";
 
 
 const Hit = () => {
 
-    const{hit, getHit} = useContext(CustomContext);
+    // const {hit, getHit, isLoading} = useContext(CustomContext);
+    //
+    // useEffect(()=>{
+    //     getHit()
+    // },[]);
 
-    useEffect(()=>{
-        getHit()
-    },[]);
+
+
+    const {data, isLoading} = useGetProductsQuery({_limit: 12})
+
+    // useEffect(() => {
+    //     dispatch(getAllBooks())
+    // },[])
+
+    console.log(data)
+
+
+
 
 
 
@@ -35,9 +53,10 @@ const Hit = () => {
                     >
 
                         {
-                            hit.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <SwiperSlide>
+                            isLoading ? <CardSkeleton cards={12}/> :
+                            data.map((item, idx)=>(
+                                <Fragment >
+                                    <SwiperSlide key={item.id || idx}>
                                         <Card item={item}/>
                                     </SwiperSlide>
                                 </Fragment>

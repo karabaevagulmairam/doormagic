@@ -4,26 +4,38 @@ import ProductInfo from "../../components/ProductInfo/ProductInfo";
 import {useParams} from "react-router-dom"
 import api from "../../config/api/api";
 import Hit from "../../components/Hit/Hit";
+import {useDispatch, useSelector} from "react-redux";
+import {getOneBook} from "../../redux/reducers/oneBook";
+
 
 
 const Product = () => {
 
-    const {id} = useParams();
+    const params = useParams();
+    const dispatch = useDispatch()
 
-    const [product, setProduct] = useState({});
-
-    const getOne = (id) => {
-        api(`products/${id}`).json()
-            .then((res) => setProduct(res))
-    }
+    const {product} = useSelector(store => store.book)
 
     useEffect(() => {
-        getOne(id)
-    }, []);
+        dispatch(getOneBook(params.id))
+    },[])
 
-    console.log(product);
+    console.log(product)
 
-    if ('id' in product) {
+    // const [product, setProduct] = useState({});
+    //
+    // const getOne = (id) => {
+    //     api(`products/${id}`).json()
+    //         .then((res) => setProduct(res))
+    // }
+    //
+    //
+    // useEffect(() => {
+    //     getOne(id)
+    // }, [id]);
+    //
+    // console.log(product);
+
         return (
             <>
                 <section className="product">
@@ -32,6 +44,7 @@ const Product = () => {
                             <ProductSlider product={product}/>
                             <ProductInfo product={product}/>
                         </div>
+
 
                         <h2 className="product__info-titleDesc">Описание книги</h2>
                         <p className="product__info-desc">
@@ -43,9 +56,6 @@ const Product = () => {
             </>
 
         );
-    } else {
-        return <h2>Loading...</h2>
-    }
 
 };
 

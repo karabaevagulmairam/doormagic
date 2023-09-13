@@ -7,13 +7,17 @@ export const CustomContext = createContext();
 export const Context = (props) => {
 
     const [user, setUser] = useState({email: ''});
-    const [authorCatalog, setAuthorCatalog] =useState([]);
     const [favorites, setFavorites] = useState([]);
-    const [authorSlide, setAuthorSlide] =useState([]);
     const [hit, setHit] =useState([]);
     const [catalog, setCatalog] =useState([]);
+    const [authorCatalog, setAuthorCatalog] =useState([]);
     const [search, setSearch] = useState('');
+
+    const [authorSlide, setAuthorSlide] =useState([]);
     const [author, setAuthor] =useState([]);
+
+    const [isLoading, setIsLoading] = useState('true');
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -76,8 +80,12 @@ export const Context = (props) => {
 
     const getHit = () =>{
         api('products?_sort=rating&_order=desc&_limit=12').json()
-            .then((res)=>setHit(res))
+            .then((res)=> {
+                setHit(res);
+                setIsLoading(false)
+            })
     };
+
 
     //end hit
 
@@ -96,9 +104,14 @@ export const Context = (props) => {
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites))
     }, [favorites]);
-    const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
-    const getCatalog = () =>{ api('products').json().then((res)=>setCatalog(res))};
+
+
     const getAuthorSlide = () =>{ api('authors').json().then((res)=>setAuthorSlide(res))};
+
+
+    const getCatalog = () =>{ api(`products`).json().then((res)=> setCatalog(res))};
+    const getAuthorCatalog = (author) =>{ api(`products?author=${author}`).json().then((res)=>setAuthorCatalog(res))};
+
     //end favorites
     const getAuthor = () =>{ api('authors').json().then((res)=>setAuthor(res))};
 
@@ -175,11 +188,24 @@ export const Context = (props) => {
 
     //end countCarts
 
+
+    //author functions
+
+    const getOneAuthor = (id) => {
+        api(`authors/${id}`).json()
+            .then((res) => setAuthor(res))
+    }
+
+
+
+
     let value = {
         user, setUser, registerUser, loginUser, logOutUser, getHit, hit, addCarts,
         addCartsCountPlus, removeCartsCountMinus, favoritesHandler, favorites,
         search, setSearch , getCatalog ,catalog , getAuthorSlide , authorSlide, author, getAuthor, addOrder,
-        book,getBook
+
+        setIsLoading, isLoading, getOneAuthor, setAuthorCatalog, authorCatalog, getAuthorCatalog
+
     };
 
     return <CustomContext.Provider value={value}>

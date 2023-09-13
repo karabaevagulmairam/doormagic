@@ -3,6 +3,9 @@ import {CustomContext} from "../../config/context/context";
 import {Swiper,SwiperSlide} from "swiper/react";
 import Card from "../../components/Card/Card";
 import { Pagination, Autoplay } from 'swiper/modules';
+import book from "../../assets/book.png"
+
+
 const Favorites = () => {
 
     const {favorites} = useContext(CustomContext);
@@ -65,7 +68,14 @@ const Favorites = () => {
             </section>
         );
     } else {
-        return <h2 className="hit__title-fav">Список избранных товаров пуст</h2>
+        return (
+            <section className="hit__title-section">
+                <div className="hit__title-img">
+                    <img src={book} alt=""/>
+                </div>
+                <h2 className="hit__title-fav">Ваш список избранных товаров пуст</h2>
+            </section>
+        )
     }
 };
 

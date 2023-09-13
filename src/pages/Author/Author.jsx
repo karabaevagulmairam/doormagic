@@ -9,14 +9,38 @@ const Author = () => {
 
     const {id} = useParams();
 
-    const [author, setAuthor] = useState({});
-    const{catalog, getCatalog} = useContext(CustomContext);
+    const{authorCatalog, getAuthorCatalog, author, getOneAuthor} = useContext(CustomContext);
+
     useEffect(() => {
-        api(`authors/${id}`).json()
-            .then((res) => setAuthor(res))
+        getOneAuthor(id)
     }, []);
 
+    useEffect(()=>{
+        getAuthorCatalog(author.name)
+    },[author]);
+
     console.log(author)
+
+    console.log(authorCatalog)
+    const addPoint = () => {
+
+        const rating = {
+            count: author.ratingView.count + 1,
+            point: author.ratingView.point + 10
+        }
+
+        api(`authors/${id}`,{
+            method:'PATCH',
+            headers: {
+                'content-type': 'application/json'
+            },
+            json:{
+                ratingView: rating
+            }
+        } )
+            .then(res => alert('все изменилось'))
+    }
+
 
     if ('id' in author) {
         return (
@@ -30,14 +54,17 @@ const Author = () => {
                                 <p className="author__desc">{author.description}</p>
                             </div>
                         </div>
-                        <h2 className="author__title">Все книги</h2>
-                        {
-                            catalog.map((item, idx)=>(
-                                <Fragment key={item.id || idx}>
-                                    <Card item={item}/>
-                                </Fragment>
-                            ))
-                        }
+                        <button onClick={addPoint}>добавить балл</button>
+                        <h2 className="author__title">Все книги автора</h2>
+                        <div className="catalog__row">
+                            {
+                                authorCatalog.map((item, idx)=>(
+                                    <Fragment key={item.id || idx}>
+                                        <Card item={item}/>
+                                    </Fragment>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </>

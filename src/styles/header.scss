@@ -34,6 +34,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    position: relative;
     &-search{
       width: 30%;
       position: relative;
@@ -70,6 +71,20 @@
     &-icon{
       color: #525252;
       font-size: 25px;
+    }
+    &-results {
+      position: absolute;
+      width: 100%;
+      background: #D3D3D3;
+      height: 200px;
+      overflow: scroll;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      a {
+        color: black;
+      }
     }
   }
   &__bot{

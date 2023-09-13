@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 //media
 import {MdEmail} from "react-icons/md"
 import {FiPhone} from "react-icons/fi"
@@ -17,13 +18,13 @@ const HeaderTop = () => {
                             </span>
                             support@deepmag.ru
                         </a>
-                        <a href="tel: +7 (919)-123-45-56" className="header__top-link">
+                        <a href="tel: +996 (779)-17-19-20" className="header__top-link">
                             <span>
                                 <FiPhone/>
                             </span>
-                            +7 (919)-123-45-56
+                            +996 (779)-17-19-20
                         </a>
-                        <a href="tel: +7 (919)-123-45-56" className="header__top-link">
+                        <a href="tel: +996 (779)-17-19-20" className="header__top-link">
                             <span>
                                 <RiWhatsappFill/>
                             </span>
@@ -33,12 +34,12 @@ const HeaderTop = () => {
                     </div>
                     <div className="header__top-delivery">
 
-                        <a href="#" className="header__top-link">
+                        <Link to="/delivery" className="header__top-link">
                             <span>
                                 <TbTruckDelivery/>
                             </span>
                             Доставка
-                        </a>
+                        </Link>
                     </div>
                 </nav>
             </div>
