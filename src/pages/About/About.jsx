@@ -32,8 +32,8 @@ const About = () => {
                 <ol className="about__list">
                     <li className="about__desc">Новинки.DEEPMAG.kg - первый интернет-магазин в Кыргызстане, где появляются свежие книжные хиты.</li>
                     <li className="about__desc">Доставка. Мы доставляем по всему Кыргызстану.</li>
-                    <li className="about__desc">Упаковка. Наши книги всегда доходят в отличном состоянии, спасибо надежной упаковке.</li>
-                    <li className="about__desc">Кэшбэк. Для постоянных покупателей book24.ru - самое выгодное место в мире.</li>
+                    <li className="about__desc">Упаковка. Наши книги всегда доходят в отличном состоянии, в надежной упаковке.</li>
+                    <li className="about__desc">Кэшбэк. Для постоянных покупателей DEEPMAG.kg - самое выгодное место в мире.</li>
                 </ol>
 
                 <h2 className="about__subtitle">

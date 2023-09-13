@@ -8,7 +8,6 @@ import Card from "../Card/Card";
 import {CustomContext} from "../../config/context/context";
 import CardSkeleton from "../CardSkeleton/CardSkeleton";
 
-
 const Hit = () => {
 
     const {hit, getHit, isLoading} = useContext(CustomContext);
@@ -33,7 +32,6 @@ const Hit = () => {
                         }
                         speed={1500}
                         slidesPerView={5}
-                        spaceBetween={30}
                         modules={[Pagination, Autoplay]}
                         className="mySwiper"
                     >
