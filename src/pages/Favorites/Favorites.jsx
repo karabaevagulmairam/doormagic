@@ -4,15 +4,17 @@ import {Swiper,SwiperSlide} from "swiper/react";
 import Card from "../../components/Card/Card";
 import { Pagination, Autoplay } from 'swiper/modules';
 import book from "../../assets/book.png"
+import {useSelector} from "react-redux";
 
 
 const Favorites = () => {
 
-    const {favorites} = useContext(CustomContext);
+    // const {favorites} = useContext(CustomContext);
 
+    const {user} = useSelector(store => store.user)
     const [page, setPage] = useState(1);
 
-    let favoritesPages = new Array(Math.ceil(favorites.length / 4)).fill(null, 0);
+    let favoritesPages = new Array(Math.ceil(user.favorites.length / 4)).fill(null, 0);
 
     useEffect(() => {
         if (page > favoritesPages.length) {
@@ -20,9 +22,8 @@ const Favorites = () => {
         }
     }, [favoritesPages]);
 
-    console.log(favorites);
 
-    if (favorites.length) {
+    if (user.favorites.length) {
         return (
             <section className="hit">
                 <div className="container">
@@ -45,7 +46,7 @@ const Favorites = () => {
                     >
 
                         {
-                            favorites.filter((item, idx) => idx >= page * 4 - 4 && idx < page * 4).map((item)=>(
+                            user.favorites.filter((item, idx) => idx >= page * 4 - 4 && idx < page * 4).map((item)=>(
                                 <Fragment key={item.id || idx}>
                                     <SwiperSlide>
                                         <Card item={item}/>

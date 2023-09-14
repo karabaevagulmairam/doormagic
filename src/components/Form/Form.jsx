@@ -51,6 +51,7 @@ const Form = () => {
             point: 0,
             orders: [],
             carts: [],
+            favorites: [],
             city: '',
             home: '',
             street: ''

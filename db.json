@@ -606,40 +606,19 @@
       "id": 4
     },
     {
-      "email": "akdil.phanti@gmail.com",
-      "password": "$2a$10$NaMlQUtvvbvhYGf0hLpnL.78egsFE8sbspqooL1la5/ZpmJkP5yza",
-      "name": "Akdil",
-      "surname": "Кубанычбеков",
+      "email": "admin@mail.ru",
+      "password": "$2a$10$DqC/x.1Lsdk3FaJwiYedU.L5sOuxYVw/1fIwDXE88TJ0LanWuZuBi",
+      "name": "Jane",
+      "surname": "sss",
       "phone": "+996(123)12-31-23",
       "point": 0,
       "orders": [],
       "carts": [],
+      "favorites": [],
       "city": "",
       "home": "",
       "street": "",
       "id": 5
-    },
-    {
-      "email": "asdasd@gmail.com",
-      "password": "$2a$10$h3yMXVcltNeOC8R..Wsz4O1Oosj8xg.2o/6voL2C0BRIBnNLn20Dq",
-      "name": "Jane",
-      "surname": "asdas",
-      "phone": "+996(233)41-23-12",
-      "id": 6
-    },
-    {
-      "email": "admin@mail.ru",
-      "password": "$2a$10$mOz.l/r.47QdU6uJTagbwu0D/clNVFG4sTheeStR1EjMr.SKjuMJy",
-      "name": "Jane",
-      "surname": "asdas",
-      "phone": "+996(312)31-23-12",
-      "point": 0,
-      "orders": [],
-      "carts": [],
-      "city": "",
-      "home": "",
-      "street": "",
-      "id": 7
     }
   ],
   "products": [
