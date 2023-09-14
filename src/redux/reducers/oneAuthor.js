@@ -8,8 +8,7 @@ export const getOneAuthor = createAsyncThunk(
     async (id,thunkAPI) => {
         try {
             const res = await axios(`${instance}authors/${id}`)
-            console.log(res.guls)
-            return res.guls
+            return res.data
         } catch (error) {
             return thunkAPI.rejectWithValue(error)
         }
@@ -19,7 +18,7 @@ export const getOneAuthor = createAsyncThunk(
 const authorSlice = createSlice({
     name: "oneAuthor",
     initialState: {
-        gul: []
+        author: []
     },
     reducers: {},
     extraReducers: (builder) => {
@@ -29,7 +28,7 @@ const authorSlice = createSlice({
             })
             .addCase(getOneAuthor.fulfilled, (state, {payload}) => {
                 state.isLoding = 'done'
-                state.gul = payload
+                state.author = payload
             })
             .addCase(getOneAuthor.rejected, (state, {payload}) => {
                 state.isLoding = 'false'

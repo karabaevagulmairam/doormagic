@@ -5,6 +5,10 @@ const ACard = ({item}) => {
 
     const location = useLocation();
 
+    const rating = item?.ratingView?.count + item?.ratingView?.point / item?.ratingView?.count
+
+    console.log(rating)
+
     return (
         <div className="authors__aCard">
             <Link to={`/author/${item.id}`}>
@@ -13,7 +17,7 @@ const ACard = ({item}) => {
 
             <div className="authors__aCard-info">
                 <h3 className="authors__aCard-title">{item.name}</h3>
-                <p className="authors__aCard-book">{item.rating} книг</p>
+                <p className="authors__aCard-book">{Math.round(rating)} книг</p>
             </div>
         </div>
     );
