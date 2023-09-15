@@ -1,16 +1,12 @@
-import React, {useContext} from 'react';
+
 import {AiOutlineHeart, AiFillHeart} from "react-icons/ai";
 import {Link, useNavigate, useLocation} from 'react-router-dom'
 import {LiaOpencart} from   "react-icons/lia"
-import {CustomContext} from "../../config/context/context";
 import {useDispatch, useSelector} from "react-redux";
 import {addCart, addFavorites, deleteCard} from "../../redux/reducers/user.js";
 
 const Card = ({item}) => {
 
-    const {favorites, favoritesHandler} = useContext(CustomContext);
-
-    // const {addCarts, user} = useContext(CustomContext);
 
     const dispatch = useDispatch()
     const {user} = useSelector(store => store.user)
@@ -21,9 +17,6 @@ const Card = ({item}) => {
 
     return (
             <div className="cards">
-
-
-
 
                 <div className="cards__row">
                     <div className="card">

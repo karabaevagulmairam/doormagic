@@ -1,5 +1,4 @@
-import React, {Fragment, useContext, useEffect, useState} from 'react';
-import {CustomContext} from "../../config/context/context";
+import React, {Fragment, useEffect, useState} from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
 import Card from "../../components/Card/Card";
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -9,7 +8,6 @@ import {useSelector} from "react-redux";
 
 const Favorites = () => {
 
-    // const {favorites} = useContext(CustomContext);
 
     const {user} = useSelector(store => store.user)
     const [page, setPage] = useState(1);

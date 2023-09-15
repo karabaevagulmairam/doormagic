@@ -1,12 +1,9 @@
-import React, {useContext} from 'react';
+
 import {Link} from "react-router-dom";
-import {CustomContext} from "../../config/context/context";
 import {useDispatch, useSelector} from "react-redux";
 import {addCount, deleteCard, deleteCount} from "../../redux/reducers/user.js";
 
 const Cart = () => {
-
-    const {removeCartsCountMinus, addCartsCountPlus} = useContext(CustomContext);
 
 
 

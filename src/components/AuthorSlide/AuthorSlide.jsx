@@ -22,7 +22,6 @@ const AuthorSlide = () => {
 
     const {data} = useGetAuthorsQuery({_limit: 12})
 
-    console.log(data)
 
 
 

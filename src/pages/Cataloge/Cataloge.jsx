@@ -1,8 +1,7 @@
-import React, {Fragment, useContext, useEffect, useState} from 'react';
-import {CustomContext} from "../../config/context/context";
+import {Fragment, useEffect, useState} from 'react';
 import Card from "../../components/Card/Card";
 import {Pagination} from "antd"
-import {useGetProductsQuery} from "../../redux/api/api.js";
+
 import {useDispatch, useSelector} from "react-redux";
 import {getAllBooks} from "../../redux/reducers/books.js";
 
@@ -10,7 +9,6 @@ import {getAllBooks} from "../../redux/reducers/books.js";
 const Cataloge = () => {
 
 
-    // const {catalog, getCatalog} = useContext(CustomContext);
 
     const dispatch = useDispatch()
     const [category, setCategory] = useState('all');
