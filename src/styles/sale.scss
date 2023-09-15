@@ -10,4 +10,41 @@
   .banner__img{
     height: 320px;
   }
+  &__row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 50px 0;
+  }
+  &__card{
+    background: #444B59;
+    padding: 30px;
+    display: flex;
+    column-gap: 20px;
+    &-img{
+      width: 100px;
+      height: 100px;
+    }
+    &-info{
+
+    }
+    &-title{
+
+    }
+    &-desc{
+
+    }
+    &-time{
+
+    }
+    &-end{
+
+    }
+    &-subtitle{
+
+    }
+    &-btn{
+
+    }
+  }
 }

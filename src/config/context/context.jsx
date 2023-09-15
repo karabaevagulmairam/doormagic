@@ -12,7 +12,7 @@ export const Context = (props) => {
     const [catalog, setCatalog] =useState([]);
     const [authorCatalog, setAuthorCatalog] =useState([]);
     const [search, setSearch] = useState('');
-
+    const [sale, setSale] = useState([]);
     const [authorSlide, setAuthorSlide] =useState([]);
     const [author, setAuthor] =useState([]);
 
