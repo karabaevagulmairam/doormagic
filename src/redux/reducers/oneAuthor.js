@@ -8,18 +8,33 @@ export const getOneAuthor = createAsyncThunk(
     async (id,thunkAPI) => {
         try {
             const res = await axios(`${instance}authors/${id}`)
-            console.log(res.guls)
-            return res.guls
+            return res.data
         } catch (error) {
             return thunkAPI.rejectWithValue(error)
         }
     }
 )
 
+
+export const updateAuthorRating = createAsyncThunk(
+    "oneAuthor/updateAuthorRating",
+    // Ваша логика обновления рейтинга здесь
+    async ({ id, ratingData }, thunkAPI) => {
+        try {
+            const res = await axios.patch(`${instance}authors/${id}`, {
+                ratingView: ratingData, //[]
+            });
+            return res.data;
+        } catch (error) {
+            return thunkAPI.rejectWithValue(error);
+        }
+    }
+);
+
 const authorSlice = createSlice({
     name: "oneAuthor",
     initialState: {
-        gul: []
+        author: []
     },
     reducers: {},
     extraReducers: (builder) => {
@@ -29,12 +44,16 @@ const authorSlice = createSlice({
             })
             .addCase(getOneAuthor.fulfilled, (state, {payload}) => {
                 state.isLoding = 'done'
-                state.gul = payload
+                state.author = payload
             })
             .addCase(getOneAuthor.rejected, (state, {payload}) => {
                 state.isLoding = 'false'
                 state.error = payload
             })
+            .addCase(updateAuthorRating.fulfilled, (state, { payload }) => {
+                // Обновите состояние автора с новым рейтингом
+                state.author = payload;
+            });
 
     }
 

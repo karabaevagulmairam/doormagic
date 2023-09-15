@@ -1,10 +1,15 @@
 import React from 'react';
 import {useContext} from "react";
 import {CustomContext} from "../../config/context/context";
+import {useSelector} from "react-redux";
 
 const Room = (item) => {
 
-    const {user} = useContext(CustomContext);
+    // const {user} = useContext(CustomContext);
+
+    const {user} = useSelector(store => store.user)
+
+    console.log(user)
 
     return (
         <section className='room'>

@@ -5,56 +5,32 @@ import {BsSearch} from "react-icons/bs"
 import {RiUserHeartLine} from "react-icons/ri"
 import {BiBookHeart} from "react-icons/bi"
 import {LiaOpencart} from   "react-icons/lia"
-import {useContext, useEffect, useState} from "react";
-import {CustomContext} from "../../../../config/context/context";
-import api from "../../../../config/api/api";
+import {useState, useEffect} from "react";
 import {useGetProductsQuery} from "../../../../redux/api/api.js";
+import {useDispatch, useSelector} from "react-redux";
+import {logOutAcc} from "../../../../redux/reducers/user.js";
 
 
 const HeaderCenter = () => {
 
-    const {user, logOutUser} = useContext(CustomContext);
-
+    const { user } = useSelector((store) => store.user);
     const location = useLocation();
-    // const [result, setResult] = useState([]);
-    // const [isLoading, setIsLoading] = useState(false);
-    const [searchQuery, setSearchQuery] = useState('');
-    // const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(search);
-
+    const [searchQuery, setSearchQuery] = useState("");
     const [isSearchResultsOpen, setIsSearchResultsOpen] = useState(false);
+    const [debouncedQuery, setDebouncedQuery] = useState("");
+    const { data, isLoading } = useGetProductsQuery({ title_like: debouncedQuery });
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+        const debounceTimeout = setTimeout(() => {
+            setDebouncedQuery(searchQuery);
+        }, 300); // Adjust the debounce delay as needed (e.g., 300 milliseconds).
 
-    const {data, isLoading} = useGetProductsQuery({title_like: searchQuery})
-
-
-    const navigate = useNavigate()
-
-    // useEffect(() => {
-    //     const delaySearch = setTimeout(() => {
-    //         setDebouncedSearchQuery(searchQuery);
-    //     }, 500);
-    //
-    //     return () => clearTimeout(delaySearch);
-    // }, [searchQuery]);
-
-    // useEffect(() => {
-    //     if (debouncedSearchQuery) {
-    //         setIsLoading(true);
-    //         api(`products?title_like=${debouncedSearchQuery}`)
-    //             .json()
-    //             .then((res) => {
-    //                 setSearch(debouncedSearchQuery);
-    //                 setResult(res);
-    //                 setIsLoading(false);
-    //             })
-    //             .catch((error) => {
-    //                 console.error("Ошибка при выполнении поиска:", error);
-    //                 setIsLoading(false);
-    //             });
-    //     } else {
-    //         setResult([]);
-    //     }
-    // }, [debouncedSearchQuery]);
+        return () => {
+            clearTimeout(debounceTimeout);
+        };
+    }, [searchQuery]);
 
     const handleInputChange = (e) => {
         const value = e.target.value;
@@ -103,7 +79,12 @@ const HeaderCenter = () => {
                     <LiaOpencart/>
                 </Link>
                 {
-                    location.pathname === '/room' ? <span onClick={logOutUser} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
+                    location.pathname === '/room' ?
+                        <span onClick={() => {
+                        dispatch(logOutAcc())
+                        localStorage.removeItem('user')
+                    }} className="header__center-log">Выйти</span> :
+                        <Link to={user.email ? '/room' : '/login'} className="header__center-icon">
                         <RiUserHeartLine/>
                     </Link>
                 }

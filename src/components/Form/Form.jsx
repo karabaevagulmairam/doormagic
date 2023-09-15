@@ -1,5 +1,5 @@
 import React, {useContext, useRef, useState} from 'react';
-import {Link, useLocation} from "react-router-dom"
+import {Link, useLocation, useNavigate} from "react-router-dom"
 import Logo from "../../assets/Logo.svg";
 import {useForm} from "react-hook-form";
 import InputMask from "react-input-mask"
@@ -8,19 +8,27 @@ import {CiUser} from "react-icons/ci"
 import {HiUser} from "react-icons/hi"
 import {BsPhone} from "react-icons/bs"
 import {AiFillEye, AiFillEyeInvisible} from "react-icons/ai"
-import api from "../../config/api/api";
+import api, {instance} from "../../config/api/api";
 import {CustomContext} from "../../config/context/context";
 import logo from "../../assets/logo.jpg"
+import axios from "axios";
+import {useDispatch} from "react-redux";
+import {loginAcc} from "../../redux/reducers/user.js";
 
 const Form = () => {
 
-    const [passwordView, setPasswordView] = useState(false);
 
-    const {registerUser, loginUser} = useContext(CustomContext);
+
+    // const {registerUser, loginUser} = useContext(CustomContext);
 
     const password = useRef();
-
+    const [passwordView, setPasswordView] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate()
+
+
+    const dispatch = useDispatch()
+
 
     const {
         register,
@@ -36,6 +44,32 @@ const Form = () => {
 
     password.current = watch("password");
 
+
+    const registerUser = (user) => {
+        axios.post(`${instance}register`, {
+            ...user,
+            point: 0,
+            orders: [],
+            carts: [],
+            favorites: [],
+            city: '',
+            home: '',
+            street: ''
+        }).then((res) => {
+            dispatch(loginAcc(res.data.user))
+            localStorage.setItem('user', JSON.stringify(res.data.user))
+            navigate('/')
+        })
+    };
+
+
+    const loginUser = (user) => {
+        axios.post(`${instance}login`, user).then((res) => {
+            dispatch(loginAcc(res.data.user))
+            localStorage.setItem('user', JSON.stringify(res.data.user))
+            navigate('/')
+        })
+    };
 
 
     const submitForm = (data) => {

@@ -1,13 +1,14 @@
-import React, {useContext, useEffect} from 'react';
+
 import {Link, useNavigate} from 'react-router-dom';
 import {AiOutlineHeart, AiFillHeart} from "react-icons/ai";
 import {LiaOpencart} from   "react-icons/lia"
-import {CustomContext} from "../../config/context/context";
+import {useDispatch, useSelector} from "react-redux";
+import {addCart, addFavorites} from "../../redux/reducers/user.js";
 
 const ProductInfo = ({product}) => {
 
 
-    const {addCarts, user, favorites, favoritesHandler, authorSlide, getAuthorSlide} = useContext(CustomContext);
+    // const {addCarts, user, favorites, favoritesHandler, authorSlide, } = useContext(CustomContext);
 
 
     // useEffect(()=>{
@@ -17,6 +18,10 @@ const ProductInfo = ({product}) => {
     // const oneAuthor = authorSlide.filter((item) => item.name === product.author)
 
     // console.log(oneAuthor)
+
+
+    const dispatch = useDispatch()
+    const {user} = useSelector(store => store.user)
 
     const navigate = useNavigate();
 
@@ -52,7 +57,7 @@ const ProductInfo = ({product}) => {
                                     </button>
                                     : <button type="button" className="cart__bottom-order" onClick={() => {
                                         if ('id' in user){
-                                            addCarts(product)
+                                            dispatch(addCart(product))
                                         } else{
                                             navigate('/login')
                                         }
@@ -60,9 +65,9 @@ const ProductInfo = ({product}) => {
                                         <span className="card__cart"><LiaOpencart size={17}/></span>
                                     </button>
                             }
-                            <button className="cart__bottom-order product__info-fav" type='submit' onClick={() => favoritesHandler(product)}>
+                            <button className="cart__bottom-order product__info-fav" type='submit' onClick={() => dispatch(addFavorites(product))}>
                                 {
-                                    favorites.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
+                                    user.favorites.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
                                 } В ИЗБРАННОЕ
                             </button>
                         </div>

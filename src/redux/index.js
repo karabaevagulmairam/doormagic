@@ -5,6 +5,7 @@ import authors from "./reducers/authors.js";
 import author from "./reducers/oneBook.js";
 import sale from "./reducers/oneSale.js";
 import sales from "./reducers/sale.js";
+import user from "./reducers/user.js";
 import {apiSlice} from "./api/api";
 
 export const store = configureStore({
@@ -15,6 +16,7 @@ export const store = configureStore({
         author,
         sale,
         sales,
+        user,
         [apiSlice.reducerPath]: apiSlice.reducer
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),

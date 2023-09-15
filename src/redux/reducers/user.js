@@ -2,6 +2,9 @@ import {createSlice,createAsyncThunk} from "@reduxjs/toolkit";
 import instance from "../../config/api/api.js"
 
 
+const user = JSON.parse(localStorage.getItem('user'))
+
+
 const userSlice = createSlice({
     name: "user",
     initialState: {
@@ -21,26 +24,61 @@ const userSlice = createSlice({
         },
     },
     reducers: {
+        loginAcc: (state,{payload}) => {
+            state.user = payload
+        },
+        logOutAcc: (state, {payload}) => {
+            state.user = {
+                id: "",
+                email: "",
+                name:  "",
+                surname: "",
+                phone: "",
+                carts: [],
+                orders:  [],
+                favorites:  [],
+                home:  "",
+                city:  "",
+                street:  "",
+                point: "",
+            }
+        },
         addCart: (state,{payload}) => {
-            state.user.cart.find(item => item.id === payload.id) ?
-                state.user.cart =  state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
-                : state.user.cart = [... state.user.cart,{...payload,count:1}]
-            localStorage.setItem("cart",JSON.stringify({
-                ...state.user.cart
+            state.user.carts.find(item => item.id === payload.id) ?
+                state.user.carts =  state.user.carts.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
+                : state.user.carts = [... state.user.carts,{...payload,count:1}]
+            localStorage.setItem("user",JSON.stringify({
+                ...state.user
             }))
         },
         deleteCard: (state,{payload}) => {
-            state.user.cart = state.user.cart.filter(item => item.id !== payload.id)
+            state.user.carts = state.user.carts.filter(item => item.id !== payload.id);
+            localStorage.setItem("user", JSON.stringify({ ...state.user }));
         },
         addCount:(state,{payload}) => {
-            state.user.cart = state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
+            state.user.carts = state.user.carts.map(item => item.id === payload.id ? {...payload,count:item.count + 1} : item)
+
+            localStorage.setItem("user", JSON.stringify({ ...state.user }));
         },
         deleteCount:(state,{payload}) => {
+            state.user.carts = state.user.carts.map(item => item.id === payload.id ? {...payload,count:item.count !==  1 ? item.count - 1 : 1 } : item)
+            localStorage.setItem("user", JSON.stringify({ ...state.user }));
+        },
+        addFavorites: (state, {payload}) => {
+            const existingItem = state.user.favorites.find(item => item.id === payload.id);
 
-            state.user.cart = state.user.cart.map(item => item.id === payload.id ? {...payload,count:item.count !==  1 ? item.count - 1 : 1 } : item)
+            if (existingItem) {
+                state.user.favorites = state.user.favorites.filter(item => item.id !== payload.id);
+            } else {
+                state.user.favorites = [...state.user.favorites, payload];
+            }
+
+            localStorage.setItem("user", JSON.stringify({ ...state.user }));
         }
     }
 })
 
 
+
+export const {loginAcc,logOutAcc, addCart, deleteCard, addCount, deleteCount, addFavorites} = userSlice.actions
 export default userSlice.reducer
