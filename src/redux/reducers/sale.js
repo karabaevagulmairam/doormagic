@@ -1,7 +1,7 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
 import {instance} from "../../config/api/api";
-import {getOneSale} from "./oneSale";
+
 
 
 export const getAllSales = createAsyncThunk(
@@ -39,6 +39,5 @@ const salesSlice = createSlice({
     }
 
 })
-console.log(getOneSale)
 
 export default salesSlice.reducer

@@ -48,7 +48,7 @@ const Card = ({item}) => {
 
                         <span className="card__fav" onClick={() => dispatch(addFavorites(item))}>
                         {
-                            user.favorites.some(el => el.id === item.id) ? <AiFillHeart color="red"/> : <AiOutlineHeart/>
+                            user?.favorites?.some(el => el.id === item.id) ? <AiFillHeart color="red"/> : <AiOutlineHeart/>
                         }
                     </span>
                     </div>
