@@ -1,13 +1,16 @@
-import React from 'react';
 import {Link, useLocation} from 'react-router-dom'
 
 const ACard = ({item}) => {
 
     const location = useLocation();
 
-    const rating = item?.ratingView?.count + item?.ratingView?.point / item?.ratingView?.count
+    const ratingCount = item?.ratingView?.length;
+    const ratingPoints = item?.ratingView?.reduce((acc, rec) => (acc += rec.point), 0)
 
-    console.log(rating)
+    console.log(ratingCount)
+    console.log(ratingPoints)
+
+    const ratingTotal = ratingPoints / ratingCount
 
     return (
         <div className="authors__aCard">
@@ -17,7 +20,7 @@ const ACard = ({item}) => {
 
             <div className="authors__aCard-info">
                 <h3 className="authors__aCard-title">{item.name}</h3>
-                <p className="authors__aCard-book">{Math.round(rating)} книг</p>
+                <p className="authors__aCard-book">{Math.round(ratingTotal)} книг</p>
             </div>
         </div>
     );

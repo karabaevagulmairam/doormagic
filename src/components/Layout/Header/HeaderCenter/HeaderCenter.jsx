@@ -79,10 +79,12 @@ const HeaderCenter = () => {
                     <LiaOpencart/>
                 </Link>
                 {
-                    location.pathname === '/room' ? <span onClick={() => {
+                    location.pathname === '/room' ?
+                        <span onClick={() => {
                         dispatch(logOutAcc())
                         localStorage.removeItem('user')
-                    }} className="header__center-log">Выйти</span> : <Link to={user.email?.length ? '/room' : '/login'} className="header__center-icon">
+                    }} className="header__center-log">Выйти</span> :
+                        <Link to={user.email ? '/room' : '/login'} className="header__center-icon">
                         <RiUserHeartLine/>
                     </Link>
                 }

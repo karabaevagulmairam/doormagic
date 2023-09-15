@@ -51,6 +51,11 @@ button{
   }
 }
 
+
+.star.selected {
+  color: gold;
+}
+
 @import "authors";
 @import "author";
 @import "header";

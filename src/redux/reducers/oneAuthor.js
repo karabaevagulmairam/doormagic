@@ -15,6 +15,22 @@ export const getOneAuthor = createAsyncThunk(
     }
 )
 
+
+export const updateAuthorRating = createAsyncThunk(
+    "oneAuthor/updateAuthorRating",
+    // Ваша логика обновления рейтинга здесь
+    async ({ id, ratingData }, thunkAPI) => {
+        try {
+            const res = await axios.patch(`${instance}authors/${id}`, {
+                ratingView: ratingData, //[]
+            });
+            return res.data;
+        } catch (error) {
+            return thunkAPI.rejectWithValue(error);
+        }
+    }
+);
+
 const authorSlice = createSlice({
     name: "oneAuthor",
     initialState: {
@@ -34,6 +50,10 @@ const authorSlice = createSlice({
                 state.isLoding = 'false'
                 state.error = payload
             })
+            .addCase(updateAuthorRating.fulfilled, (state, { payload }) => {
+                // Обновите состояние автора с новым рейтингом
+                state.author = payload;
+            });
 
     }
 

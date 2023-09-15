@@ -3,7 +3,7 @@ import api from "../../config/api/api";
 import {useParams} from "react-router-dom";
 import Card from "../../components/Card/Card";
 import {useDispatch, useSelector} from "react-redux";
-import {getOneAuthor} from "../../redux/reducers/oneAuthor.js";
+import {getOneAuthor, updateAuthorRating} from "../../redux/reducers/oneAuthor.js";
 import {useGetProductsQuery} from "../../redux/api/api.js";
 
 
@@ -12,57 +12,50 @@ const Author = () => {
     const {id} = useParams();
     const dispatch = useDispatch()
     const {author} = useSelector(store => store.author)
+    const {user} = useSelector(store => store.user)
     const [selectedRating, setSelectedRating] = useState(0);
 
     useEffect(() => {
         dispatch(getOneAuthor(id))
+        const existingReviewUser = author.ratingView?.find(review => parseInt(review.userId) === parseInt(user.id))
+        if(existingReviewUser){
+            setSelectedRating(existingReviewUser.point)
+        }
     }, [author.name])
 
     console.log(author.name)
 
-
     const {data} = useGetProductsQuery({author: author.name})
 
 
-
-
-
     const addPoint = () => {
-        // Проверяем, что пользователь выбрал рейтинг
-        if (selectedRating === 0) {
-            alert('Выберите рейтинг перед отправкой.');
-            return;
+        // Проверьте, что пользователь выбрал рейтинг и выполнил другие проверки, если необходимо
+        const existingReviewUser = author.ratingView.some(review => parseInt(review.userId) === parseInt(user.id))
+        if(existingReviewUser){
+            alert("Вы ранее оставляли отзыв")
+            return
         }
-
-        // Отправляем выбранный рейтинг на сервер
+        // Отправьте выбранный рейтинг на сервер
         const newRating = {
-            count: author.ratingView.count + 1,
-            point: author.ratingView.point + selectedRating,
+            point: selectedRating, userId: user.id
         };
 
-        api(`authors/${id}`, {
-            method: 'PATCH',
-            headers: {
-                'content-type': 'application/json',
-            },
-            json: {
-                ratingView: newRating,
-            },
-        })
-            .then((res) => {
-                alert('Рейтинг успешно добавлен.');
-                // Можно также обновить состояние автора с новым рейтингом, чтобы отобразить его без перезагрузки страницы
-                // dispatch(getOneAuthor(id));
+        dispatch(updateAuthorRating({
+            id: id, // ID автора
+            ratingData: [...author.ratingView, newRating], // Новый рейтинг
+        }))
+            .then(() => {
+                alert("Отзыв успешно добавлен.");
+                // Обновите состояние автора с новым рейтингом без перезагрузки страницы
             })
             .catch((error) => {
-                console.error('Ошибка при добавлении рейтинга:', error);
+                console.error("Ошибка при добавлении отзыва:", error);
             });
     };
 
 
     if ('id' in author) {
-        return (
-            <>
+        return (<>
                 <div className="author">
                     <div className="container">
                         <div className="author__row">
@@ -110,13 +103,9 @@ const Author = () => {
                         </div>
                         <h2 className="author__title">Все книги автора</h2>
                         <div className="catalog__row">
-                            {
-                                data?.map((item, idx)=>(
-                                    <Fragment key={item.id || idx}>
-                                        <Card item={item}/>
-                                    </Fragment>
-                                ))
-                            }
+                            {data?.map((item, idx) => (<Fragment key={item.id || idx}>
+                                    <Card item={item}/>
+                                </Fragment>))}
                         </div>
                     </div>
                 </div>
