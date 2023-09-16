@@ -1,6 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit";
 import books from "./reducers/books"
-import newBooks from "./reducers/newBooks"
 import book from "./reducers/oneBook"
 import authors from "./reducers/authors.js";
 import author from "./reducers/oneAuthor.js";
@@ -12,7 +11,6 @@ import {apiSlice} from "./api/api";
 export const store = configureStore({
     reducer: {
         books,
-        newBooks,
         book,
         authors,
         author,

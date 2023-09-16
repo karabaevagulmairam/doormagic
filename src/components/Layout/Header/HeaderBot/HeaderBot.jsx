@@ -16,7 +16,7 @@ const HeaderBot = () => {
                 <Link to={'/rating'} className="header__bot-link">
                     Рейтинги
                 </Link>
-                <Link className="header__bot-link">
+                <Link to={'/newBooks'} className="header__bot-link">
                     Новинки
                 </Link>
                 <Link to={'/authors'} className="header__bot-link">
