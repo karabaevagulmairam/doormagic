@@ -64,7 +64,7 @@ const ProductInfo = ({product}) => {
                             }
                             <button className="cart__bottom-order product__info-fav" type='submit' onClick={() => dispatch(addFavorites(product))}>
                                 {
-                                    user.favorites.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
+                                    user?.favorites?.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
                                 } В ИЗБРАННОЕ
                             </button>
                         </div>
