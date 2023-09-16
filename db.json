@@ -2356,287 +2356,492 @@
       "id": 2,
       "name": "Ли Бардуго",
       "description": "Ли Бардуго — американская писательница, которая родилась в Израиле в 1975 году, а выросла в Америке. Сейчас живет в Голливуде, где помимо писательской деятельности, увлекается визажем и выступает с музыкальной группой.\n\nЛи Бардуго прославилась благодаря циклу о Гришах и созданию вселенной «ГришиВерс». На написание первой книги «Тень и кость» Ли вдохновила русская культура и фольклор. Книгой заинтересовался продюсер франшизы о «Гарри Поттере» и как только вышла первая книга, выкупил права на экранизацию. В 2021 году на экраны вышел сериал «Тень и кость» от Netflix, который получил высокие оценки и продление на второй сезон.\n\nНе меньшей популярностью у читателей всего мира пользуется цикл Ли Бардуго «Шестерка ворнов», события которого происходят в уже знакомой вселенной, но с новыми, не менее яркими персонажами.\nКниги Ли Бардуго переведены на 22 языка и изданы более чем в 50 странах.",
-      "rating": "4.7",
+      "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/835/8355f00c107580c161c1a23f3e8b457f.jpg"
     },
     {
       "id": 3,
       "name": "Маас Сара Дж.",
       "description": "Сара Дж. Маас – американская писательница, автор романов-бестселлеров в жанре фэнтези. Ее самые знаменитые серии – «Стеклянный трон», «Королевство шипов и роз» и «Город Полумесяца». Книги Сары переведены на 35 языков.Сара Джей Маас родилась 5 марта 1986 г. в Нью-Йорке. В 2008 г. с отличием окончила Гамильтон-колледж по специальности “Писательское мастерство” и дополнительной специальности “Религиоведение”, сразу после учебы переехала в Калифорнию.\n\nСара начала работать над первым романом (ныне известный как «Стеклянный трон»), когда ей было всего шестнадцать лет. Написав первые несколько глав, она опубликовала их на сайте для начинающих писателей. Роман о приключениях девушки-ассасина Селены Сардотин мгновенно обрел невероятную популярность и спустя некоторое время стал самым читаемым произведением на сайте.\n\nНеожиданный успех сподвиг Сару Маас заняться поисками издателя для своего романа. В 2012 г. книга наконец-то вышла в печать. Опубликовало роман знаменитое издательство Bloomsbury.",
-      "rating": "4.3",
+       "ratingView": [
+        {
+          "point": 0,
+          "userId": 0
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 4,
       "name": "Агата Кристи",
       "description": "«Королева детектива» Агата Кристи подарила миру более 100 рассказов, 60 романов с запутанным сюжетом и 17 пьес, причем ее работы до сих пор выпускаются миллионными тиражами. Английская писательница, настоящее имя которой — Агата Миллер, родилась в 1890 году. Она застала две мировые войны, работала медсестрой и фармацевтом. Уникальный жизненный опыт дал автору возможность создавать не только интересные, но и впечатляюще достоверные работы.\n\nТворчество\n\nРабота с бельгийскими беженцами в начале XX века помогла Агате Кристи создать образ легендарного сыщика Эркюля Пуаро, который стал главным героем ее дебютного романа «Таинственное происшествие в Стайлзе». В 1930 году дебютировал ее новый персонаж — мисс Марпл в детективе «Убийство в доме Викария». За этими книгами последовало великое множество рассказов и романов. В их числе — «Убийство в Восточном экспрессе» и «Багдадская встреча», а также другие «восточные» произведения, созданные под впечатлением от поездок по Ираку и Сирии с новым мужем.\n\nЗа этими работами последовали и ставшие культовыми книги «Десять негритят», «Смерть в облаках», «Пять поросят» и др. Все они выполнены в традиционном для Кристи формате романа-головоломки с тонким драматическим подтекстом. Ее стиль отличает элегантная ирония, смелое нарушение канонов детективного жанра и глубокий психологизм отношений персонажей.\n\nДостижения\n\nА вклад в английскую и мировую литературу Агата Кристи была удостоена ордена Британской империи второй степени. Общий тираж книг Агаты Кристи превышает 4 миллиарда экземпляров на 100 разных языках. Примечательно, что ее работы бьют рекорды по количеству театральных постановок экранизаций. Книги Кристи послужили основой 26 полнометражных фильмов и культовых сериалов о приключениях Мисс Марпл и Эрклюля Пуаро.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/ad9/ad934131e6c77add3a7cdd881912867c.png"
     },
     {
       "id": 5,
       "name": "Мара Вульф",
       "description": "Мара Вульф – современная немецкая писательница, одна из самых читаемых и популярных авторов young adult литературы.\n\nМара родилась и живет на востоке Германии, в земле Саксония-Анхальт. В юности она изучала историю и политику, писательскую карьеру начала в 2011 году с публикации романа на самиздатовской онлайн-платформе. Ее путь в литературе – пример self made автора, которому принесли популярность отзывы читателей на онлайн-ресурсах. Только спустя несколько лет, в 2017 году, на ее романы обратили внимание издатели, и книги стали выходить также в печатном виде. Сегодня они доступны во всех форматах – электронные книги, аудиокниги, книги в мягких обложках.\n\nМара признается, что никогда не планировала стать писателем, но внезапно у нее возникла идея, и это стало делом ее жизни. «До этого моя жизнь была совершенно нормальной. Как у работающей матери троих детей, у меня действительно не было времени на всякую чепуху в голове», – говорит Мара. Сегодня она готова посоветовать каждому поймать свою собственную «чепуху» и поддаться ей. Книги Мары Вульф изданы суммарным тиражом более одного миллиона экземпляров, переведены на разные языки, удостоены литературных премий, роман «Возвращение ангелов» был бестселлером Amazon.\n\nМара Вульф также пишет любовные романы под псевдонимом Эмма С. Мур.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/5d1/5d19c69bf2bc54ef34363dfac781c473/68d25aef767360515d4eaa4f14b93fab.jpg"
     },
     {
       "id": 6,
       "name": "Джейн Остен",
       "description": "Джейн Остен, иногда Остин (англ. Jane Austen, 16 декабря 1775 — 18 июля 1817) – английский прозаик, основоположница британского реализма, автор «романов нравов». Неповторимая манера Остин, психологизм ее романов, тонкая ирония, подчас переходящая в сатиру, в сочетании с кажущейся простотой сюжета сделали ее единственной в своем роде писательницей, чье творчество стало своеобразным символом английской литературы и имело множество подражателей. Родилась в многодетной семье, отец – приходской священник. О судьбе ее старших братьев, в отличие от жизни самой Остин, известно многое. Что касается писательницы, не сохранилось даже достоверных изображений. Наиболее точное – портрет, сделанный сестрой, он сходится с одним из описаний Остин. Отец был широко образованным человеком, поэтому дети много читали и обсуждали прочитанное. Основой для романов Остин стала ее переписка с родственниками и друзьями. В письмах они обсуждают не только личные дела, но и неспокойную эпоху – Французская революция, Война за независимость Америки, Вест-Индийские кампании. Остин так и не вышла замуж из-за тяжелого финансового положения семьи. Она получала гонорары за опубликованные романы, но популярность обрела лишь после смерти. Ее самые значительные вещи – «Чувства и чувствительность», «Гордость и предубеждение», «Мэнсфилд-парк» и «Эмма».",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/6a1/6a161b91663172594e06c2a7dc0ba981.jpg"
     },
     {
       "id": 7,
       "name": "Джон Рональд Толкин",
       "description": "Джон Рональд Руэл Толкин -  родоначальник современной фэнтези, профессор оксфордского университета, специалист по древнему и средневековому английскому языку, создал удивительный мир - Средиземье, который уже без малого пятьдесят лет неодолимо влечет к себе миллионы читателей. \n\"В земле была нора, а в норе жил хоббит\". Эти слова написал Джон Рональд Руэл Толкин на обороте школьной экзаменационной работы, которую проверял одним жарким летним днем. И кто бы мог подумать, что именно из них, как из волшебного зернышка, произрастет одно из самых известных произведений мировой литературы. Именно с нее начинается знакомство с чудесным миром Средиземья. Трилогия «Властелин Колец» бесспорно возглавляет список «культовых» книг ХХ века. В 1937 году был написан «Хоббит», а в середине 1950-х годов увидели свет три книги «Властелина колец», повествующие о Средиземье – мире, населенном представителями волшебных рас со сложной культурой, историей и мифологией. \"Сильмариллион\" – один из масштабнейших миров в истории фэнтези, мифологический канон, который Джон Руэл Толкин составлял на протяжении всей жизни. Книга о первых Эпохах Средиземья, в которой поведана не только история великой войны меж Светом и Тьмою, тысячелетия сотрясавшей некогда мирную и цветущую землю, но и предыстория Колец Всевластья - Колец, путь которых по Средиземью еще только начинается...",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/98f/98f86ba1a3a8a501a72d75a3bb64ae29.jpg"
     },
     {
       "id": 8,
       "name": "Фрэнк Герберт",
       "description": "Фрэнк Герберт (1920–1986 гг.), полное имя – Франклин Патрик Герберт младший, родился в Такоме. В восемнадцать лет он сбежал из дома к дяде и тете в Сейлем и поселился у них. В 1939 г. начал работать в газете фотографом и журналистом, соврав о своем возрасте.\n\nАвтор был трижды женат. Первая жена Флора Пакинсон в 1942 г. родила дочь. Вторая жена, журналистка Беверли Энн Стюарт, родила двух сыновей. Она умерла от рака в 1984 г., через год писатель женился снова – на Терезе Шеклфорд.\n\nНаиболее известным произведением автора является научно-фантастический роман «Дюна», ставший золотой классикой жанра. Он был признан наиболее продаваемым в своей категории, получил множество премий и трижды был экранизирован. Книга вошла в цикл «Хроники Дюны». Задумка романа пришла к автору в тот момент, когда он собирал материал для статьи о дюнах. Процесс написания длился шесть лет.\n\nПисатель всю жизнь увлекался фантастикой. Первым его произведением был роман «В поисках чего-то» (1952 г.), затем вышло еще несколько рассказов, но настоящее призвание пришло к писателю только после выхода «Дюны». За книгу он получил рекордную по тем временам сумму в 20 000 долларов. В 1972 г. он смог наконец уволиться из редакции и продолжить работу над циклом.\n\nПисатель скончался через год после третьей свадьбы – в феврале 1986 г.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/883/883c8c85ee85ca408f869b714165a3fa/48fb79d551288a7d807ace3504a4c491.jpg"
     },
     {
       "id": 9,
       "name": "Джордж Р.Р. Мартин",
       "description": "Джордж Рэймонд Ричард Мартин (George Raymond Richard Martin,) – легендарный американский писатель-фантаст, член Американской ассоциации писателей, сценарист и продюсер, автор многочисленных бестселлеров, в том числе культового цикла «Песнь льда и пламени», послужившего основной для сериала канала HBO «Игра престолов».\nОбладатель шести премий «Эмми», в том числе за лучшие спецэффекты, за лучший звук и грим. Четыре раза становился обладателем премии «Хьюго». На его счету 11 премий «Логус», две премии «Небьюла» и приз «Всемирной премии фэнтези». Книги Мартина известны во всем мире и переведены на множество языков.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/6b6/6b6a3be982971db7ac12681b807fe276.jpg"
     },
     {
       "id": 10,
       "name": "Джеймс Дэшнер",
       "description": "Джеймс Дэшнер родился в американском городе Остелл в 1972 году, став седьмым ребёнком в семье. С самого детства Джеймс мечтал заниматься писательством. У родителей Джеймса была старая пишущая машинка, на которой он впервые попробовал писать, но дальше хобби дело не зашло. После окончания школы Джеймс поступил в Университет Бригама Янга, где получил степень магистра в области бухгалтерского учёта[3]. Прежде чем посвятить себя карьере писателя работал в сфере финансов, но, в конце концов, давняя страсть взяла вверх.В свободное от творческого процесса время Джеймс любит читать, смотреть фильмы и хорошие ТВ-шоу, кататься на лыжах. Всё перечисленное может вдохновить его на творчество: например, «Бегущий в лабиринте» был написан под сильным влиянием «Игры Эндера» Орсона Скотта Карда и «Повелителя Мух» Уильяма Голдинга. Каждый раз, когда Джеймса одолевает творческий кризис, он берет перерыв на просмотр фильма или прочтение книги. Тогда идеи просто бьют фонтаном — только и успевай записывать.\n\nВ настоящее время Джеймс Дэшнер живёт в Скалистых горах в штате Юта вместе со своей семьей и продолжает писать.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 11,
       "name": "Брэм Стокер",
       "description": "Сэр Абрахам «Брэм» Стокер (англ. Sir Abraham «Bram» Stoker, 8 ноября 1847 года, Дублин, Ирландия — 20 апреля 1912 года, Лондон) – ирландский прозаик, театральный менеджер, автор всемирно известного готического романа «Дракула». Родился в семье дублинского хирурга, окончил математический факультет, но увлекался футболом и работал журналистом и театральным критиком. Дружил с актером Генри Ирвингом, который ввел его в высшее лондонское общество и познакомил с Конан Дойлом, Уайльдом и Уистлером. Написал много книг, изучал европейский фольклор, но успеха «Дракулы», позднее экранизированного десятки раз, новеллы и изыскания не превзошли.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/778/7780e011aec2dad173ded5743f9f87e5/8049618dbe810e6848e72cca5f28c4d7.jpg"
     },
     {
       "id": 12,
       "name": "Эмма Скотт",
       "description": "Эмма Скотт — американский автор-открытие 2020 года! Специализируется на эмоциональных любовных романах для подростков и взрослых, которые никого не оставляют равнодушными. Эмма родилась в Сан-Диего, потом жила в Лос-Анджелесе, а сейчас — в Сан-Франциско. Девушка с детства увлекалась литературой, поэтому школе ее считали «ботанкой» — она всегда ходила в обнимку с очередной книгой. Эмма Скотт получила театральное образование, но быстро поняла, что все же больше предпочитает литературу. Начала с фэнтези, а преуспела в жанре любовного романа и довольно быстро приобрела популярность, ее книги стали бестселлерами USA Today и Wall Street Journal.\n\nВ серии «Романтическая проза Эммы Скотт» выйдут такие романы, как «Пять минут жизни», «Дотянуться до звезд», «Зажечь небеса» и другие.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/c0d/c0df4bd1e5fc3eba00982525fff490ed/16f19f9746f2d11b2836bae7351a7d3d.jpg"
     },
     {
       "id": 13,
       "name": "Пенелопа Дуглас",
       "description": "Писательница Пенелопа Дуглас в данный живет в Лас-Вегасе, а родилась в городе Дюбюк штата Айова в большой семье. По совету отца она окончила Университет Северной Айовы со степенью бакалавра по специальности «Государственное управление». Затем она получила степень магистра в области педагогики в Университете Лойола в Новом-Орлеане. Пенелопа Дуглас работала учителем математики до 2014 года и уволилась, чтобы посвятить себя книгам.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/5e3/5e3b03d2053284b316b3815802a26702/4471eb9a8ed6e63ed1a0930e3f8f34d1.jpg"
     },
     {
       "id": 14,
       "name": "Тунсю Мосян",
       "description": "По словам автора, она придумала свой псевдоним, опираясь на слова матери: Мосян Тунсю хотела изучать литературу в колледже, а её мать настаивала на том, чтобы она изучала экономику. Её мать сказала, что «чувствует запах чернил в одной руке и запах денег в другой». 墨 香 означает «аромат туши (для письма)», а 铜臭 — фраза, означающая «вонь денег».",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 15,
       "name": "Керри Манискалко",
       "description": "Керри Манискалко — молодая американская писательница, прославившаяся серией книг «Охота на Джека-потрошителя». Она выросла в Нью-Йорке, в старом доме с привидениями. Это послужило началом увлечения готической атмосферой, наполненной историями о призраках и маньяках.Училась Керри в художественной школе Нью-Йорка, но уже с первого курса начала подумывать о смене специализации и погружении в криминалистику. Помимо учебы в школе, девушка посещала курсы по уголовному правосудию и психологии, где стала одной из лучших учениц. Также писательница увлекается судебной экспертизой, викторианской эпохой и йогой, обожает платья и долгие беседы со своими кошками за чашечкой отличного чая.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/d32/d32bdb6e7bc68be11f0d5f8c86e17c61/66926fed7283cf5e350485a7e5c209ac.jpg"
     },
     {
       "id": 16,
       "name": "Джули Кагава",
       "description": "Американская писательница Джули Кагава начала проявлять литературный талант еще в школе. Тогда она предприняла первые попытки показать учителям проиллюстрированные ею же мрачные хоррор-рассказы, повергавшие их в ужас. Со временем Джули начала уделять больше времени чтению. Она долгое время пыталась работать в книжных магазинах, но остановила свой выбор на профессии кинолога.\n\nВ 2010 году состоялся литературный дебют Кагавы. Тогда была опубликована первая книга «Железный король» из цикла о «Железных фейри». Эта серия продолжает выходить до сих пор. В настоящий момент Джули пишет в жанре фэнтези и выпускает до двух романов в год. В ее произведениях встречаются различные мистические существа, а также отсылки к фольклору разных стран. Так, в основу серии «Лисья тень» легла японская мифология. Еще один известный среди читателей цикл — «Рождение драконов». Джули Кагава также представила вампирскую сагу «Кровь Эдема». Писательница нередко сопровождает работы собственными иллюстрациями. Кроме того, она открыла онлайн-магазин, в котором продает фигурки.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/64c/64c1fd9d3bc60f96725dce64e7624773/79d85704f7515c93a6a56c616d2e5dd1.jpg"
     },
     {
       "id": 17,
       "name": "Блейк Дебора",
       "description": "Алексин Фарол Фоллмут, также известная под псевдонимом Оливи Блейк, любит и пишет истории, зачастую связанные с фантастикой, паранормальными явлениями и мистикой. Чаще всего ее работы вращаются вокруг глобальных вопросов о том, что значит быть человеком (или нет), бесконечно интересных сложностей жизни и любви.\nАлексин погрузилась в писательство после того, как отказалась от давно задуманного проторенного пути во время учебы в юридической школе, и теперь сосредоточилась в основном на ремесле автора и головной боли при создании новых историй. Из-под ее пера вышел бестселлер New York Times и Sunday Times «Шестерка Атласа», который был выпущен в 2022 году и уже в ближайшее время ожидается продолжение.\nАлексин живет и работает в Лос-Анджелесе со своим мужем и ребенком.\nПодробнее: https://www.labirint.ru/authors/262758/",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 18,
       "name": "Роберт Льюис Стивенсон",
       "description": "Роберт Льюис Балфур Стивенсон (англ. Robert Louis Balfour Stevenson; 13 ноября 1850, Эдинбург — 3 декабря 1894, Уполу, Самоа) – шотландский писатель, автор культовых авантюрных романов в жанре неоромантизма, оказавший значительное влияние на мировую культуру.\n\nКаждое путешествие – по Шотландии, во Францию, по Северной Америке – давало богатый материал для путевых очерков и повестей. Первые художественные произведения, принесшие славу – рассказы о приключениях принца Богемии Флоризеля, изначально публиковавшиеся в журнале «Лондон». Первая публикация знаменитого «Острова сокровищ» прошла бесславно. Критика и читатели заметили только третье – иллюстрированное – издание, переведенное на множество языков и ставшее каноном авантюрного жанра.\n\nСтивенсон выпустил также ставший классическим «Детский дневник стихов» и собрание стихотворений для взрослых «Подлесок». Под влиянием книги «Преступление и наказание» написал рассказ «Маркхейм» и «Странную историю доктора Джекила и мистера Хайда». Позже он издал сборник шотландских рассказов и дилогию о Дэвиде Бэлфоре – своеобразный трибьют предкам.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/067/0676b304a4dee0b0b92ef710cdf9649a.jpg"
     },
     {
       "id": 19,
       "name": "Бёрнетт Фрэнсис Элиза",
       "description": "Родилась 24 ноября 1849 года на Йорк-стрит, 141, в Чихэме (англ.), Манчестер, и была третьей из пяти детей (у неё были два старших брата и две младшие сестры) Эдвина Ходжсона, торговца скобяными изделиями из Донкастера в Йоркшире, и его жены Элизы Бун из зажиточной манчестерской семьи. Ходжсоны владели семейным бизнесом в Динсгейте (англ.), где продавали скобяные и латунные изделия. Благодаря этому семья жила в достатке и имела горничную с няней. Когда Фрэнсис было три года, в 1852 году, семья переехала в новый, более просторный дом на той же улице. Менее чем через год Элиза забеременела пятым ребёнком, и в то же время неожиданно умер Эдвин. Мать, оставшаяся вдовой с пятью детьми, пыталась вести дела мужа, и некоторое время ей это удавалось. Но поскольку она не могла следить за всеми детьми, то на этот период воспитанием Фрэнсис занималась её бабушка. Она же научила внучку читать и привила той любовь к чтению, постоянно покупая ей книги — первой книгой Фрэнсис стала «Flower Book», где были стихи с цветными иллюстрациями. ",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Frances_Burnett.jpg/411px-Frances_Burnett.jpg"
     },
     {
       "id": 20,
       "name": "Оскар Уайльд",
       "description": "Оскара Уайльда называют одним из наиболее выдающихся писателей и философов Викторианской эпохи. Эстет и выдающийся денди с рождения рос в атмосфере красоты: роскошный дом его родителей был известным в Дублине салоном, собиравшим элиту творческих и медицинских кругов.\n\nОсобая любовь к эллинизму и в целом античности, окрепшая в годы учебы в Тринити-колледже и Оксфорде, после первых путешествий по Италии и Греции послужила вдохновением для первых произведений Уайльда. Дебютный поэтический сборник «Равенна» был удостоена премии университета.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/bf3/bf3d32fe0d19230b3a575e964557f448.jpg"
     },
     {
       "id": 21,
       "name": "Уилки Коллинз",
       "description": "Уилки Коллинз — британский писатель, создавший больше пятидесяти рассказов, а также множество пьес и романов.\n\nПоявился на свет в 1824 году в Лондоне. Его отцом был популярный художник Уильям Коллинз. Маленький Уилки обучался дома, а позже пошел в частную школу. Его семья путешествовала по Франции и Италии. Благодаря этому Коллинз хорошо знал иностранные языки.\n\nПосле окончания школы он по совету отца устроился в компанию «Antrobus & Co», занимавшуюся торговлей чаем. Там он трудился пять лет, далее работал в суде, где изучал право. Через пять лет вошел в коллегию адвокатов.\n\nУилки Коллинз создал свое первое произведение в 1843 году. Но издательства не хотели его публиковать, поэтому история впервые дошла до читателей только в 1999 году.\n\nВ 1850 году впервые напечатали его роман «Антонина». Спустя год Уилки встретил Чарльза Диккенса. В его журнале было выпущено несколько историй Коллинза. Также они совместно создали несколько произведений.\n\nСамая известная книга Коллинза — «Лунный камень». Написана в детективном жанре. История отличается психологической реалистичностью, сочетанием логики, романтики и типичных детективных мотивов. В 1860 году Уилки написал еще одну историю в этом жанре — «Женщина в белом»",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 22,
       "name": "Евгений Замятин",
       "description": "Замятин Евгений Иванович (1884-1937) – инженер-кораблестроитель, литературный критик, прозаик, сценарист. Участвовал в проектировании ледокола «Святой Александр Невский» (после революции «Ленин»). Автор повестей и рассказов в жанре неореализма, научной фантастики и политической сатиры. Но его знаковое произведение «Мы» (1920) дало новый виток развития антиутопии, какой мы понимаем её и в наши дни. Замятин первым описал обезличенный социум, тотально контролируемый государством, опередив на несколько лет Хаксли и Оруэлла.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/5d2/5d20903469cabfa6aa0a5468be6b45a8/6accb6375647dc87d643ced457355aa7.jpg"
     },
     {
       "id": 23,
       "name": "Николас Спаркс",
       "description": "Николас Спаркс — один из самых популярных авторов в мире, написавший свой первый международный бестселлер в 26 лет. Тираж его книг превысил 105 миллионов экземпляров. Романы Николаса Спаркса, переведенные на более чем 50 языков, послужили основой для ярких экранизаций, среди которых «Спеши любить», «Дневник памяти» и «Дальняя дорога». Его произведения, простые и трогательные, романтичные и искренние, вот уже более двадцати лет покоряют миллионы читательских сердец.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/f6c/f6ce080a91ff09d7628bcae3b69300e4/2cb3b1687d492a78d4389148d6b62f44.jpg"
     },
     {
       "id": 24,
       "name": "Антуан де Сент-Экзюпери",
       "description": "Антуан де Сент-Экзюпери прожил лишь 44 года и оставил после себя не так уж много литературного наследия, но «Маленький принц» остается одной из самых популярных книг по сей день.\n\nЭкзюпери всегда жил небом. В армии получил права военного летчика и уже в 1923 году попал в свою первую авиакатастрофу. Параллельно Антуан занимался литературным трудом. Первый роман «Южный почтовый» он написал, когда находился на самом краю пустыни Сахара. Практически все его произведения так или иначе связаны с небом, которое он беззаветно любил.\n\nПисатель очень много путешествовал как по работе, так и по личным делам. Он даже участвовал в поисково-спасательной операции летчика Анри Гийоме, потерпевшего крушение над Андами. Тогда же был написал «Ночной полет».\nПричиной смерти писателя так же стало небо: в 1944 году Антуан де Сент-Экзюпери отправился в полет, из которого не вернулся. Обстоятельства его гибели до сих пор доподлинно неизвестны.\n\nВ своих произведениях и на личном примере автор показывал, как важно следовать за своей мечтой.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/eef/eefc5896f229021519ea4bef8187729f.jpg"
     },
     {
       "id": 25,
       "name": "Вирджиния Вулф",
       "description": "Вирджиния Вулф (англ. Virginia Woolf; урожденная Аделина Вирджиния Стивен, англ. Adeline Virginia Stephen; 25 января 1882, Кенсингтон, Мидлсекс, Англия — 28 марта 1941, Льюис, Суссекс, Англия) – английский литератор, одна из ярчайших представителей модернизма. Родилась в семье образованных людей, росла с тремя сводными братьями и сестрами. На стыке столетий потеряла несколько близких родственников, что повлекло за собой нервные срывы, а затем депрессию. Всю жизнь страдала от перепадов настроения, в возрасте 59 лет покончила с собой. В первой половине XX века была одной из самых влиятельных фигур лондонского литературного сообщества. В 1904 году вместе с влиятельными и известными литераторами своего времени основала интеллектуальное сообщество Блумсбери. Занималась литературной критикой, писала много эссе. Наиболее известные романы – «Миссис Дэллоуэй», «На маяк», «Орландо», «По морю прочь». В 1970 годы стала иконой феминизма и до сих пор имеет большое значение в массовой культуре. Ее творчество считается классическим примером потока сознания, а сама Вулф – одним из величайших романистов современной литературы.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/c8a/c8a08156da7243ec86f556f2207d5c89/d86de6117d7bd48adfad4c08d087dec1.jpg"
     },
     {
       "id": 26,
       "name": "Эрих Ремарк",
       "description": "Ремарк Эрих Мария (1898 -1970) – один из наиболее известных и читаемых немецких писателей двадцатого века. Всемирную известность приобрёл после выхода романа «На западном фронте без перемен» (1929), который стал одним из самых характерных произведений литературы «потерянного поколения». Автор книг: «Три товарища», «Триумфальная арка», «Время жить и время умирать», «Черный обелиск» и др.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/fe4/fe454af103346dc0f79125bbb21c94ca.jpg"
     },
     {
       "id": 27,
       "name": "Сорен Свейструп",
       "description": "Сорен Свейструп – датский писатель и сценарист, прежде всего известный как автор сценария сериала «Убийство».\n\nСорен Свейструп вырос в приемной семье, живущей в небольшом датском поселке. Его всегда привлекали детективы и триллеры, но еще больше – кино. Эти две страсти Сорена воплотились в созданном им киносериале «Убийство», обретшем культовый статус во всем мире. Впоследствии этот сериал стали называть «самым прибыльным датским экспортным продуктом после пива “Туборг”». Позже Свейструп выступил одним из сценаристов кинобестселлера «Снеговик» по одноименному триллеру Ю Несбё.\n\nВ одном из многочисленных интервью по поводу «Каштанового человечка» Сорен Свейструп так ответил на вопрос, что было самым сложным в написании этого романа: «Придумать хороший сюжет. Вообще, я всегда был приверженцем интриги. Я люблю брать людей на “американские горки” сюжета со всеми их причудливыми и неожиданными поворотами; но основная задача состоит в том, чтобы все это сработало. Придумывание действительно хорошей сюжетной линии похоже на математику. Также очень важно, чтобы книга предлагала читателю больше, чем просто встряску или развлечение; она должна была иметь ключевую социальную тему. Что-то очень личное для меня».",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/895/89590c3c00768ccdc62ad7ccd59b1ec9/0d962180286cf9b81c2bc873fee859f0.jpg"
     },
     {
       "id": 28,
       "name": "Алекс Михаэлидес",
       "description": "Алекс Михаэлидес – писатель и сценарист греко-киприотско-английского происхождения. Будущий писатель родился и вырос на Кипре. Его мать — англичанка, а отец греко-кипрского происхождения. До 18 лет ходил в школу на Кипре, затем изучал английскую литературу в Кембридже, имеет степень магистра сценарного мастерства Американского института киноискусства. Написал сценарии к фильмам «Дьявол, которого ты знаешь» (2013) и «Аферисты поневоле» (2018).\n\n«Безмолвный пациент» – его первая книга. В юности Алекс Михаэлидес изучал греческую мифологию, и именно греческий миф об Алкесте, знакомый ему с 13 лет, вдохновил его на написание романа. Михаэлидес экспериментировал с этой историей в разных воплощениях – во времена студенчества он пытался создать пьесу по ее мотивам, а затем задумал короткометражный фильм и только через 15 лет «вживил» легенду в свою дебютную книгу «Безмолвный пациент».",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/6fc/6fc67632e02d6c1185f58d9c5818a9cb/c60253883bb31340408c2928c2724d25.jpg"
     },
     {
       "id": 29,
       "name": "Браун Дэн",
       "description": "Американский журналист и писатель Дэн Браун создал такие бестселлеры, как «Код да Винчи», «Ангелы и демоны» и «Инферно».\n\nБиография\n\nДэн Браун родился в 1964 году в Нью-Гемпширев семье преподавателя и органистки. Получив образование в престижном Амхертском колледже и Севильском университете, он открыл для себя музыку и начал строить карьеру в этой сфере. После не слишком удачных попыток покорить Голливуд Браун начал преподавать сначала в школе в Беверли-Хиллз, а позже — в Академии Филлипса. Знакомство с будущей женой, искусствоведом и художником, ознаменовало новый этап творческих поисков. Их результатом стала дебютная работа «Цифровая крепость», посвященная работе АНБ США. В ней впервые были представлены интересные писателю темы — религия и тайные общества, философия и теории заговора.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/a0b/a0bd0a6d8588580b56bf2cc682962938.jpg"
     },
     {
       "id": 30,
       "name": "Уэйр Рут",
       "description": "Рут Уэйр — феномен современной детективной литературы. Ее книги изданы в 46 странах и проданы тиражом около 3 000 000 копий по всему миру. Главную роль в экранизации первого романа, «В темном-темном лесу», сыграла Риз Уизерспун, фильм по второй книге, «Девушка из каюты № 10» сняла компания «CBS Films», а по «Игре в ложь» снимается сериал.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/bf5/bf55a60b97bdbc9256354245ee792f76/fcc5fde59e72229d0acfdbc4e6424aeb.jpg"
     },
     {
       "id": 31,
       "name": "Лорет Энн Уайт",
       "description": "Лорет Энн Уайт – автор бестселлеров Amazon и Washington Post в жанре мистический триллер. Ее книги продаются миллионными тиражами по всему миру, а сама писательница – трехкратный лауреат премии RITA за вклад в романтическую и детективную прозу, финалист премии Дафны Дюморье, а также обладательница множества других отраслевых наград.\n\nЛорет Энн Уайт родилась и выросла в Южной Африке. На данный момент писательница живет в Канаде, которую считает своим «настоящим домом». До того, как стать писательницей, она много лет работала в журналистике под именем Лорет Бесветерик. Журналистские расследования, которые будущая писательница проводила в это время, легли в основу многих детективных линий книг писательницы. Большинство книг Лорет Энн Уайт на русском языке печатаются в издательстве «Эксмо».",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBIgACEQEDEQH/xAAcAAACAwEAAwAAAAAAAAAAAAAABQQGBwMBAgj/xAAxEAACAQMCBAQEBQUAAAAAAAABAgMABBEFIRIxQVEGE2FxFCIygQdCkbHBFSNSctH/xAAZAQADAQEBAAAAAAAAAAAAAAADBAUCBgH/xAAkEQACAgEEAQQDAAAAAAAAAAABAgADEQQSITFBUZHw8RMUIv/aAAwDAQACEQMRAD8Ayu7ThAwVUEDh6Z9P4ph4I8LzeJdUZ7wuljCf7rKd2P8Agvr37D7V4ltl1HWUs7NY5Xd+GItzOeWy4A6ZradD0i30XTY4YyqpGPmfnv1PuaVL7RgdzVNee430nS7DTtP8m1to4Yo1+hAAOXUnmfU0lW11K5umeONVhBODIeMMO2cA/pT2ykS44cAmBTsp/Me5pjMwAxgDHICsgmPLWPMoevabbahFLaPCY7gYOJM4bHI5zyz6/pzrE7vzLfW5zdxlXWZlZW39MV9E6oqkiQrllO3t1FZR450n4u/WaBd3GXIIGWXbO/U/LXiOAcGB1VIUbhPSz0i0u7aW8srhPiUZSIJTtlgcAMfYb7YwaKl+CuK00i6kidDdI6qyFssuGI2A/wBqKVdnVsCTSDGX4feDjp8h13V2aLKERRNscdXPYdh251bNXW61VYVsZ/hrfGVQAEScuZ7e1V78Rj4ojhkeD4hrWM8XFDGFBHfbem34c6jd3vhS3lvIRhMxiTP1qDjP8famFcWDcplelFHBjmG41TTYo45rGGWMDHmwsQB7g1CnvtZmnHmQeUCwAVWySPflVjhlWPKMcqe9cJHgjnHAucbkqPpH2opII6hkrIPcrmualNb3EUMKuxZFLfJ3yNs7dOdVaLUY574Xi3UsEaS7HAHFtyPpV81B7S7nDREkrHwOCMYGdsg/eqDc6ZbamLq1abyAHZ4iAMFuuSTsMdaFYF2nMFq9wSMrz4LUIFmkWG3ktnLpeQookUlhkHA/MTyOc5opBBpurW9y9l8fbovljhbKNwrkEE4+bGSCSNux7FKqhAxu+e0k8+s2myljntFjkwy4xSs2aadK3w8SJbsT8ijAGeeB0qQvmKzGMYlX64z+b1FSY5o7uLgkIDVEp1D1EY+5mq5kOZAgeOaI75ZTwnHOucss1jCzIYRtnDKf4rnqunT2h87Ty3mk7qxyrjt70h1PxtbaSFttatZLe5ZchSvHkdxir+m1C3DK+Jap1KWDMjXN/cYuXcRRuxCoFJ+YnrvVeukgkWBXh81RIBKGOAoOck7Hbrv2rlcax/VtSjmiQpb5woPXuaaaRp8V9M9vcJ5kbgjh3wSeQOOneiseYPUtuBMdwf06W3sxby4aNinAJAFUAEAdM8tqKWS2Uum6nxrZnUYXmAa1wS8e2MoV/bAzRQf1635zJfBmi38MgbiXZgdjUF5lmbD/ANq5/wAhyf8A7XiiucsUBiIo/BkqG+eIrHcKCD9LZ2Psa4a74f03xFYm3vYQ6ZypGzxnup6H9+uaKK9puet/5M0jHMzLWNIuNFm4JoX8uJuFJhGQjjkN+Wd+XpUObU10yZJJY3eKb5VKPwlXHIg0UV01Lfk2k+ZULlqcmM5PEetQ8M0bJJGVZo1maOTOAN8xnIO/IjpzooorTMFOAIlP/9k="
     },
     {
       "id": 32,
       "name": "Тилли Коул",
       "description": "Тилли Коул — писательница, работающая в жанре фэнтези, современный роман и взрослый роман. Девушка пишет в разных стилях, чтобы не ограничивать полет своей фантазии.\n\nБудущая писательница родилась в Великобритании в местечке Тиссайд. В Тилли смешалась кровь англичанки мамы и шотландца папы. Получилась гремучая смесь, которая отражается в романах. Когда девушке исполнилось 19 лет, она уехала в Ньюкасл-на-Тайне, где училась в университете и получила диплом бакалавра искусств. По окончании вуза она преподавала в школе обществознание. Ее муж — профессиональный игрок в регби, и семья не раз переезжала в разные части Европы. Сейчас они обосновались в канадском Калгари. Здесь писательница предается литературному экстазу.https://ndc.book24.ru/resize/280x280/iblock/270/27086e015711bacbba820caa4337992f/54ff862cb61eabfef302eb9b736944bd.jpg",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/270/27086e015711bacbba820caa4337992f/54ff862cb61eabfef302eb9b736944bd.jpg"
     },
     {
       "id": 33,
       "name": "Дженнифер Арментроут",
       "description": "Дженнифер Арментроут - американская писательница. Дженнифер пишет романы для подростков, научную фантастику и фэнтези. Она также пишет романы для взрослых под именем Джей Линн (J.Lynn). Дженнифер живет в Мартинсбурге, Западная Вирджиния. Когда Дженнифер не работает над новой книгой, она проводит время за чтением книги или за просмотром фильма о зомби; либо придумывает новые идеи или отдыхает со своим мужем, Джеком Расселом Локи.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/86c/86c4824de6d46882f795b576a88adbfd/61299250333f96069339404be012aa86.jpg"
     },
     {
       "id": 34,
       "name": "Нил Гейман, Крис Ридделл",
       "description": "Британский писатель в жанре фэнтези, автор комиксов и сценариев к знаменитым фильмам Нил Гейман родился в 1960 году 10 ноября. Его родители, жившие тогда в Портсмуте, принадлежали к саентологам и переехали в Западный Сассекс, чтобы изучать дианетику.\n\nМаленький Нил был очень способным. Родные удивлялись, как рано мальчик стал читать и писать, и радовались его отличным оценкам в школе. Он мог выбрать любую область науки и с легкостью поступить в университет. Но Гейман избрал другой путь и решил связать свою жизнь с журналистикой и литературой. Конечно, писателю в начале пути пришлось совсем несладко: прибыльного заработка не было, постоянной работы не находилось. И только в 1980-е его заметили, а статьи и рассказы стали публиковаться. ",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/8a6/8a64b3f86f4e7f9e18c09a1102e17a75.jpg"
     },
     {
       "id": 35,
       "name": "Брюс Кэмерон",
       "description": "Уильям Брюс Камерон родился в 1960 году в городе Петоски, штат Мичиган. Известный американский писатель, он начал свою карьеру с должности обозревателя в юмористическом журнале. Кэмерон известен как автор бестселлера «8 простых правил для друга моей дочери-подростка», впоследствии адаптированный в комедийный сериал на ABC, который шел с 2002 по 2005 год.\n\nЕго роман «Жизнь и цель собаки» был опубликован в июле 2010 года. Он продержался в списке бестселлеров New York Times целых 19 недель. В общей сложности этот роман был в списке бестселлеров журнала около года.\n\nБ. Кэмерон также является обозревателем газеты Hawaii’s MidWeek Newspaper, где ведет свою колонку, рассказывая юмористические рассказы о своей жизни.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "data:image/jpeg;base64,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"
     },
     {
       "id": 36,
       "name": "Эль Косимано",
       "description": "Эль Косимано — современная американская писательница-романист, работающая для молодежной аудитории. Девушка родилась в пригороде Вашингтона. С юности она упорно трудилась. На летних каникулах устраивалась на рыбацкие лодки, где мыла палубы, насаживала наживку, выгружала улов. После школы она поступила в университет, чтобы изучать точные науки. Но вскоре поняла, что это не ее стезя. Косимано перешла на курс по изучению психологии и социальных наук. Полученные знания помогли выстроить карьеру в области недвижимости. Но проработав 15 лет, она решила кардинально поменять жизнь и начала писать молодежные романы.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/fb7/fb74f7841a2d6c9a5dce2950b9230df2/b54b68d253f258deb3997642af66a61e.jpg"
     },
     {
       "id": 37,
       "name": "Коллин Хоук",
       "description": "Коллин Хоук - американская писательница, автор фантастических романов для подростков.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/00c/00c342db0d084639eb8e5bc09948eda6/90b0c743bd7cf2b6c8d3f72d8459aec2.jpg"
     },
     {
       "id": 38,
       "name": "Лора Себастьян",
       "description": "Лора Себастьян (16.02.1990 г.) – современная писательница из Южной Флориды, всегда имела страсть к сочинительству. Во время учебы во втором классе она придумала новую историю Золушки, где участвовали ангелы, но книга не сохранилась.\n\nДевушка училась в колледже искусств, затем уехала в Нью-Йорк, как она думала, ненадолго, но живет там до сих пор. В свободное от писательства время автор любит читать книги, готовить вкусности и прогуливаться с любимым питомцем – пушистым псом.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/5a2/5a2199b3cbb12bc06d21eb437fd2856f/aa1c7e05dbd337e1d81eb44fae34f176.png"
     },
     {
       "id": 39,
       "name": "Амели Вэнь Чжао",
       "description": "Амели Вэнь Чжао родилась в Париже, а выросла в Пекине. Ее межкультурное становление вселило в нее глубокую любовь к глобальным проблемам общества. Она стремится донести эту страсть до читателей в своих историях, создавая целые вселенные и вдохновляясь укладом жизни разных национальностей. Трилогия о кровавой наследнице ее успешный многообещающий дебют, который успел завоевать сердца читателей по всему миру. В своих книгах Амели рассказывает о силе и мужестве, раскрывает межкультурную тематику.\n\nАмели живет в Нью-Йорке и работает в финансовом департаменте.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/4c3/4c3e520852414c1169ac6e64fb8658dc/430e85fee72c40dd85c019fe4f5ea330.jpeg"
     },
     {
       "id": 40,
       "name": "Питер Дэвид",
       "description": "Эксперт в вопросах продуктивности и личной эффективности, автор методики управления временем Getting Things Done (GTD). Книги Аллена разошлись тиражом 5 млн. экземпляров. Журнал Time назвал книгу «Как привести дела в порядок: искусство продуктивности без стресса» - лучшей бизнес-книгой десятилетия. Она была переведена на 15 языков",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/025/025f44535f6c49e10b95495c97778c25.jpg"
     },
     {
       "id": 41,
       "name": "Наоми Новик",
       "description": "Наоми Янина Новик (англ. Naomi Janina Novik, родилась 30 апреля 1973 в Нью-Йорке) — современная американская писательница, лауреат множественных наград и премий. Излюбленные жанры Наоми Новик – военное фэнтези и альтернативная история. Уже первый роман «Дракон Его Величества» (2006) принес автору награду – премию Комптона Крука за лучший дебютный роман в категории «научная фантастика и фэнтези». Сейчас он переведен на 23 языка, а на счету Наоми еще более десятка новых произведений.\n\nНаоми принимала участие в создании компьютерной игры «Neverwinter Nights: Shadows of Undrentide». Она также пишет фанфики, снимает фэн-видео и является соучредителем «Организации трансформационных произведений», которая занимается защитой прав авторов-фэнов.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/cad/cada0ad4e64b6683fe97c84a6f39327c/cb46fe17dd9a7a02fdebcbb70c4bc2f5.jpg"
     },
     {
       "id": 42,
       "name": "Л. Дж. Шэн",
       "description": "Л. Дж. Шэн — американская писательница, автор эротических романов, завоевавших признание женщин по всему миру и ставших самыми скачиваемыми произведениями. Ее романы издаются более чем в двадцати странах мира. Автор живет в Калифорнии с мужем и ребенком, любит много читать, является поклонником легкомысленных реалити-шоу и с удовольствием проводит свободное время в кругу семьи.",
-      "rating": "0",
+       "ratingView": [
+        {
+          "point": 4,
+          "userId": 6
+        }
+      ],
       "image": "https://ndc.book24.ru/resize/280x280/iblock/482/482960d681f031623c86d8474b839e94/7e6b518741521d8d3066edef614c0e46.jpg"
     }
   ],
@@ -2658,7 +2863,7 @@
     },
     {
       "id": 2,
-      "image": "агата.jpg ",
+      "image": "./src/assets/агата.jpg ",
       "title": "Начинаем расследование! –23% на подборку книг Агаты Кристи",
       "desc": "Скидка 23% на подборку книг Агаты Кристи только для авторизованных пользователей",
       "time": "Акция действует до 17 сентября 2023 года",
@@ -2666,7 +2871,7 @@
     },
     {
       "id": 3,
-      "image": "тунсю.jpg",
+      "image": "./src/assets/тунсю.jpg",
       "title": "Комиксы от «Эксмо». –20% на подборку книг Мосян Тунсю, Фёдора Нечитайло и других авторов",
       "desc": "Скидка 20% на подборку книг Мосян Тунсю, Фёдора Нечитайло и других авторов только для авторизованных пользователей с 11 по 15 сентября",
       "time": "Акция действует до 25 сентября 2023 года",

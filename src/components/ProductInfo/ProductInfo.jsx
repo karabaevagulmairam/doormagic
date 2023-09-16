@@ -8,16 +8,7 @@ import {addCart, addFavorites} from "../../redux/reducers/user.js";
 const ProductInfo = ({product}) => {
 
 
-    // const {addCarts, user, favorites, favoritesHandler, authorSlide, } = useContext(CustomContext);
 
-
-    // useEffect(()=>{
-    //     getAuthorSlide()
-    // },[]);
-    //
-    // const oneAuthor = authorSlide.filter((item) => item.name === product.author)
-
-    // console.log(oneAuthor)
 
 
     const dispatch = useDispatch()

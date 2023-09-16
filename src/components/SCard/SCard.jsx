@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AList = () => {
+const SCard = () => {
     return (
-        <div>
+        <div className="SCard">
             
         </div>
     );
 };
 
-export default AList;
+export default SCard;

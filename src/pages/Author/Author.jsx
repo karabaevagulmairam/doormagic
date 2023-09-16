@@ -1,11 +1,9 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import api from "../../config/api/api";
 import {useParams} from "react-router-dom";
 import Card from "../../components/Card/Card";
 import {useDispatch, useSelector} from "react-redux";
 import {getOneAuthor, updateAuthorRating} from "../../redux/reducers/oneAuthor.js";
 import {useGetProductsQuery} from "../../redux/api/api.js";
-
 
 const Author = () => {
 
@@ -14,9 +12,6 @@ const Author = () => {
     const {author} = useSelector(store => store.author)
     const {user} = useSelector(store => store.user)
     const [selectedRating, setSelectedRating] = useState(0);
-
-
-
 
     useEffect(() => {
         dispatch(getOneAuthor(id))
@@ -69,10 +64,10 @@ const Author = () => {
                                 <div className="author__rating">
                                     <span>Выберите рейтинг:</span>
                                     <div className="rating__stars">
-      <span
-          className={`star ${selectedRating >= 1 ? 'selected' : ''}`}
-          onClick={() => setSelectedRating(1)}
-      >
+                                         <span
+                                             className={`star ${selectedRating >= 1 ? 'selected' : ''}`}
+                                             onClick={() => setSelectedRating(1)}
+                                         >
         ★
       </span>
                                         <span
@@ -113,9 +108,7 @@ const Author = () => {
                     </div>
                 </div>
             </>
-
         );
-
 };
 
 export default Author;

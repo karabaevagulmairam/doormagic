@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import { Scrollbar,Autoplay } from 'swiper/modules';
 
-import b1 from '../../../assets/b1.jpg'
-import b2 from '../../../assets/b2.jpg'
-import b3 from '../../../assets/b3.jpg'
-import b4 from '../../../assets/b4.jpg'
-import b5 from '../../../assets/b5.jpg'
+import c1 from '../../../assets/c1.jpg'
+import c2 from '../../../assets/c2.jpg'
+import c3 from '../../../assets/c3.jpg'
+import c4 from '../../../assets/c4.jpg'
+import c5 from '../../../assets/c5.jpg'
 
 
 const Banner = () => {
@@ -32,27 +32,27 @@ const Banner = () => {
 
                        <SwiperSlide>
                            <Link to={'/sale'}>
-                               <img src={b1} alt="" className="banner__img"/>
+                               <img src={c1} alt="" className="banner__img"/>
                            </Link>
                        </SwiperSlide>
                        <SwiperSlide>
                            <Link to={'/sale'}>
-                               <img src={b2} alt="" className="banner__img"/>
+                               <img src={c2} alt="" className="banner__img"/>
                            </Link>
                        </SwiperSlide>
                        <SwiperSlide>
                            <Link to={'/sale'}>
-                               <img src={b3} alt="" className="banner__img"/>
+                               <img src={c3} alt="" className="banner__img"/>
                            </Link>
                        </SwiperSlide>
                        <SwiperSlide>
                            <Link to={'/sale'}>
-                               <img src={b4} alt="" className="banner__img"/>
+                               <img src={c4} alt="" className="banner__img"/>
                            </Link>
                        </SwiperSlide>
                        <SwiperSlide>
                            <Link to={'/sale'}>
-                               <img src={b5} alt="" className="banner__img"/>
+                               <img src={c5} alt="" className="banner__img"/>
                            </Link>
                        </SwiperSlide>
                 </Swiper>

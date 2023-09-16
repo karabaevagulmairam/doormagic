@@ -22,19 +22,7 @@ const Product = () => {
 
     console.log(product)
 
-    // const [product, setProduct] = useState({});
-    //
-    // const getOne = (id) => {
-    //     api(`products/${id}`).json()
-    //         .then((res) => setProduct(res))
-    // }
-    //
-    //
-    // useEffect(() => {
-    //     getOne(id)
-    // }, [id]);
-    //
-    // console.log(product);
+
 
         return (
             <>

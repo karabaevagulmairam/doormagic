@@ -33,6 +33,17 @@ button{
   margin: 0 auto;
 }
 
+.btn{
+  margin-top: 20px ;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: #525252;
+  color: #FFFFFF;
+  font-size: 15px;
+  &:hover{
+    background: #1A1919;
+  }
+}
 
 .title{
   font-size: 25px;
@@ -62,7 +73,7 @@ button{
 .star.selected {
   color: gold;
 }
-
+@import "action";
 @import "authors";
 @import "author";
 @import "header";

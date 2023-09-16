@@ -1,28 +1,23 @@
-import React, {Fragment, useContext, useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import ACard from "../../components/ACard/ACard";
-import {CustomContext} from "../../config/context/context";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllAuthors} from "../../redux/reducers/authors.js";
 
 
 const Authors = () => {
 
-    // const{authorSlide, getAuthorSlide} = useContext(CustomContext);
-
     const [page, setPage] = useState(1);
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
-    const {data} = useSelector(store => store.authors)
+    const {data} = useSelector(store => store.authors);
 
 
     useEffect(()=>{
         dispatch(getAllAuthors())
     },[]);
 
-
-    console.log(data)
-
+    console.log(data);
 
     return (
         <div className="authors">
@@ -40,7 +35,6 @@ const Authors = () => {
                         ))
                     }
                 </div>
-
             </div>
         </div>
     );
