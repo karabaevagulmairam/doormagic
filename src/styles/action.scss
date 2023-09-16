@@ -1,33 +1,10 @@
-.sale{
-  &__title{
-    margin-top: 40px;
-    margin-left: 180px;
-    font-weight: 400;
-  }
-  .active{
-    width: 100%;
-  }
-  .banner__img{
-    height: 320px;
-  }
-  &__row{
+.action{
+  .sale__card{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    padding: 50px 0;
-  }
-  &__card{
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
-    padding: 30px;
-    display: flex;
-    column-gap: 20px;
-    position: relative;
-    &:hover{
-      box-shadow: 0 5px 20px rgba(28, 28, 28, 0.1);
-    }
     &-img{
-      width: 230px;
-      height: 150px;
+      width: 100%;
+      height: 250px;
       border-radius: 12px;
     }
     &-info{

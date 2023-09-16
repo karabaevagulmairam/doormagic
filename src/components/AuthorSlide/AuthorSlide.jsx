@@ -5,19 +5,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import {CustomContext} from "../../config/context/context";
 import {Link} from "react-router-dom";
 import {useGetAuthorsQuery} from "../../redux/api/api.js";
-import logIn from "../../pages/LogIn/LogIn.jsx";
+import SaleCard from "../SaleCard/SaleCard";
+
 
 
 const AuthorSlide = () => {
 
-    // const{authorSlide, getAuthorSlide} = useContext(CustomContext);
-
-    // useEffect(()=>{
-    //     getAuthorSlide()
-    // },[]);
 
 
     const {data} = useGetAuthorsQuery({_limit: 12})
@@ -55,3 +50,6 @@ const AuthorSlide = () => {
 };
 
 export default AuthorSlide;
+
+
+

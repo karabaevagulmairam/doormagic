@@ -1,11 +1,9 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import api from "../../config/api/api";
 import {useParams} from "react-router-dom";
 import Card from "../../components/Card/Card";
 import {useDispatch, useSelector} from "react-redux";
 import {getOneAuthor, updateAuthorRating} from "../../redux/reducers/oneAuthor.js";
 import {useGetProductsQuery} from "../../redux/api/api.js";
-
 
 const Author = () => {
 
@@ -21,16 +19,17 @@ const Author = () => {
         if(existingReviewUser){
             setSelectedRating(existingReviewUser.point)
         }
-    }, [author.name])
+    }, [author?.name])
 
-    console.log(author.name)
+    console.log(author)
 
-    const {data} = useGetProductsQuery({author: author.name})
+
+    const {data} = useGetProductsQuery({author: author?.name})
 
 
     const addPoint = () => {
         // Проверьте, что пользователь выбрал рейтинг и выполнил другие проверки, если необходимо
-        const existingReviewUser = author.ratingView.some(review => parseInt(review.userId) === parseInt(user.id))
+        const existingReviewUser = author?.ratingView.some(review => parseInt(review.userId) === parseInt(user.id))
         if(existingReviewUser){
             alert("Вы ранее оставляли отзыв")
             return
@@ -42,7 +41,7 @@ const Author = () => {
 
         dispatch(updateAuthorRating({
             id: id, // ID автора
-            ratingData: [...author.ratingView, newRating], // Новый рейтинг
+            ratingData: [...author?.ratingView, newRating], // Новый рейтинг
         }))
             .then(() => {
                 alert("Отзыв успешно добавлен.");
@@ -54,22 +53,21 @@ const Author = () => {
     };
 
 
-    if ('id' in author) {
         return (<>
                 <div className="author">
                     <div className="container">
                         <div className="author__row">
-                            <img src={author.image} alt="" className="author__img"/>
+                            <img src={author?.image} alt="" className="author__img"/>
                             <div className="author__card">
-                                <h2 className="author__name">{author.name}</h2>
-                                <p className="author__desc">{author.description}</p>
+                                <h2 className="author__name">{author?.name}</h2>
+                                <p className="author__desc">{author?.description}</p>
                                 <div className="author__rating">
                                     <span>Выберите рейтинг:</span>
                                     <div className="rating__stars">
-      <span
-          className={`star ${selectedRating >= 1 ? 'selected' : ''}`}
-          onClick={() => setSelectedRating(1)}
-      >
+                                         <span
+                                             className={`star ${selectedRating >= 1 ? 'selected' : ''}`}
+                                             onClick={() => setSelectedRating(1)}
+                                         >
         ★
       </span>
                                         <span
@@ -103,18 +101,14 @@ const Author = () => {
                         </div>
                         <h2 className="author__title">Все книги автора</h2>
                         <div className="catalog__row">
-                            {data?.map((item, idx) => (<Fragment key={item.id || idx}>
+                            {data?.map((item, idx) => (<Fragment key={item?.id || idx}>
                                     <Card item={item}/>
                                 </Fragment>))}
                         </div>
                     </div>
                 </div>
             </>
-
         );
-    } else {
-        return <h2>Loading...</h2>
-    }
 };
 
 export default Author;

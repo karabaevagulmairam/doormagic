@@ -1,20 +1,34 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import Banner from "../Home/Banner/Banner";
 import SaleCard from "../../components/SaleCard/SaleCard";
-import CardSkeleton from "../../components/CardSkeleton/CardSkeleton";
-import {useGetProductsQuery} from "../../redux/api/api";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllSales} from "../../redux/reducers/sale";
 
 const Sale = () => {
 
-    const {data} = useGetProductsQuery()
+    const dispatch = useDispatch();
+
+    const {data} = useSelector(store => store.sales);
+
+    useEffect(() => {
+        dispatch(getAllSales())
+    },[]);
+
+    console.log(data);
 
     return (
         <div className="sale">
-            <div className="container">
-                <h1 className="sale__title">Акции и скидки на книги</h1>
+            <h1 className="sale__title">Акции и скидки на книги</h1>
+            <div className="container__small">
                 <Banner/>
                 <div className="sale__row">
-                   <SaleCard/>
+                    {
+                        data.map((item, idx)=>(
+                            <Fragment key={item.id || idx}>
+                                <SaleCard item={item}/>
+                            </Fragment>
+                        ))
+                    }
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import books from "./reducers/books"
 import newBooks from "./reducers/newBooks"
 import book from "./reducers/oneBook"
 import authors from "./reducers/authors.js";
-import author from "./reducers/oneBook.js";
+import author from "./reducers/oneAuthor.js";
 import sale from "./reducers/oneSale.js";
 import sales from "./reducers/sale.js";
 import user from "./reducers/user.js";
