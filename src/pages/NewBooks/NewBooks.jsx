@@ -8,9 +8,10 @@ import CardSkeleton from "../../components/CardSkeleton/CardSkeleton";
 const NewBooks = () => {
 
     const dispatch = useDispatch();
-    const [category] = useState('all');
     const {data, isLoading} = useSelector(store => store.books);
     const [page, setPage] = useState(1);
+
+    console.log(data.filter((item) => item.year === '2023').filter((itm, idx) => idx <= 12))
 
     useEffect(() => {
         dispatch(getAllBooks())
@@ -18,11 +19,11 @@ const NewBooks = () => {
 
 
     const showCount = data
-        .filter(item => category === "all" ? item : item.category === category)
+        .filter(item => '2023' === "all" ? item : item.year === '2023')
         .filter((item, idx) => idx + 1 <= page * 10 && idx >= page * 10 - 10).length;
 
     const showCountLength = data
-        .filter(item => category === "all" ? item : item.category === category).length;
+        .filter(item => '2023' === "all" ? item : item.year === '2023').length;
 
     return (
         <div className="newBooks">
