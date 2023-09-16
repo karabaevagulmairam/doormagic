@@ -50,12 +50,15 @@ const ProductInfo = ({product}) => {
                                         <span className="card__cart"><LiaOpencart size={22}/></span>
                                     </button>
                                     : <button type="button" className="cart__bottom-order" onClick={() => {
-                                        if ('id' in user){
-                                            dispatch(addCart(product))
-                                        } else{
-                                            navigate('/login')
+                                        if (Array.isArray(user.favorites)) {
+                                            dispatch(addFavorites(product))
+                                        } else {
+                                           navigate('/login')
                                         }
-                                    }}>В КОРЗИНУ
+                                    }}>
+                                        {
+                                            Array.isArray(user.favorites) && user.favorites.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
+                                        }В КОРЗИНУ
                                         <span className="card__cart"><LiaOpencart size={17}/></span>
                                     </button>
                             }
