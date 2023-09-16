@@ -1,5 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit";
 import books from "./reducers/books"
+import newBooks from "./reducers/newBooks"
 import book from "./reducers/oneBook"
 import authors from "./reducers/authors.js";
 import author from "./reducers/oneBook.js";
@@ -11,6 +12,7 @@ import {apiSlice} from "./api/api";
 export const store = configureStore({
     reducer: {
         books,
+        newBooks,
         book,
         authors,
         author,
@@ -20,4 +22,4 @@ export const store = configureStore({
         [apiSlice.reducerPath]: apiSlice.reducer
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),
-})
+});
