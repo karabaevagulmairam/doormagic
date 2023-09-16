@@ -11,9 +11,12 @@ import {store} from "./redux";
 ReactDOM.createRoot(document.getElementById('root')).render(
     <SkeletonTheme>
         <BrowserRouter>
+            <Context>
                 <Provider store={store}>
                     <App />
                 </Provider>
+            </Context>
+
         </BrowserRouter>
     </SkeletonTheme>
 );

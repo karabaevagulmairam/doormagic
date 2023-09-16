@@ -16,6 +16,8 @@ const ProductInfo = ({product}) => {
 
     const navigate = useNavigate();
 
+    console.log(user)
+
     return (
         <div className="product__info">
                 <div className="product__info-info">
@@ -42,7 +44,8 @@ const ProductInfo = ({product}) => {
                         <p className="product__info-price">{product.price} сом</p>
                         <div className="product__info-prod">
                             {
-                                user.carts?.some(el => el.id === product.id) ?
+                                user.carts.length &&
+                                user?.carts?.some(el => el.id === product.id) ?
                                     <button type="button" className="product__info-btn">ДОБАВЛЕНО
                                         <span className="card__cart"><LiaOpencart size={22}/></span>
                                     </button>
