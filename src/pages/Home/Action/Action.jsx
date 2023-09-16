@@ -2,6 +2,7 @@ import React, {Fragment, useEffect} from 'react';
 import SaleCard from "../../../components/SaleCard/SaleCard";
 import {useDispatch, useSelector} from "react-redux";
 import {getAllSales} from "../../../redux/reducers/sale";
+
 import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';

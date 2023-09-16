@@ -44,12 +44,14 @@ const Favorites = () => {
                     >
 
                         {
-                            user.favorites.filter((item, idx) => idx >= page * 4 - 4 && idx < page * 4).map((item)=>(
-                                <Fragment key={item.id || idx}>
-                                    <SwiperSlide>
-                                        <Card item={item}/>
-                                    </SwiperSlide>
-                                </Fragment>
+                            user.favorites
+                                .filter((item, idx) => idx >= page * 4 - 4 && idx < page * 4).map((item)=>(
+
+                                    <Fragment key={item.id || idx}>
+                                        <SwiperSlide>
+                                            <Card item={item}/>
+                                        </SwiperSlide>
+                                    </Fragment>
                             ))
                         }
                     </Swiper>

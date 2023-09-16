@@ -1,4 +1,5 @@
 .action{
+  padding-top: 40px ;
   .sale__card{
     display: flex;
     flex-direction: column;
@@ -8,12 +9,11 @@
       border-radius: 12px;
     }
     &-info{
-      width: 65%;
+      margin-top: 10px;
     }
     &-title{
       font-size: 20px;
       font-weight: 700;
-      line-height: 28px;
     }
     &-desc{
       font-size: 14px;
@@ -25,11 +25,12 @@
       border-radius: 4px;
       background-color: #fff8e1;
       padding: 12px 14px;
-      width: 30%;
+      width: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       column-gap: 15px;
+      margin-top: 20px;
     }
     &-gif{
       width: 30px;
