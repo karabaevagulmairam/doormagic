@@ -7,10 +7,21 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import Card from "../Card/Card";
 import CardSkeleton from "../CardSkeleton/CardSkeleton";
 import {useGetProductsQuery} from "../../redux/api/api";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllBooks} from "../../redux/reducers/books";
 
 const Hit = () => {
 
-    const {data, isLoading} = useGetProductsQuery({_limit: 12});
+    const dispatch = useDispatch()
+
+    const {data, isLoading} = useSelector(store => store.books);
+
+    console.log(data.filter((item) => item.year === '2023').filter((itm, idx) => idx <= 12))
+
+    useEffect(() => {
+        dispatch(getAllBooks())
+    },[])
+
 
     return (
         <section className="hit">
@@ -29,7 +40,7 @@ const Hit = () => {
 
                         {
                             isLoading ? <CardSkeleton cards={12}/> :
-                            data.map((item, idx)=>(
+                            data.filter((item) => item.year === '2023').filter((itm, idx) => idx <= 12).map((item, idx)=>(
                                 <Fragment >
                                     <SwiperSlide key={item.id || idx}>
                                         <Card item={item}/>

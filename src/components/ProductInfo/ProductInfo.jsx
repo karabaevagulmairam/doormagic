@@ -16,6 +16,8 @@ const ProductInfo = ({product}) => {
 
     const navigate = useNavigate();
 
+    console.log(user)
+
     return (
         <div className="product__info">
                 <div className="product__info-info">
@@ -42,17 +44,21 @@ const ProductInfo = ({product}) => {
                         <p className="product__info-price">{product.price} сом</p>
                         <div className="product__info-prod">
                             {
-                                user.carts?.some(el => el.id === product.id) ?
+                                user.carts.length &&
+                                user?.carts?.some(el => el.id === product.id) ?
                                     <button type="button" className="product__info-btn">ДОБАВЛЕНО
                                         <span className="card__cart"><LiaOpencart size={22}/></span>
                                     </button>
                                     : <button type="button" className="cart__bottom-order" onClick={() => {
-                                        if ('id' in user){
-                                            dispatch(addCart(product))
-                                        } else{
-                                            navigate('/login')
+                                        if (Array.isArray(user.favorites)) {
+                                            dispatch(addFavorites(product))
+                                        } else {
+                                           navigate('/login')
                                         }
-                                    }}>В КОРЗИНУ
+                                    }}>
+                                        {
+                                            Array.isArray(user.favorites) && user.favorites.some(el => el.id === product.id) ? <AiFillHeart size={20} color="red"/> : <AiOutlineHeart size={20}/>
+                                        }В КОРЗИНУ
                                         <span className="card__cart"><LiaOpencart size={17}/></span>
                                     </button>
                             }

@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                     <ul className="footer__menu">
                         <li className="footer__item">
-                            <a href="#" className="footer__link">О нас</a>
+                            <Link to={'/about'} className="footer__link">О нас</Link>
                         </li>
                         <li className="footer__item">
                             <a href="" className="footer__link">Подарочные сертификаты</a>
@@ -40,7 +40,7 @@ const Footer = () => {
                             <a href="#" className="footer__link">Оплата</a>
                         </li>
                         <li className="footer__item">
-                            <a href="#" className="footer__link">Акции</a>
+                            <Link to={'/sale'} className="footer__link">Акции</Link>
                         </li>
                         <li className="footer__item">
                             <a href="#" className="footer__link">Пользовательское соглашение</a>
