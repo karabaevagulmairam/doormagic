@@ -14,8 +14,6 @@ const   SaleCard = ({item}) => {
 
     const navigate = useNavigate();
 
-    const {user} = useSelector(store => store.user);
-
     useEffect(() => {
         dispatch(getOneSale(id))
     },[])

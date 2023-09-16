@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {Link} from "react-router-dom";
 
 const Action = () => {
     const dispatch = useDispatch();
@@ -32,7 +33,9 @@ const Action = () => {
                         data.map((item, idx)=>(
                             <Fragment>
                                 <SwiperSlide key={item.id || idx}>
-                                    <SaleCard item={item}/>
+                                    <Link to={`/saleCard/${item.id}`}>
+                                        <SaleCard item={item}/>
+                                    </Link>
                                 </SwiperSlide>
                             </Fragment>
                         ))

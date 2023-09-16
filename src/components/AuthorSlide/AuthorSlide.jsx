@@ -7,18 +7,10 @@ import 'swiper/css/pagination';
 
 import {Link} from "react-router-dom";
 import {useGetAuthorsQuery} from "../../redux/api/api.js";
-import SaleCard from "../SaleCard/SaleCard";
-
-
 
 const AuthorSlide = () => {
 
-
-
     const {data} = useGetAuthorsQuery({_limit: 12})
-
-
-
 
     return (
         <div className="authorSlide">
