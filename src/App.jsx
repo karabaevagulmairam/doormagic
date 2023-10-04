@@ -18,6 +18,7 @@ import Rating from "./pages/Rating/Rating";
 import Author from "./pages/Author/Author";
 import Delivery from "./pages/Delivery/Delivery";
 import NewBooks from "./pages/NewBooks/NewBooks";
+import MyOrder from "./pages/MyOrders/MyOrder";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path='*' element={<NotFound/>}/>
           <Route path='/delivery' element={<Delivery/>}/>
           <Route path='/newBooks' element={<NewBooks/>}/>
+          <Route path='/myOrder' element={<MyOrder/>}/>
         </Route>
 
         <Route path='/login' element={<LogIn/>}/>

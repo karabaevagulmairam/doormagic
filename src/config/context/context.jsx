@@ -155,7 +155,6 @@ export const Context = (props) => {
 
     //end countCarts
 
-
     //author functions
 
     const getOneAuthor = (id) => {

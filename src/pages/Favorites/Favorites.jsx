@@ -14,6 +14,8 @@ const Favorites = () => {
 
     let favoritesPages = new Array(Math.ceil(user.favorites.length / 4)).fill(null, 0);
 
+    console.log(favoritesPages);
+
     useEffect(() => {
         if (page > favoritesPages.length) {
             setPage(favoritesPages.length)

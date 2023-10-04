@@ -1,0 +1,66 @@
+.myOrder{
+  padding: 50px 0 100px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  &__desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 45%;
+    &-text{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 19px;
+      font-weight: 500;
+    }
+  }
+  &__row{
+    display: flex;
+    flex-direction: column;
+  }
+  &__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+    padding: 3px 10px;
+    background: #fff;
+    width: 70%;
+    &-item{
+      display: flex;
+      width: 40%;
+      padding: 20px 10px;
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 5px 0 0 50px;
+    }
+    &-title{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &-author{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+    }
+    &-price{
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+    }
+  }
+  img{
+    width: 21%;
+  }
+}

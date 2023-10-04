@@ -4,13 +4,13 @@ import {useDispatch, useSelector} from "react-redux";
 import {Link, useNavigate, useParams} from "react-router-dom";
 import {getOneSale} from "../../redux/reducers/oneSale";
 
-const   SaleCard = ({item}) => {
+const SaleCard = ({item}) => {
 
     const {id} = useParams();
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
-    const {sale} = useSelector(store => store.sale)
+    const {sale} = useSelector(store => store.sale);
 
     const navigate = useNavigate();
 
@@ -18,9 +18,9 @@ const   SaleCard = ({item}) => {
 
     useEffect(() => {
         dispatch(getOneSale(id))
-    },[])
+    },[]);
 
-    console.log(sale)
+    console.log(sale);
 
     return (
         <div className="sale__card">
@@ -34,7 +34,13 @@ const   SaleCard = ({item}) => {
             </div>
             <div className="sale__card-end">
                 <img className="sale__card-gif" src={gif} alt=""/>
-                <p className="sale__card-subtitle">До окончания акции</p>
+                <div className="sale__card-timer">
+                    <p className="sale__card-subtitle">До окончания акции</p>
+                    <span id="days">5:</span>
+                    <span id="hours">19:</span>
+                    <span id="minutes">24:</span>
+                    <span id="seconds">16</span>
+                </div>
             </div>
             <button className="sale__card-btn" onClick={()=> {navigate(`/SCard/${item.id}`)}}>Подробнее</button>
         </div>
