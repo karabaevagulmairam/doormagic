@@ -12,12 +12,9 @@ export const Context = (props) => {
     const [catalog, setCatalog] =useState([]);
     const [authorCatalog, setAuthorCatalog] =useState([]);
     const [search, setSearch] = useState('');
-    const [sale, setSale] = useState([]);
     const [authorSlide, setAuthorSlide] =useState([]);
     const [author, setAuthor] =useState([]);
-
     const [isLoading, setIsLoading] = useState('true');
-
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -30,11 +27,8 @@ export const Context = (props) => {
         }
     }, []);
 
+
     //start userContent
-
-
-
-
 
     const logOutUser = () => {
         setUser({email: ''});

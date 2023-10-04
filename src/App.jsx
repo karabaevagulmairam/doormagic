@@ -18,7 +18,9 @@ import Rating from "./pages/Rating/Rating";
 import Author from "./pages/Author/Author";
 import Delivery from "./pages/Delivery/Delivery";
 import NewBooks from "./pages/NewBooks/NewBooks";
-
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer, toast} from "react-toastify";
+import React from "react";
 
 function App() {
 
@@ -47,8 +49,17 @@ function App() {
 
         <Route path='/login' element={<LogIn/>}/>
         <Route path='/register' element={<Register/>}/>
-
       </Routes>
+
+      <ToastContainer position="top-center"
+                      autoClose={5000}
+                      hideProgressBar={false}
+                      newestOnTop={false}
+                      closeONClick
+                      rtl={false}
+                      pauseOnFocusLoss
+                      draggable
+                      pauseOnHover/>
     </>
   )
 }
