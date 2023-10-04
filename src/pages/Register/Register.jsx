@@ -28,7 +28,7 @@ const Register = () => {
                 dispatch(authUser(res.data));
                 navigate('/')
             })
-            .catch((err)=> toast(err.response.data.message));
+            .catch((err)=> console.log(err));
     };
 
 

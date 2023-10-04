@@ -21,6 +21,9 @@ import NewBooks from "./pages/NewBooks/NewBooks";
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast} from "react-toastify";
 import React from "react";
+import MyOrder from "./pages/MyOrders/MyOrder";
+
+
 
 function App() {
 
@@ -45,6 +48,7 @@ function App() {
           <Route path='*' element={<NotFound/>}/>
           <Route path='/delivery' element={<Delivery/>}/>
           <Route path='/newBooks' element={<NewBooks/>}/>
+          <Route path='/myOrder' element={<MyOrder/>}/>
         </Route>
 
         <Route path='/login' element={<LogIn/>}/>
