@@ -12,11 +12,13 @@ import {useForm} from "react-hook-form";
 import {authUser} from "../../redux/reducers/auth";
 import {toast} from "react-toastify";
 import axios from "../../utils/axios.js";
+import {useDispatch} from "react-redux";
 
 
 const Register = () => {
 
     const password = useRef();
+    const dispatch = useDispatch();
     const {register, handleSubmit, formState: {errors}, watch} = useForm({mode: "onBlur"});
     password.current = watch("password");
     const navigate = useNavigate();
@@ -192,11 +194,6 @@ const Register = () => {
                         location.pathname === '/register' && <label className="form__label">
                             <span className="form__label-text">Подтвердите пароль</span>
                             <div className="form__label-field">
-                                {/*<span className="form__label-icon" onClick={() => setPasswordView(prev => !prev)}>*/}
-                                {/*    {*/}
-                                {/*        passwordView ? <AiFillEyeInvisible/> : <AiFillEye/>*/}
-                                {/*    }*/}
-                                {/*</span>*/}
                                 <input {...register('confirmPwd', {
                                     validate: value =>
                                         value === password.current || "The password do not match"

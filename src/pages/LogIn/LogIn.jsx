@@ -12,11 +12,13 @@ import {useForm} from "react-hook-form";
 import {authUser} from "../../redux/reducers/auth";
 import {toast} from "react-toastify";
 import axios from "../../utils/axios.js";
+import {useDispatch} from "react-redux";
 
 const LogIn = () => {
 
     const password = useRef();
     const {register, handleSubmit, formState: {errors}, watch} = useForm({mode: "onBlur"});
+    const dispatch = useDispatch();
     password.current = watch("password");
     const navigate = useNavigate();
     const [passwordView, setPasswordView] = useState(false);

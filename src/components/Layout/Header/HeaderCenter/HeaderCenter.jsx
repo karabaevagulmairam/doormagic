@@ -3,12 +3,12 @@ import {Link, useLocation, useNavigate} from "react-router-dom"
 import Logo from "../../../../assets/Logo.svg"
 import {BsSearch} from "react-icons/bs"
 import {RiUserHeartLine} from "react-icons/ri"
-import {BiBookHeart} from "react-icons/bi"
+import {BiLogOut, BiBookHeart} from "react-icons/bi"
 import {LiaOpencart} from   "react-icons/lia"
 import {useState, useEffect} from "react";
 import {useGetProductsQuery} from "../../../../redux/api/api.js";
 import {useDispatch, useSelector} from "react-redux";
-import {logOutAcc} from "../../../../redux/reducers/user.js";
+import {logOutUser} from "../../../../redux/reducers/auth.js";
 
 
 const HeaderCenter = () => {
@@ -79,14 +79,23 @@ const HeaderCenter = () => {
                     <LiaOpencart/>
                 </Link>
                 {
-                    location.pathname === '/room' ?
-                        <span onClick={() => {
-                        dispatch(logOutAcc())
-                        localStorage.removeItem('user')
-                    }} className="header__center-log">Выйти</span> :
-                        <Link to={user.email ? '/room' : '/login'} className="header__center-icon">
-                        <RiUserHeartLine/>
-                    </Link>
+                    JSON.parse(localStorage.getItem('@@remember-rootState')).auth?.user ?
+                            <span onClick={() => dispatch(logOutUser())}>
+                                <Link to={'/room'} className="header__center-icon">
+                                 <BiLogOut />
+                             </Link>
+                            </span>
+                         :
+                        <Link to={'/login'} className="header__center-icon">
+                                 <RiUserHeartLine/>
+                             </Link>
+
+                    // location.pathname === '/room' ?
+                    //     <span onClick={() => {
+                    //     dispatch(logOutAcc())
+                    //     localStorage.removeItem('user')
+                    // }} className="header__center-log">Выйти</span> :
+                    //
                 }
 
             </div>
